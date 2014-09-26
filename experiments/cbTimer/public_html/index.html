@@ -8,7 +8,9 @@
 
 </head>
 <body ng-app="cbTimer"> 
-<div id="container" ng-controller="cbTimerCtrl">
+
+ <div id="container" ng-controller="cbTimerCtrl">
+    <div><a href="http://chrisbautista.github.io/">BACK TO HOME</a></div>
     <div>
     <div id="clock">{{timer}}</div>
     <button ng-click="toggleTimer()">{{mode}}</button>
@@ -25,11 +27,11 @@
             </tr>
         </tbody>
     </table>
-</div>
+      
+ 
+ </div>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
   <script src="app.js"></script>
-  
-  <div><a href="http://chrisbautista.github.io/">BACK TO HOME</a></div>
 </body>
 </html>
 
