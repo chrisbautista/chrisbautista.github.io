@@ -13,7 +13,7 @@ myApp.service('initService', function($rootScope) {
     //initialize schedule list
     this.experiments = {
         list: [
-            ['/experiments/cbTimer/','AngularJS: Timer']
+            ['/experiments/cbTimer/public_html/','AngularJS: Timer']
         ]
     };
 });
