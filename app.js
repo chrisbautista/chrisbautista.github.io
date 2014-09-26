@@ -15,7 +15,7 @@ myApp.service('initService', function($rootScope) {
         list: [
             ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],
             ['/experiments/cbTimer/public_html/','AngularJS: Append to Table'],
-            ['','AngularJS: Catch Keypress'],
+            ['','AngularJS: Catch Keypress']
         ]
     };
 });
