@@ -12,6 +12,17 @@
 
    
 }
+
+a{
+    height:40px;
+    display:block;
+    padding:8px;
+    border-radius: 5px;
+    border:1px solid #DDD;
+    color:white;
+    background-color: #ff3300;
+}
+
 button{
     height:102px;
     width:102px;
