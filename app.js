@@ -18,11 +18,18 @@ myApp.service('initService', function($rootScope) {
             ['','AngularJS: Catch Keypress']
         ]
     };
+    this.lessons = {
+        list: [
+            ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
+            
+        ]
+    };
 });
 
 myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, initService) {
 
     $scope.experiments = initService.experiments;
+    $scope.lessons = initService.experiments;
 
 }]);
 
