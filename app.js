@@ -29,7 +29,7 @@ myApp.service('initService', function($rootScope) {
 myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, initService) {
 
     $scope.experiments = initService.experiments;
-    $scope.lessons = initService.experiments;
+    $scope.lessons = initService.lessons;
 
 }]);
 
