@@ -15,12 +15,17 @@ myApp.service('initService', function() {
         list: [
             ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],
             ['/experiments/cbTimer/public_html/','AngularJS: Append to Table'],
-            ['','AngularJS: Catch Keypress']
+            ['#','AngularJS: Catch Keypress']
         ]
     };
     this.lessons = {
         list: [
             ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
+            ['#','Javascript Best Practices'],
+            ['#','Javascript Design Patterns: Singleton'],
+            ['#','Javascript Design Patterns: Factory'],
+            ['#','Javascript Design Patterns: Decorator'],
+            ['#','JSLint: Unnecessary `else` after disruption']
             
         ]
     };
