@@ -9,7 +9,7 @@ function checkTime(i) {
 
 var tmPromise, myApp = angular.module('codeSpud',[]);
 
-myApp.service('initService', function($rootScope) {
+myApp.service('initService', function() {
     //initialize schedule list
     this.experiments = {
         list: [
