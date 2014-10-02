@@ -21,7 +21,7 @@ myApp.service('initService', function() {
     this.lessons = {
         list: [
             ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
-            ['/lessons/javascript/balanceParens.html','Problem: Provided a string build a function to check for balanced parens '],
+            ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
             ['#','Javascript Best Practices'],
             ['#','Javascript Design Patterns: Singleton'],
             ['#','Javascript Design Patterns: Factory'],
