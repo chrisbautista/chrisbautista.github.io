@@ -11,7 +11,7 @@ var tmPromise, myApp = angular.module('codeSpud',[]);
 
 myApp.service('initService', function() {
     //initialize schedule list
-    this.myprojects = {
+    this.projects = {
         list: [
             ['/Khrunus','Khrunus: pure html5 for timekeeping']
             
@@ -42,6 +42,7 @@ myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, ini
 
     $scope.experiments = initService.experiments;
     $scope.lessons = initService.lessons;
+    $scope.projects = initService.projects;
 
 }]);
 
