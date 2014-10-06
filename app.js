@@ -11,7 +11,7 @@ var tmPromise, myApp = angular.module('codeSpud',[]);
 
 myApp.service('initService', function() {
     //initialize schedule list
-    this.projects = {
+    this.myprojects = {
         list: [
             ['/Khrunus','Khrunus: pure html5 for timekeeping']
             
