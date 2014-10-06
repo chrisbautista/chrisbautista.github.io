@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Testing Angular</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div  ng-controller="myController">
+            Hello! Welcome to the Angular World,  {{username}}
+        </div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+        <script>
+            var myApp = angular.module("myApp", []);
+            
+            myApp.controller("myController",["$scope", function ($scope) {
+                    $scope.username = "Christopher Bautista";
+            }]);
+            
+            
+            
+        </script>
+    </body>
+</html>

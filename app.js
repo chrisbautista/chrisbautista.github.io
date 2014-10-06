@@ -11,6 +11,12 @@ var tmPromise, myApp = angular.module('codeSpud',[]);
 
 myApp.service('initService', function() {
     //initialize schedule list
+    this.projects = {
+        list: [
+            ['/Khrunus','Khrunus: pure html5 for timekeeping']
+            
+        ]
+    };
     this.experiments = {
         list: [
             ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],
