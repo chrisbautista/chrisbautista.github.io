@@ -28,6 +28,8 @@ myApp.service('initService', function() {
         list: [
             ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
             ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
+            ['/lessons/javascript/closure.js','Javascript: Closures'],
+            ['/lessons/javascript/shorthand.js','Javascript: Shorthand for Common Patterns'],
             ['#','Javascript Best Practices'],
             ['#','Javascript Design Patterns: Singleton'],
             ['#','Javascript Design Patterns: Factory'],
