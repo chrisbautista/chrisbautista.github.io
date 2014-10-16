@@ -33,7 +33,7 @@
 
             <ul>
                 <li ng-repeat="item in projects.list">
-                    <a href="{{item[0] === '#' ? 'javascript:alert("under construction");' : item[0] }}">{{item[1]}}</a>
+                    <a href="{{ (item[0] === '#' ? 'javascript:alert("under construction");' : item[0]) }}">{{item[1]}}</a>
                 </li>
             </ul>
 
@@ -41,7 +41,7 @@
 
             <ul>
                 <li ng-repeat="item in experiments.list">
-                    <a href="{{item[0] === '#' ? 'javascript:alert("under construction");' : item[0] }}">{{item[1]}}</a>
+                    <a href="{{ (item[0] === '#' ? 'javascript:alert("under construction");' : item[0]) }}">{{item[1]}}</a>
                 </li>
             </ul>
             
@@ -49,7 +49,7 @@
 
             <ul>
                 <li ng-repeat="item in lessons.list">
-                    <a href="{{item[0] === '#' ? 'javascript:alert("under construction");' : item[0] }}">{{item[1]}}</a>
+                    <a href="{{ (item[0] === '#' ? 'javascript:alert("under construction");' : item[0]) }}">{{item[1]}}</a>
                 </li>
             </ul>
 
