@@ -5,18 +5,18 @@ A place to play
 
 # Outline
 
-## Projects
+### Projects
 
 * Khrunus: pure html5 for timekeeping
 
-## Experiments
+### Experiments
 
 * AngularJS: Timer using $timeout service
 * AngularJS: Making timer into a directive
 * AngularJS: Append to Table
 * AngularJS: Catch Keypress
 
-## Lessons
+### Lessons
 
 * Javascript Shorthand Constructs
 * Problem: Provided a string build a function to check for balanced parens
