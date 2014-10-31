@@ -7,26 +7,21 @@ A place to play
 
 ## Projects
 
-Khrunus: pure html5 for timekeeping
+* Khrunus: pure html5 for timekeeping
 
 ## Experiments
 
-AngularJS: Timer using $timeout service
-AngularJS: Making timer into a directive
-AngularJS: Append to Table
-AngularJS: Catch Keypress
+* AngularJS: Timer using $timeout service
+* AngularJS: Making timer into a directive
+* AngularJS: Append to Table
+* AngularJS: Catch Keypress
 
 ## Lessons
 
-Javascript Shorthand Constructs
-Problem: Provided a string build a function to check for balanced parens
-Javascript: Closures
-Javascript: Shorthand for Common Patterns
-Javascript Best Practices
-Javascript Design Patterns: Singleton
-Javascript Design Patterns: Factory
-Javascript Design Patterns: Decorator
-JSLint: Unnecessary `else` after disruption
+* Javascript Shorthand Constructs
+* Problem: Provided a string build a function to check for balanced parens
+* Javascript: Closures
+* Javascript: Shorthand for Common Patterns
 
 # Workflow
 
