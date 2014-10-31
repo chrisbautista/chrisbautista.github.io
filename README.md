@@ -5,9 +5,11 @@ A place to play
 
 # Workflow
 
-## testing 
-* Install in Apache
+### Testing 
+1) Install in a web server
 
-* PHP server
+or
+
+2) PHP server
 > php -S localhost:9000
 
