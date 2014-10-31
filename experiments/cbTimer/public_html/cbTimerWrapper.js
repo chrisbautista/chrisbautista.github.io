@@ -1,11 +1,10 @@
-// @todo get $timeout()
 
 var Timer = {
 
     /**
     * set clock to normalize time
     * @func initTimer
-    * 
+    *
     * @TODO style clock
     */
     init : function () {
@@ -16,7 +15,7 @@ var Timer = {
     /**
     * set clock to normalize time
     * @func startTimer
-    * 
+    *
     * @TODO trigger timer
     */
     startTimer : function () {
@@ -28,7 +27,7 @@ var Timer = {
      /**
     * set clock to normalize time
     * @func stopTimer
-    * 
+    *
     * @TODO stop timer
     */
     stopTimer : function () {
@@ -40,7 +39,7 @@ var Timer = {
     * set clock to normalize time
     * @func setTimer
     * @param intTime integer
-    * 
+    *
     * @TODO convert integer to time string
     */
     setTimer : function (intTime) {

@@ -34,17 +34,21 @@ myApp.controller('cbTimerCtrl', ['$scope', '$timeout', 'initService', function (
     return i;
   }
 
+  function setMode() {
+    $scope.mode === "Stop" ? "Stop" : "Start";
+  }
+
   /**
   *  @func startTimer
-  *  trigger timer to start, 
+  *  trigger timer to start,
   *  recursive, call again when timer expires
   */
   function startTimer() {
     // toggle
-    $scope.mode = "Stop";
+    setMode();
 
     var h, m, s, ms, today = new Date();
-    // compute for the duration, 
+    // compute for the duration,
     // normalize for the user
     timeEnd = today.getTime();
     ms = Math.floor((timeEnd - timeStart) / 1000);
@@ -59,7 +63,7 @@ myApp.controller('cbTimerCtrl', ['$scope', '$timeout', 'initService', function (
     // timer expired, restart timer
     tmPromise = $timeout(function () {
       startTimer();
-    }, 1000);
+    }, 500);
   }
 
   /**
@@ -68,7 +72,7 @@ myApp.controller('cbTimerCtrl', ['$scope', '$timeout', 'initService', function (
    */
   function stopTimer() {
     // toggle
-    $scope.mode = "Start";
+    setMode();
 
     // stop timeout service
     $timeout.cancel(tmPromise);
@@ -97,4 +101,3 @@ myApp.controller('cbTimerCtrl', ['$scope', '$timeout', 'initService', function (
 
 
 }]);
-
