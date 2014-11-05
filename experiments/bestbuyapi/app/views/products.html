@@ -35,10 +35,8 @@
 <div class="container">
 <section>
   <div class="col-md-3 col-xs-3 col-l-3 ">
-      <h3>Categories</h3>
-      
         <div ng-repeat="cat in categories">
-          <a ng-click="loadCategoryProducts(cat)">{{cat.name}}</a>
+          <a ng-click="loadCategoryProducts(cat)" ng-class="category.id == cat.id ? 'btn btn-primary' : '' ">{{cat.name}}</a>
         </div>
       
   </div>
@@ -46,7 +44,6 @@
 <!-- CategoryProducts -->
 <section>
   <div class="col-md-9 col-xs-9 col-l-9">
-    <h3>{{category.name}}</h3>
     <div>
       <ul class="list-inline">
         <li ng-repeat="product in categoryProducts | limitTo:32">
