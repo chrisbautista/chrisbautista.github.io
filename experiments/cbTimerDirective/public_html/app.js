@@ -1,6 +1,6 @@
 'use strict';
 
-var tmPromise, myApp = angular.module('cbTimer', []);
+var tmPromise, myApp = angular.module('myApp', []);
 
 /**
  *  @ngdirective cbTimerCtrl

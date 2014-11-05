@@ -1,0 +1,62 @@
+<!-- dialog Product -->
+<div class="overlay" ng-if="product.sku">
+  <div class="dialog container" >
+    <div >
+      <img ng-src="http://www.bestbuy.ca{{product.brandThumbnailImage}}" />
+    </div>
+    <div >
+      <img ng-src="http://www.bestbuy.ca{{product.thumbnailImage}}" />
+      <h3>{{product.name}}</h3>
+    </div>
+    <div ng-class="product.regularPrice > product.salePrice ? onSale: '' ">
+      <h4 class="text-info">{{product.regularPrice | currency}}</h4>
+    </div>
+    <div ng-show="product.regularPrice > product.salePrice">
+      <span>{{product.salePrice | currency}}</span>
+    </div>
+
+    <div class="lead" >
+      <p>{{product.shortDescription}}</p>
+    </div>
+
+    <div >
+      <ul 
+        <ul class="list-inline">
+        <li ng-disabled="!product.isAvailableForOrder" class="btn btn-info">In Stock</li>
+        <li ng-disabled="!product.isAvailableForPickup" class="btn btn-info">In Store Pickup</li>
+      </ul>
+    </div>
+    <div class="dialog-buttons">
+      <button class="btn btn-primary pull-right" ng-click="clearProduct()">Close</button>
+    </div>
+  </div>
+</div>
+<!-- Categories -->
+<div class="container">
+<section>
+  <div class="col-md-3 col-xs-3 col-l-3 ">
+      <h3>Categories</h3>
+      
+        <div ng-repeat="cat in categories">
+          <a ng-click="loadCategoryProducts(cat)">{{cat.name}}</a>
+        </div>
+      
+  </div>
+</section>
+<!-- CategoryProducts -->
+<section>
+  <div class="col-md-9 col-xs-9 col-l-9">
+    <h3>{{category.name}}</h3>
+    <div>
+      <ul class="list-inline">
+        <li ng-repeat="product in categoryProducts | limitTo:32">
+          <a ng-click="showProduct(product)" ><img ng-src="http://bestbuy.ca{{product.thumbnailImage}}" alt="product-name"/></a>
+        </li>
+       
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+</div>
