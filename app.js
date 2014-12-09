@@ -19,8 +19,8 @@ myApp.service('initService', function() {
     };
     this.experiments = {
         list: [
-            ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],
-            ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
+          /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],*/
+            ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'], 
             ['/experiments/bestbuyapi/app/','AngularJS: Creating a Service for AJAX API '],
             ['#','AngularJS: Catch Keypress']
         ]
