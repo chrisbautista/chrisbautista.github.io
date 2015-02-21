@@ -26,19 +26,19 @@
         $(".scents").on('mouseover',function(){
           
           if($(this).attr('src').indexOf("pg3-selectcard.png")!==-1){
-            $(this).attr('src',"_assets/pg3-selectcard-hi.png");
+            $(this).attr('src',"assets/pg3-selectcard-hi.png");
           }
 
           $(this).on("mouseout",function(){
-              $(this).attr('src',"_assets/pg3-selectcard.png");
+              $(this).attr('src',"assets/pg3-selectcard.png");
               $(this).off("mouseout");
           });
 
         }).on('click',function(e){
           e.preventDefault();
           self.postcard.setDesign($(this)[0].alt);
-          $(".preview").attr("src","_assets/designs/"+ self.postcard.getThumbNail());
-          $("#hrefFront").attr("href","_assets/designs/"+ self.postcard.getPostcardZoom());
+          $(".preview").attr("src","assets/designs/"+ self.postcard.getThumbNail());
+          $("#hrefFront").attr("href","assets/designs/"+ self.postcard.getPostcardZoom());
           self.nextPage();
           e.stopPropagation();
           $(".scents").off();
@@ -92,7 +92,7 @@
           $('.back').fancybox({type:'ajax',padding : 0,width:640,height:469,autoSize:false,scrolling:'no',openEffect  : 'elastic', 
             beforeShow:function(){
               var dateStr = (new Date()).toDateString().split(" ");
-              $("#postcard").css("background-image","url('_assets/designs/"+ self.postcard.getPostcardBack() +")");
+              $("#postcard").css("background-image","url('assets/designs/"+ self.postcard.getPostcardBack() +")");
               $("#salute").html("Dear "+ $("#frm_sendee").val().substr( 0, $("#frm_fname").val().indexOf(" ",0) ) + ",");
               $("#ddate").html(dateStr[1]+" "+dateStr[2]+", "+dateStr[3] );
               $("#dedicatory").html(""+$("#frm_dedication").val());

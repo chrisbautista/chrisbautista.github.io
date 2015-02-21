@@ -30,9 +30,9 @@
         var checkImg = new Image();
         var imagesArray = $('img').map(function(){return $(this).attr("src");});
 
-        checkImg.src ='_assets/loading.png';
+        checkImg.src ='assets/loading.png';
 
-        jQuery.imgpreload('_assets/loading.png', function(){
+        jQuery.imgpreload('assets/loading.png', function(){
           $('#container').fadeOut(50);
           $("#msg").fadeOut(50).fadeIn(100);
           $("#msg").html("<strong>Starting ...</strong>");
