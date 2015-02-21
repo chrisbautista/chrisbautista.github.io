@@ -10,8 +10,8 @@ Change Logs:
 
 @font-face {
     font-family: MyCustomFont;
-    src: url("../_assets/fonts/jennasue-webfont.eot");
-    src: url("../_assets/fonts/jennasue-webfont.eot?#iefix") format("embedded-opentype"), url("../_assets/fonts/jennasue-webfont.ttf") format("truetype");
+    src: url("../assets/fonts/jennasue-webfont.eot");
+    src: url("../assets/fonts/jennasue-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/jennasue-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +20,7 @@ Change Logs:
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../_assets/loading.png);
+    background-image: url(../assets/loading.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
 body.friendclass {
     margin: 0;
     padding: 0;
-    background-image: url(../_assets/loading.png);
+    background-image: url(../assets/loading.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -56,11 +56,11 @@ body.friendclass {
 }
 
 .intro {
-    background-image: url(../_assets/intro-bg.jpg) !important;
+    background-image: url(../assets/intro-bg.jpg) !important;
 }
 
 .inside {
-    background-image: url(../_assets/inside-bg.jpg) !important;
+    background-image: url(../assets/inside-bg.jpg) !important;
 }
 
 #msg {

@@ -21,8 +21,8 @@ gulp.task('css', function () {
 });
 
 gulp.task('copy', function() {
-    gulp.src('src/_assets/**/*')
-        .pipe(gulp.dest('build/_assets/'));
+    gulp.src('src/assets/**/*')
+        .pipe(gulp.dest('build/assets/'));
     gulp.src('src/css/vendor/**/*')
         .pipe(gulp.dest('build/css/vendor/'));
     gulp.src('src/js/vendor/**/*')
