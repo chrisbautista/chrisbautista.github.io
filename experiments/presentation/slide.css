@@ -1,0 +1,78 @@
+/*
+ *   Slide
+ *
+ */
+
+.slide-inViewRight {
+    display: block !important;
+    position:absolute;
+    left: 100%;
+    -webkit-animation: slideIn 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slideIn 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+.slide-prevView {
+    display: block !important;
+    position:absolute;
+    left: 0;
+    -webkit-animation: slideInPrev 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slideInPrev 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+
+@-webkit-keyframes slideIn {
+    100% { left:0; }
+}
+
+@keyframes slideIn {
+    100% { left:0; }
+}
+
+@-webkit-keyframes slideInPrev {
+    100% { left:-100%; }
+}
+
+@keyframes slideInPrev {
+    100% { left:-100%; }
+}
+
+.slide-inViewLeft {
+    display: block !important;
+    position:absolute;
+    left: -100%;
+    -webkit-animation: slideInLeft 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slideInLeft 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+.slide-nextView {
+    display: block !important;
+    position:absolute;
+    left: 0;
+    -webkit-animation: slideInNext 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slideInNext 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+
+@-webkit-keyframes slideInLeft {
+    100% { left:0; }
+}
+
+@keyframes slideInLeft {
+    100% { left:0; }
+}
+
+@-webkit-keyframes slideInNext {
+    100% { left:100%; }
+}
+
+@keyframes slideInNext {
+    100% { left:100%; }
+}
