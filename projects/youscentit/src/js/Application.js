@@ -10,7 +10,7 @@
      this.currentPage = 0;
      this.render = Mods.animatePages;
      this.pages = Object.keys(this.render);
-     console.log(this.pages);
+     
      this.postcard = Mods.postcard;
      this.currentDesign = "";
 
