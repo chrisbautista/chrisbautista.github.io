@@ -100,14 +100,10 @@
                     e.stopPropagation();
                 });
 
-                $('.back').off().fancybox({
-                    type: 'ajax',
-                    padding: 0,
+                helpers.thisPreview({ 
+                    obj:$("#hrefBack"), 
                     width: 640,
                     height: 469,
-                    autoSize: false,
-                    scrolling: 'no',
-                    openEffect: 'elastic',
                     beforeShow: function() {
                         var dateStr = (new Date()).toDateString().split(" ");
                         $("#postcard").css("background-image", "url('assets/designs/" + self.postcard.getPostcardBack() + ")");

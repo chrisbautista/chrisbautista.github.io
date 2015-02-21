@@ -4,13 +4,6 @@
 (function(){
   'use strict';
 
-  var helpers = {
-    mask: function (){$("#container").block({ message:null, overlayCSS: { backgroundColor: '#FFF' } });},
-    unmask: function (){$("#container").unblock();},
-    runFancyBox: function(){$('.fancybox').fancybox();},
-    fadeScreen: function (scr1,scr2) {scr1.fadeOut(null,"",function(){scr2.removeClass("hid").fadeIn(500,"",function(){scr1.addClass("hid");});});}
-  };  
-
   var PageRender = {
 
      intro: function(){
@@ -90,13 +83,13 @@
       $("#container").html($("#insideContent")[0].innerHTML); 
       $("#header-top").fadeOut(10);
       $("#content").fadeOut(10);
+      helpers.thumbPreview();
   
       setTimeout(function(){
         $("#container").fadeIn(500,function(){
           $("#header-top").fadeIn(700);
           $("#content").fadeIn(1200);
         });
-        helpers.runFancyBox();
       },500);
 
      },//mechanics
@@ -113,7 +106,7 @@
 
      },     
      postcard: function(){
-      $('.fancybox').fancybox({padding : 0,openEffect  : 'elastic'});
+      
       helpers.fadeScreen($("#step4"),$("#step5"));
       
      },
@@ -124,6 +117,7 @@
 
 
   window.PageRender = PageRender;
+
 
 
 }());
