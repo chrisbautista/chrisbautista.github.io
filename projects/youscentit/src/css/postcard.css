@@ -5,7 +5,7 @@
 	width:640px;
 	height:469px;
 	margin:0 auto;
-	background-image:url(../_assets/designs/_back.png);
+	background-image:url(../assets/designs/_back.png);
 	border: 1px solid #AAAAAA;
 	font-family: MyCustomFont, Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
