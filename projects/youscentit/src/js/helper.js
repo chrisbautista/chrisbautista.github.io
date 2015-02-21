@@ -69,6 +69,7 @@ $(function(){
       });
       $('.previewOverlay').on('click',function(){
           $(this).off();
+          insideContainer.remove();
           $(this).remove();
       });
     }
