@@ -1,5 +1,5 @@
 // JavaScript Document
-;jQuery.fn.limitMaxlength = function(options){
+jQuery.fn.limitMaxlength = function(options){
 
 	var settings = jQuery.extend({
 		attribute: "maxlength",

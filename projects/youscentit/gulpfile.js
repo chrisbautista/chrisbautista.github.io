@@ -16,6 +16,7 @@ gulp.task('js', function () {
 gulp.task('css', function () {
    gulp.src(['src/css/app.css','src/css/postcard.css',]) //select all javascript files under js/ and any subdirectory
         .pipe(concat('app.min.css')) //the name of the resulting file
+        .pipe(uglifycss())
         .pipe(gulp.dest('build/css/'))
         .pipe(notify({ message: 'Finished minifying CSS'}));
 });
@@ -34,8 +35,8 @@ gulp.task('copy', function() {
             'css': 'css/app.min.css',
             'js': 'js/app.min.js'
         }))
-        .pipe(gulp.dest('build/'));
-
+        .pipe(gulp.dest('build/'))
+        .pipe(notify({ message: 'Finished copying files'}));
 });
 
 gulp.task('default', function () {
