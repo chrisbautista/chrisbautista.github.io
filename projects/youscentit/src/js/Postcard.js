@@ -22,19 +22,19 @@ var Postcard = {
     var design;
 		if(des=="paris"){
 				design = {
-          back : "_back-paris.png",
+          back : "back-paris.png",
 				  thumb :  "paris2-thumb.png",
 					zoom : "paris2.jpg"
         };
 		}else if(des=="japan"){
 				design = {
-          back : "_back-japan.png",
+          back : "back-japan.png",
           thumb :  "japan1-thumb.png",
           zoom : "japan1.jpg"
         };
 		}else if(des=="rio"){
         design = {
-          back : "_back-rio.png",
+          back : "back-rio.png",
           thumb :  "rio1-thumb.png",
           zoom : "rio1.jpg"
         };
