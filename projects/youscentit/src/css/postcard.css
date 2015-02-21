@@ -5,7 +5,11 @@
 	width:640px;
 	height:469px;
 	margin:0 auto;
-	border: 1px solid #AAAAAA;
+    position:fixed !important;
+    border:5px solid #FFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.8);
+    padding:2px;
+    
 	font-family: MyCustomFont, Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     font-size:16pt;
