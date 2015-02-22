@@ -6,6 +6,7 @@
 	
 var Postcard = {
   setDesign: function(des){
+    this.designName = des;
     this.design = this.getDesign(des);
     this.message = {};
   },
@@ -13,7 +14,7 @@ var Postcard = {
     return this.design.thumb;
   },
   getPostcardBack: function(){
-    return this.design.back;
+    return this.designName;
   },
   getPostcardZoom: function(){
     return this.design.zoom;

@@ -7,7 +7,7 @@ $(function(){
     thumbPreview: function(config){
       var allThumbs = $(".cbPreview");
       var hlpr = this;
-      allThumbs.on('click',function(e){
+      allThumbs.off().on('click',function(e){
         var overlay,highRes,img,w,h;
         var thumb = e.target.parentNode;
         e.preventDefault();
@@ -35,14 +35,14 @@ $(function(){
     thisPreview: function(config){
       var obj = config.obj;
       var hlpr = this;
-      obj.on('click',function(e){
+      obj.off().on('click',function(e){
         var overlay,insideContainer,w,h;
         var thumb = e.target.parentNode;
         e.preventDefault();
         $('body').append($('<div></div>').addClass('previewOverlay'));
-        $(".previewOverlay").append('<div id="postcard"><div id="divleft"><div id="salute">Dear _______________,</div><div id="ddate"></div><div id="dedicatory"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor consequat nibh, nec euismod risus accumsan ac. Aenean tortor ante,  </p></div><div id="close">Love <br/>  _______________</div></div><div id="divright"><div id="To"></div><div id="From"></div></div></div>');
+        $(".previewOverlay").append('<div id="thispostcard"><div id="divleft"><div id="salute">Dear _______________,</div><div id="ddate"></div><div id="dedicatory"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor consequat nibh, nec euismod risus accumsan ac. Aenean tortor ante,  </p></div><div id="close">Love <br/>  _______________</div></div><div id="divright"><div id="To"></div><div id="From"></div></div></div>');
         
-        insideContainer = $("#postcard");
+        insideContainer = $("#thispostcard");
         
         w = parseInt(insideContainer.css('width'));
         h = parseInt(insideContainer.css('height'));
@@ -68,9 +68,10 @@ $(function(){
 
       });
       $('.previewOverlay').on('click',function(){
-          $(this).off();
+         
           insideContainer.remove();
           $(this).remove();
+          $(this).off();
       });
     }
   };  

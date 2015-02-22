@@ -1,7 +1,7 @@
 /* CSS Document */
 
 
-#postcard{
+#thispostcard{
 	width:640px;
 	height:469px;
 	margin:0 auto;
@@ -9,12 +9,20 @@
     border:5px solid #FFF;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.8);
     padding:2px;
-    
 	font-family: MyCustomFont, Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     font-size:16pt;
 }
 
+.paris{
+    background:url("../assets/designs/back-paris.png") !important;
+}
+.rio{
+    background:url("../assets/designs/back-rio.png") !important;
+}
+.japan{
+    background:url("../assets/designs/back-japan.png") !important;
+}
 
 #divleft{
 	float:left;

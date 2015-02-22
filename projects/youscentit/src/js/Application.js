@@ -106,13 +106,14 @@
                     height: 469,
                     beforeShow: function() {
                         var dateStr = (new Date()).toDateString().split(" ");
-                        $("#postcard").css("background-image", "url('assets/designs/" + self.postcard.getPostcardBack() + ")");
                         $("#salute").html("Dear " + $("#frm_sendee").val().substr(0, $("#frm_fname").val().indexOf(" ", 0)) + ",");
                         $("#ddate").html(dateStr[1] + " " + dateStr[2] + ", " + dateStr[3]);
                         $("#dedicatory").html("" + $("#frm_dedication").val());
                         $("#close").html($("#frm_closing").val() + ",<br />" + $("#frm_sender").val());
                         $("#From").html("From: " + $("#frm_sender").val());
                         $("#To").html("" + $("#frm_fname").val() + "<br />" + $("#frm_street").val() + " " + $("#frm_province").val() + " " + $("#frm_zip").val());
+                        console.log(self.postcard.getPostcardBack());
+                        $("#thispostcard").addClass(self.postcard.getPostcardBack());
                     }
                 });
 
