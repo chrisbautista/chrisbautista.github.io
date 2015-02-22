@@ -112,7 +112,6 @@
                         $("#close").html($("#frm_closing").val() + ",<br />" + $("#frm_sender").val());
                         $("#From").html("From: " + $("#frm_sender").val());
                         $("#To").html("" + $("#frm_fname").val() + "<br />" + $("#frm_street").val() + " " + $("#frm_province").val() + " " + $("#frm_zip").val());
-                        console.log(self.postcard.getPostcardBack());
                         $("#thispostcard").addClass(self.postcard.getPostcardBack());
                     }
                 });
