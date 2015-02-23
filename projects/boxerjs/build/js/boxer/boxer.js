@@ -1,3 +1,14 @@
+/*
+ * jQuery Boxer Plugin
+ * Version 0.0.4 (21 Feb 2015)
+ * @requires jQuery v1.4.3 or later
+ *
+ * Examples at: http://chrisbautista.github.io/projects/boxerjs/
+ * Copyright (c) 2014-2015 Chris Bautista @chrisbautista
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+*/
 (function($) {
 
     var createBoxer = function(config) {
@@ -33,7 +44,7 @@
             }
             
             configType = $(thumb).attr('data-type') || "";
-            console.log(configType);
+    
             
             $('body').append($('<div></div>').addClass(config.overlayName));
             $main = $("."+ config.overlayName);
@@ -43,7 +54,7 @@
 
             insideContainer = buildInside(thumb, configType, function() {
                 outSideContainer.appendChild(insideContainer);
-                console.dir($(outSideContainer)[0].firstChild);
+
                 if($(outSideContainer)[0].firstChild.width){
                     w = $(outSideContainer)[0].firstChild.width;
                     h = $(outSideContainer)[0].firstChild.height;
@@ -54,7 +65,7 @@
                     $($(outSideContainer)[0].firstChild).css('height',h);
                     //$(outSideContainer).css('padding',"10px");
                 }
-                console.log(w, h);
+
 
                 if( w >$(window).width()*0.7 || h > $(window).height()*0.7 ){
                     w =  parseInt(w/2);
@@ -83,7 +94,6 @@
             var fragment,insideNode,text,title;
             fragment = document.createDocumentFragment();
 
-            console.log(thumb,configType);
 
             if (configType === "" || configType ==="image" ) { //image
                 
@@ -102,8 +112,6 @@
 
             } else if(configType==="ajax"){
                 insideNode = document.createElement("div");
-                console.log("ajax");    
-                
                 $(insideNode).load(thumb.href, function( response, status, xhr ) {
                   fragment.appendChild(insideNode);
                   callback(response);
@@ -131,7 +139,6 @@
 
         this.filter("div").each(function() {
             $.each(this.children, function() {
-                console.log(this);
                 createBoxer($.extend({obj: $(this)}, settings));
             });
         });
