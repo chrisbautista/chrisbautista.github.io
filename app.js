@@ -39,6 +39,7 @@ myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, ini
 
     $scope.experiments = initService.experiments;
     $scope.lessons = initService.lessons;
+    $scope.projects = initService.projects;
 
 }]);
 
