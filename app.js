@@ -5,6 +5,12 @@ var tmPromise, myApp = angular.module('codeSpud',[]);
 
 myApp.service('initService', function() {
     //initialize schedule list
+    this.projects = {
+        list: [
+        
+            ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
+        ]
+    };
     this.experiments = {
         list: [
           /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],*/

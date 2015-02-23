@@ -58,12 +58,47 @@
 		line-height: 24px;
 
 	}
+
+	.jumbotron{
+		background-color: #EEE;
+		box-shadow:0 1px 1px 0 rgba(0,0,0,0.3);
+		min-height: 100px;
+		padding:30px;
+	}
 	</style>
 </head>
 <body>
 <div id="container">
 <h1>BoxerJs : Demo </h1>
 <h2>by @chrisbautista/codespud</h2>
+
+<div class="jumbotron">
+	
+	Github repository: <a href="https://github.com/chrisbautista/boxerjs">https://github.com/chrisbautista/boxerjs</a>
+	<br /><br/>
+	<div>Usage:</div>
+	<p><ol>
+		<li>copy boxer.js, boxer.css, and close.png into your project</li>
+		<li>include boxer.js and boxer.css</li>
+		<li>wrap anchors in a container e.g. <br>
+		<code>
+			&lt;div class="boxer" &gt;
+				<br>&nbsp;&nbsp;&nbsp;&lt;a href="picture.png" title="this is a picture" &gt; 
+				 &lt;img src="picture_thumb.jpg" /&gt;
+				 &lt;/a&gt;<br>
+			&lt;/div &gt;
+
+		</code>
+		</li>
+		<li>run code <br>
+		<code>
+			
+				$(".boxer").boxer();
+
+		</code>
+		</li>
+	</ol></p>
+</div>
 
 <div class="boxer">
 	<h3>Thumbnails</h3>
