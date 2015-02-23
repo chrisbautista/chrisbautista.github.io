@@ -10,8 +10,16 @@
 		padding:40px;
 		font-family: sans-serif;	
 		color:#444;
+
 	}
-	h1{color:#0DF;font-size:3em;text-shadow:1px 1px 1px rgba(0,0,0,0.3);}
+
+	#container{
+		max-width: 800px;margin-top:30px;
+		margin-left: auto; margin-right: auto;
+	}
+	h1{color:#0DF;font-size:3em;text-shadow:1px 1px 1px rgba(0,0,0,0.3);max-width: 700px;}
+	h2{color:#0DF;font-size:2.2em;text-shadow:1px 1px 1px rgba(0,0,0,0.3);line-height: 16px;max-width: 700px;}
+
 	table{
 
 		width:80%;
@@ -40,7 +48,7 @@
 	}
 
 	.boxer{
-
+		max-width: 800px;
 		padding:30px;
 		margin-top:30px;
 		margin-left: auto; margin-right: auto;
@@ -53,8 +61,9 @@
 	</style>
 </head>
 <body>
-<h1>BoxerJs : Demo by @chrisbautista/codespud</h1>
-
+<div id="container">
+<h1>BoxerJs : Demo </h1>
+<h2>by @chrisbautista/codespud</h2>
 
 <div class="boxer">
 	<h3>Thumbnails</h3>
@@ -93,6 +102,9 @@
 	 	<li>(Ajax with Animation)</li>
 	</ul> 
 </div>
+
+</div>
+
 
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="js/boxer/boxer.min.js"></script>
