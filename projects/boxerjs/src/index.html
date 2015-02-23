@@ -7,6 +7,13 @@
 	<link rel="stylesheet" href="js/boxer.css">
 	<!-- endbuild -->
 	<style type="text/css">
+
+	body{
+		padding:40px;
+		font-family: sans-serif;	
+		color:#444;
+	}
+	h1{color:#0DF;text-shadow:0 1px 1px 0 rgba(0,0,0,0.2);}
 	table{
 
 		width:80%;
@@ -27,9 +34,11 @@
 		color:#FEFEFE;
 		font-weight: bold;
 		border:1px solid black;
+		padding:7px;
 	}
 	td{
 		border:1px solid black;
+		padding:7px;
 	}
 
 	.boxer{
@@ -37,8 +46,11 @@
 		padding:30px;
 		margin-top:30px;
 		margin-left: auto; margin-right: auto;
-		background-color: #FAFAFA;
-		border:;
+		background-color: #0DE;
+		border-radius: 6px;
+		box-shadow:0 1px 1px 0 rgba(0,0,0,0.3);
+		line-height: 24px;
+
 	}
 	</style>
 </head>
@@ -47,13 +59,13 @@
 
 
 <div class="boxer">
-	<h4>Thumbnails</h4>
+	<h3>Thumbnails</h3>
 	<a href="assets/dog1.jpg" title="Dog 1" ><img src="assets/dog1_thumb.jpg" alt="dog 1"></a>
 	<a href="assets/dog2.jpg" title="Dog 2" ><img src="assets/dog2_thumb.jpg" alt="dog 2"></a>
 	<a href="assets/dog3.jpg" title="Dog 3" ><img src="assets/dog3_thumb.jpg" alt="dog 3"></a>
 </div>
 <div class="boxer">
-	<h4>Thumbnails in a UL</h4>
+	<h3>Thumbnails in an Unordered List</h3>
 	<ul>
 	<li><a href="assets/dog1.jpg" title="Dog 1 1" ><img src="assets/dog1_thumb.jpg" alt="dog 1"></a></li>
 	<li><a href="assets/dog2.jpg" title="Dog 1 2" ><img src="assets/dog2_thumb.jpg" alt="dog 2"></a></li>
@@ -64,9 +76,9 @@
 </div>
 
 <div class="boxer">
-	<h4>Anchors in a paragraph</h4>
+	<h3>Anchors in a Paragraph</h3>
 	I love my <a href="assets/dog1.jpg" title="Dog 1 1" >dog</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna <a href="assets/dog1.jpg" title="Dog 1 1" > another dog</a>. Ut enim ad minim veniam,
+	tempor incididunt ut labore et dolore magna <a href="assets/dog2.jpg" title="Dog 1 2" > another dog</a>. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -76,9 +88,9 @@
 </div>
 
 <div class="boxer">
-	<h4>Ajax</h4>
+	<h3>Ajax Demo</h3>
 	<ul>
-	 	<li><a href="page.html" data-type="ajax">(html from root directory)</a></li>
+	 	<li><a href="page.html" data-type="ajax">(local html snippet)</a></li>
 	 	<li>(Remote Iframe)</li>
 	 	<li>(Ajax with Animation)</li>
 	</ul> 
