@@ -1,0 +1,19 @@
+{
+  "name": "surfbiggestfan",
+  "version": "1.0.2",
+  "description": "Promo for Surf: Biggest Fan campaign",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-uglify": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-html-replace": "^1.4.4",
+    "gulp-concat": "^2.5.2",
+    "gulp-uglifycss": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@chrisbautista",
+  "license": "ISC"
+}
