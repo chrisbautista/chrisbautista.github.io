@@ -52,6 +52,11 @@
             outSideContainer = document.createElement('div');
             outSideContainer.id = "imgContainer";
 
+            // add initial class here
+            // make provisions for adding animation specific 
+            // properties ( genie starts from the mouse position, 
+            // fadein )
+
             insideContainer = buildInside(thumb, configType, function() {
                 outSideContainer.appendChild(insideContainer);
 
