@@ -1,0 +1,2 @@
+http://stackoverflow.com/questions/9518261/determine-the-combinations-of-making-change-for-a-given-amount
+http://stackoverflow.com/questions/26081128/given-n-how-to-find-the-number-of-different-ways-to-write-n-as-the-sum-of-1-3?lq=1
