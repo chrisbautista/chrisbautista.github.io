@@ -46,7 +46,7 @@
                 return false;
             }
             /*
-             * first try, isBalancedV1, try parenthesis only
+             * first try, isBalancedV2, try parenthesis only
              * @param {string} c
              * @returns boolean
              */
@@ -73,6 +73,34 @@
                 return iLevels === 0 ? true : false ;
             }
 
+            // working
+            function isBalancedV3(sStatement, parensStack){
+                
+                var c, iLevels = 0, // parens level ( = 1, () = 0, (()) = 2, ) = err
+                    openParens = '({['.split(''),
+                    closeParens = ')}]'.split('');
+                    
+                var parensStack = parensStack || [];
+                
+                if(sStatement.length===0){
+                    return parensStack.length === 0? true : false;
+                }
+
+                c = sStatement[0];
+                //console.log(c, sStatement, parensStack);//, openParens, closeParens);
+
+                if(openParens.indexOf(c)!==-1){ 
+                    // push to stack
+                    parensStack.push(c);
+                }else if((closeParens.indexOf(c)!==-1)
+                          &&(closeParens.indexOf(c) === openParens.indexOf(parensStack[parensStack.length-1]))){
+                    parensStack.pop();
+                }
+
+                return isBalancedV3(sStatement.slice(1), parensStack);
+            }
+
+
             /**
              * testProvider : automate testing
              * @param array arrValues
@@ -81,20 +109,20 @@
              */
             var testProvider = function (arrValues, func){
                 var i;
-                try{
+                //try{
                     for (i in arrValues){
                         var res = func(arrValues[i][0]);
                         if(res!==arrValues[i][1]){
-                            console.log(arrValues[i].toString() + " res "+ res + " -> did not evaluate correctly");
+                            console.log("Failed: "+ arrValues[i][0].toString() );
                             return false;
+                        }else{
+                        
+                            console.log("Success: "+arrValues[i][0].toString());
                         }
-                        
-                        console.log(arrValues[i].toString()+ " res "+ res + " OK ");
-                        
                     }
-                }catch(ex){
-                    return false;
-                }
+                /*}catch(ex){
+                    throw ex;
+                }*/
                 return true;
             }
             
@@ -103,16 +131,19 @@
              * @type Array
              */
             var testStatements= [
-                ['()',true],
+                ['()',         true],
                 ['(true?x:y)',true],
                 [')(',false],
                 ['({1,2,3})',true],
                 ['({13)',false],
-                ['({13)}',false]
+                ['({13)}',false],
+                ['if(true){donothing();}',true]
                 
             ];
             
-            console.log(testProvider(testStatements,isBalancedV1)?"no problems" : "errors"); // v1 failed
+            console.log("Check if a parens are balanced!")
+            console.log(testProvider(testStatements,isBalancedV3)?"no problems" : "errors"); // v1 failed
+
            // console.log(testProvider(testStatements,isBalancedV2)?"no problems" : "errors"); // incomplete
             
             
