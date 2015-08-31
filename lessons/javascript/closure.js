@@ -1,7 +1,7 @@
 //!-- closures
 
 // sample 1
-(function () { console.log('this is a closure') }());
+(function () { console.log('this is a closure') }()); // IIFE
 
 (function () {
   'use strict';
