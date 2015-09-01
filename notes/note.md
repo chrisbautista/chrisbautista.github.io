@@ -7,3 +7,5 @@ DO NOT USE Array or String functions. Provide all possible test scenarios.
 [9,2,3,1] transform to 9231
 
 http://www.quora.com/What-does-a-good-answer-on-Quora-look-like-What-does-it-mean-to-be-helpful/answer/Quora-Official-Account
+
+http://www.freecodecamp.com/challenges/bonfire-diff-two-arrays
