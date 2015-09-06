@@ -8,7 +8,8 @@ myApp.service('initService', function() {
     this.projects = {
         list: [
         
-            ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
+            ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.'],
+            ['/Alexandria/','Alexandria: Audiobooks App built with Ionic']
         ]
     };
     this.experiments = {
