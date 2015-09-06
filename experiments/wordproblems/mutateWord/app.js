@@ -56,7 +56,7 @@
         return dictionary[dictionary.length-1] === endString ? dictionary : dictionary;
     }
 
-    console.log(mutateWords("wore","wave",
+    console.log(mutateWords("love","cave",
         ["hate","have","word","wave", "love","cave","cove","said","joke","wove","wore"]));
 
 
