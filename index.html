@@ -37,39 +37,34 @@
               </label>
             </p>
 
-            <div ng-show="!testList.length">
-              <h5>Projects</h5>
-
-              <ul>
-                  <li ng-repeat="item in  testList=(projects.list | filter:query)">
-                      <a href="{{item[0]}}">{{item[1]}}</a>
-                  </li>
-                  <li ng-show="!testList.length"><p>No Projects found.</p></li>
-              </ul>
-            </div>
             
-            <div ng-show="!testListExperiments.length">
-              <h5>Experiments</h5>
+            <h5>Projects</h5>
 
-              <ul>
-                  <li ng-repeat="item in testListExperiments=(experiments.list | filter:query)">
-                      <a href="{{item[0]}}">{{item[1]}}</a>
-                  </li>
-                  <li ng-show="!testListExperiments.length"><p>No Experiments found.</p></li>
-              </ul>
-            </div>
+            <ul>
+                <li ng-repeat="item in  testList=(projects.list | filter:query)">
+                    <a href="{{item[0]}}">{{item[1]}}</a>
+                </li>
+                <li ng-show="!testList.length"><p>No Projects found.</p></li>
+            </ul>
+
+            <h5>Experiments</h5>
+
+            <ul>
+                <li ng-repeat="item in testListExperiments=(experiments.list | filter:query)">
+                    <a href="{{item[0]}}">{{item[1]}}</a>
+                </li>
+                <li ng-show="!testListExperiments.length"><p>No Experiments found.</p></li>
+            </ul>
             
-            <div ng-show="!testListLessons.length">
             <h5>Lessons</h5>
 
-              <ul>
-                  <li ng-repeat="item in testListLessons=(lessons.list | filter:query)">
-                      <a href="{{item[0]}}">{{item[1]}}</a>
-                  </li>
-                  <li ng-show="!testListLessons.length"><p>No Lessons found.</p></li>
-              </ul>
-            </div>
-            
+            <ul>
+                <li ng-repeat="item in testListLessons=(lessons.list | filter:query)">
+                    <a href="{{item[0]}}">{{item[1]}}</a>
+                </li>
+                <li ng-show="!testListLessons.length"><p>No Lessons found.</p></li>
+            </ul>
+
 
             
                   </section>
