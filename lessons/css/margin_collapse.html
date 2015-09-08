@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Margin Collapsing</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style type="text/css">
+		
+		html {font-size: 1em;}
+
+		body {
+		  background-color: white;
+		  font-family: 'Libre Baskerville', serif;
+		  font-weight: 400;
+		  line-height: 1.45;
+		  color: #333;
+		}
+		h1, h2, h3, h4 {
+		  font-weight: inherit;
+		  line-height: 1.2;
+		}
+
+		h1 {
+		  margin-top: 0;
+		  font-size: 3.098em;
+		  margin-bottom: 0.5em;
+		}
+
+		h2 {font-size: 2.827em;}
+
+		h3 {font-size: 1.999em;}
+
+		h4 {font-size: 1.414em;}
+
+		small, .font_small {font-size: 0.707em;}
+
+		code,pre {
+			width: 500px;
+			background-color:#663333;
+			color:#eee;
+			
+		}
+
+		.demo{
+			border:1px solid #FFF;
+			padding-top:40px;
+			padding-left:0;
+			margin: 20px 0 40px 0;
+			opacity:.95;
+		}
+
+		/*Adjacent*/
+		.box {
+			width:500px;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		.el1{
+			background-color: #AAA;
+			margin-bottom: 50px;
+		}
+		.el2{
+			background-color: #CCC;
+			margin-top:20px;
+		}
+
+		.el2neg{
+			background-color: #CCC;
+			margin-top:-20px;
+		}
+
+		/* Parent Child */
+		.el1pc{
+			background-color: #AAA;
+			margin-bottom: 0px;
+		}
+		.el2pc, .el2pc-bordered{
+			background-color: #CCC;
+			margin-top:20px;
+		}
+		.el3pc{
+			background-color: #EEE;
+			margin-top:40px;
+		}
+		.el2pc-bordered{
+			border: 1px solid #000;
+
+		}
+
+	</style>
+</head>
+<body>
+	
+	<section>
+		<h1>Adjacent Elements</h1>
+		<code language="CSS">
+		<pre>
+
+	.element_1{
+		background-color: #AAA;
+		margin-bottom: 50px;
+	}
+	.element_2{
+		background-color: #CCC;
+		margin-top:20px;
+	}
+
+	// Distance between elements is 50px(largest margin)
+		</pre>
+
+		
+		</code>
+		<div class="demo">
+			
+			<div class="el1 box">
+				<h4>Element 1</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, placeat dicta voluptates perferendis. Perferendis, ipsa impedit corporis temporibus necessitatibus optio vero nemo pariatur rem voluptate, officiis sequi. Quia adipisci, nostrum.
+			</div>
+			<div class="el2 box">
+				<h4>Element 2</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, placeat dicta voluptates perferendis. Perferendis, ipsa impedit corporis temporibus necessitatibus optio vero nemo pariatur rem voluptate, officiis sequi. Quia adipisci, nostrum.
+				
+			</div>
+		</div>			
+		
+
+	</section>
+	<hr/>
+	<section>
+		<h1>Adjacent Elements: Negative margin</h1>
+		<code language="CSS">
+		<pre>	
+
+	.element_1{
+		background-color: #AAA;
+		margin-bottom: 50px;
+	}
+	.element_2{
+		background-color: #CCC;
+		margin-top:-20px;
+	}
+
+	// distance between elements is 30px( 50px + -20px)	
+
+</pre>
+		
+		</code>
+		<div class="demo">
+			
+			<div class="el1 box">
+				<h4>Element 1</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, placeat dicta voluptates perferendis. Perferendis, ipsa impedit corporis temporibus necessitatibus optio vero nemo pariatur rem voluptate, officiis sequi. Quia adipisci, nostrum.
+			</div>
+			<div class="el2neg box">
+				<h4>Element 2</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, placeat dicta voluptates perferendis. Perferendis, ipsa impedit corporis temporibus necessitatibus optio vero nemo pariatur rem voluptate, officiis sequi. Quia adipisci, nostrum.
+				
+			</div>
+		</div>			
+		
+
+	</section>
+
+	<hr/>
+
+	<section>
+		<h1>Parent and Child</h1>
+		<code language="CSS">
+		<pre>		
+
+	.element_1{
+		background-color: #AAA;
+		margin-bottom: 0px;
+	}
+	.element_2{
+		background-color: #CCC;
+		margin-top:20px;
+	}
+	.element_3{
+		background-color: #EEE;
+		margin-top:40px;
+	}
+
+	// distance between element 1 and element 3 is 
+	// 40px(largest margin). element2's margin-top is 
+	// ignored or COLLAPSED.
+
+</pre>
+
+
+		</code>
+		<div class="demo">
+			
+			<div class="el1pc box"><h4>Element 1</h4></div>
+			<div class="el2pc box">
+				<div class="el3pc box">
+					<h4>Element 3</h4>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sequi, consequuntur aut, ratione illo dolorem distinctio expedita aperiam cupiditate similique. Unde adipisci nemo eos voluptate vero nostrum cum suscipit sunt!
+				</div>
+			</div>
+
+
+		</div>			
+		
+
+	</section>
+<hr />
+	<section>
+		<h1>Parent and Child: Parent has Padding or Border</h1>
+		<code language="CSS">
+		<pre>		
+
+	.element_1{
+		background-color: #AAA;
+		margin-bottom: 0px;
+	}
+	.element_2{
+		background-color: #CCC;
+		margin-top:20px;
+		border: 1px solid #000;
+	}
+	.element_3{
+		background-color: #EEE;
+		margin-top:40px;
+	}
+
+	// distance between element 1 and element 3 is 
+	// 60px = 40px(element 2 margin-top) + 20px(element 3 margin-top). element3
+	// is pushed down.
+
+</pre>
+
+
+		</code>
+		<div class="demo">
+			
+			<div class="el1pc box"><h4>Element 1</h4></div>
+			<div class="el2pc-bordered box">
+				<div class="el3pc box">
+					<h4>Element 3</h4>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sequi, consequuntur aut, ratione illo dolorem distinctio expedita aperiam cupiditate similique. Unde adipisci nemo eos voluptate vero nostrum cum suscipit sunt!
+				</div>
+			</div>
+
+
+		</div>			
+		
+
+	</section>
+
+
+
+
+
+</body>
+</html>

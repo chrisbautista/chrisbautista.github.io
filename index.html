@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/css/ionicons.min.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -29,17 +30,24 @@
       <section>
         <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Codespud's Playground.</h3>
 
+            <p>
+              <label>
+              <i class="icon ion-search"></i>
+                <input type="text" ng-model="query" placeholder="Search">
+              </label>
+            </p>
+
             <h5>Projects</h5>
 
             <ul>
-                <li ng-repeat="item in projects.list">
+                <li ng-repeat="item in projects.list | filter:query">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
             </ul>
             <h5>Experiments</h5>
 
             <ul>
-                <li ng-repeat="item in experiments.list">
+                <li ng-repeat="item in experiments.list | filter:query">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
             </ul>
@@ -47,7 +55,7 @@
             <h5>Lessons</h5>
 
             <ul>
-                <li ng-repeat="item in lessons.list">
+                <li ng-repeat="item in lessons.list | filter:query">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
             </ul>

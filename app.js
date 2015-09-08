@@ -8,8 +8,8 @@ myApp.service('initService', function() {
     this.projects = {
         list: [
         
-            ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.'],
-            ['/Alexandria/','Alexandria: Audiobooks App built with Ionic']
+            ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
+            ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
         ]
     };
     this.experiments = {
@@ -26,6 +26,8 @@ myApp.service('initService', function() {
             ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
             ['/lessons/javascript/closure.js','Javascript: Closures'],
             ['/lessons/javascript/shorthand.js','Javascript: Shorthand for Common Patterns'],
+            
+            ['/lessons/css/margin_collapse.html','CSS: Margin Collapse'],
             ['#','Javascript Best Practices'],
             ['#','Javascript Design Patterns: Singleton'],
             ['#','Javascript Design Patterns: Factory'],
