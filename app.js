@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-var tmPromise, myApp = angular.module('codeSpud',[]);
+var tmPromise, myApp = angular.module('codeSpud',['ngAnimate']);
 
 myApp.service('initService', function() {
     //initialize schedule list
