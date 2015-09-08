@@ -4,7 +4,7 @@
 var tmPromise, myApp = angular.module('codeSpud',['ngAnimate']);
 
 myApp.service('initService', function() {
-    //initialize schedule list
+    //initialize schedule
     this.projects = {
         list: [
         
@@ -14,7 +14,7 @@ myApp.service('initService', function() {
     };
     this.experiments = {
         list: [
-          /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'],*/
+          /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
             ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
             ['/experiments/bestbuyapi/app/','AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)'],
             ['#','AngularJS: Catch Keypress']
@@ -36,6 +36,49 @@ myApp.service('initService', function() {
             
         ]
     };
+    this.tags = [];
+    this.getTags = function(){
+        function getTagCount(item){
+            var tmp = item[1].split(' ');
+            for(var i=0; i<tmp.length;i++){
+                if(!this.tags[tmp[i]]){
+                     this.tags[tmp[i]]=1;
+                }else{
+                    this.tags[tmp[i]]++;
+                }
+            }
+        }
+
+        function sortProperties(obj, isNumericSort)
+        {
+            isNumericSort=isNumericSort || false; // by default text sort
+            var sortable=[];
+            for(var key in obj)
+                if(obj.hasOwnProperty(key))
+                    sortable.push([key, obj[key]]);
+            if(isNumericSort)
+                sortable.sort(function(a, b)
+                {
+                    return a[1]-b[1];
+                });
+            else
+                sortable.sort(function(a, b)
+                {
+                    var x=a[1].toLowerCase(),
+                        y=b[1].toLowerCase();
+                    return x<y ? -1 : x>y ? 1 : 0;
+                });
+            return sortable; // array in format [ [ key1, val1 ], [ key2, val2 ], ... ]
+        }
+        angular.forEach(this.projects.list,getTagCount);
+        angular.forEach(this.experiments.list,getTagCount);
+        angular.forEach(this.lessons.list,getTagCount);
+
+        console.log(this.tags);
+
+        this.tags = sortProperties(this.tags, true);
+
+    }
 });
 
 myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, initService) {
@@ -43,6 +86,7 @@ myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, ini
     $scope.experiments = initService.experiments;
     $scope.lessons = initService.lessons;
     $scope.projects = initService.projects;
+    $scope.tags = initService.tags;
 
 }]);
 
