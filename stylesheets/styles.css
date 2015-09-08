@@ -447,3 +447,8 @@ footer {
 .fade.ng-leave-active {
     opacity: 0;
 }
+
+ul {
+
+  position:relative;
+}
