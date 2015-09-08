@@ -423,25 +423,30 @@ footer {
 /* Animation */
 
 .fade {
-    height: 100%;
-    opacity: 1;
+  line-height:40px;
+  list-style:none;
+  box-sizing:border-box;
 }
+
+.fade.ng-move,
 .fade.ng-enter,
 .fade.ng-leave {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
 }
+
+.fade.ng-leave.ng-leave-active,
+.fade.ng-move,
 .fade.ng-enter {
-    opacity: 0;
+  opacity:0;
+  max-height:0;
 }
-.fade.ng-enter-active {
-    opacity: 1;
-}
-.fade.ng-leave {
-    opacity: 1;
-}
-.fade.ng-leave-active {
-    opacity: 0;
+
+.fade.ng-leave,
+.fade.ng-move.ng-move-active,
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
 }
 
 ul {
