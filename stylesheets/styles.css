@@ -326,7 +326,7 @@ section {
 /* Footer */
 
 footer {
-  width:170px;
+  width:100%;
   float:left;
   position:fixed;
   bottom:10px;
