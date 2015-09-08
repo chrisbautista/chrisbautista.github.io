@@ -49,7 +49,7 @@
             <h5>Experiments</h5>
 
             <ul>
-                <li ng-repeat="item in testListExperiments(experiments.list | filter:query)">
+                <li ng-repeat="item in testListExperiments=(experiments.list | filter:query)">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
                 <li ng-show="!testListExperiments.length"><p>No Experiments found.</p></li>
@@ -58,7 +58,7 @@
             <h5>Lessons</h5>
 
             <ul>
-                <li ng-repeat="item in testListLessons(lessons.list | filter:query)">
+                <li ng-repeat="item in testListLessons=(lessons.list | filter:query)">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
                 <li ng-show="!testListLessons.length"><p>No Lessons found.</p></li>
