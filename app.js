@@ -79,6 +79,8 @@ myApp.service('initService', function() {
         this.tags = sortProperties(this.tags, true);
 
     }
+
+    this.getTags();
 });
 
 myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, initService) {
