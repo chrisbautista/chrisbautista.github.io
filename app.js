@@ -57,13 +57,15 @@ function InitService() {
     this.tags = [];
     this.getTags = function(){
         var disTags = this.tags;
+        var tmpTag = '';
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
-                if(!disTags[tmp[i]]){
-                     disTags[tmp[i]]=1;
+                tmpTag = tmp[i].replace(/\W/g, '');
+                if(!disTags[tmpTag]){
+                     disTags[tmpTag]=1;
                 }else{
-                    disTags[tmp[i]]++;
+                    disTags[tmpTag]++;
                 }
             }
         }
