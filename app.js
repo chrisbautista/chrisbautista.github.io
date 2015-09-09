@@ -1,9 +1,24 @@
 (function(){
 'use strict';
 
-var tmPromise, myApp = angular.module('codeSpud',['ngAnimate']);
+var tmPromise; 
 
-myApp.service('initService', function() {
+angular.module('codeSpud',['ngAnimate'])
+       .service('initSrvc', initService);
+       .controller('homePageCtrl', HomePageController );
+
+/////////////////////////
+
+function HomePageController (initSrvc) {
+    var vm = this;
+    vm.experiments = initSrvc.experiments;
+    vm.lessons = initSrvc.lessons;
+    vm.projects = initSrvc.projects;
+    vm.tags = initSrvc.tags;
+
+}
+
+function InitService() {
     //initialize schedule
     this.projects = {
         list: [
@@ -83,16 +98,8 @@ myApp.service('initService', function() {
     }
 
     this.getTags();
-});
+}
 
-myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, initService) {
-
-    $scope.experiments = initService.experiments;
-    $scope.lessons = initService.lessons;
-    $scope.projects = initService.projects;
-    $scope.tags = initService.tags;
-
-}]);
 
 })();
 
