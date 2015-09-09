@@ -4,7 +4,8 @@
 var tmPromise; 
 
 angular.module('codeSpud',['ngAnimate'])
-       .service('initSrvc', initService);
+       
+       .service('initSrvc', initService)
        .controller('homePageCtrl', HomePageController );
 
 /////////////////////////
