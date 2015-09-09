@@ -21,7 +21,7 @@ function HomePageController ($scope, initSrvc) {
 }
 
 function InitService() {
-
+    var model = this;
 
     this.tags = [];
     this.getTags = getTags;
@@ -65,6 +65,15 @@ function InitService() {
     function getTags(){
         var disTags = this.tags;
         var tmpTag = '';
+
+        angular.forEach(model.projects.list,getTagCount);
+        angular.forEach(model.experiments.list,getTagCount);
+        angular.forEach(model.lessons.list,getTagCount);
+
+        console.log(model.tags);
+        model.tags = sortProperties(model.tags, true);
+
+        //--------------
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
@@ -98,13 +107,8 @@ function InitService() {
                 });
             return sortable; // array in format [ [ key1, val1 ], [ key2, val2 ], ... ]
         }
-        angular.forEach(this.projects.list,getTagCount);
-        angular.forEach(this.experiments.list,getTagCount);
-        angular.forEach(this.lessons.list,getTagCount);
 
-        console.log(this.tags);
 
-        this.tags = sortProperties(this.tags, true);
 
     }
 
