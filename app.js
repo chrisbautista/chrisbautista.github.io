@@ -23,19 +23,19 @@ function HomePageController ($scope, initSrvc) {
 function InitService() {
     var model = this;
 
-    this.tags = [];
-    this.getTags = getTags;
-    this.getTags();
+    model.tags = [];
+    model.getTags = getTags;
+    model.getTags();
 
     //initialize schedule
-    this.projects = {
+    model.projects = {
         list: [
         
             ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
             ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
         ]
     };
-    this.experiments = {
+    model.experiments = {
         list: [
           /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
             ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
@@ -43,7 +43,7 @@ function InitService() {
             ['#','AngularJS: Catch Keypress']
         ]
     };
-    this.lessons = {
+    model.lessons = {
         list: [
             ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
             ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
@@ -63,7 +63,7 @@ function InitService() {
 
     ////////////////////////
     function getTags(){
-        var disTags = this.tags;
+        var disTags = model.tags;
         var tmpTag = '';
 
         angular.forEach(model.projects.list,getTagCount);
