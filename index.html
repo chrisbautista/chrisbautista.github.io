@@ -15,7 +15,7 @@
     <![endif]-->
   </head>
   <body ng-app="codeSpud">
-      <div class="wrapper" ng-controller="homePageCtrl">
+      <div class="wrapper" ng-controller="homePageCtrl as vm">
       <header>
         <h1 class="header">CodeSpud</h1>
         <p class="header">A place to play</p>
@@ -33,7 +33,7 @@
             <div>
               <label>
               <i class="icon ion-search"></i>
-                <input type="text" ng-model="query" placeholder="Search">
+                <input type="text" ng-model="vm.query" placeholder="Search">
               </label>
             </div>
 
@@ -41,7 +41,7 @@
             <h5>Projects</h5>
 
             <ul>
-                <li ng-repeat="item in  testList=(projects.list | filter:query)" class="fade">
+                <li ng-repeat="item in  testList=(vm.projects.list | filter:vm.query)" class="fade">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
                 <li ng-show="!testList.length"><p>No Projects found.</p></li>
@@ -50,7 +50,7 @@
             <h5>Experiments</h5>
 
             <ul>
-                <li ng-repeat="item in testListExperiments=(experiments.list | filter:query)" class="fade">
+                <li ng-repeat="item in testListExperiments=(vm.experiments.list | filter:vm.query)" class="fade">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
                 <li ng-show="!testListExperiments.length"><p>No Experiments found.</p></li>
@@ -59,7 +59,7 @@
             <h5>Lessons</h5>
 
             <ul>
-                <li ng-repeat="item in testListLessons=(lessons.list | filter:query)"  class="fade">
+                <li ng-repeat="item in testListLessons=(vm.lessons.list | filter:vm.query)"  class="fade">
                     <a href="{{item[0]}}">{{item[1]}}</a>
                 </li>
                 <li ng-show="!testListLessons.length"><p>No Lessons found.</p></li>

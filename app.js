@@ -10,8 +10,9 @@ angular.module('codeSpud',['ngAnimate'])
 
 /////////////////////////
 
-function HomePageController (initSrvc) {
+function HomePageController ($scope, initSrvc) {
     var vm = this;
+    console.log(initSrvc);
     vm.experiments = initSrvc.experiments;
     vm.lessons = initSrvc.lessons;
     vm.projects = initSrvc.projects;
