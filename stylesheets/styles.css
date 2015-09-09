@@ -326,10 +326,10 @@ section {
 /* Footer */
 
 footer {
-  width:100%;
-  position:absolute;
-  bottom:10px;
-	padding-left: 50px;
+  clear:both;
+  position:fixed;
+  bottom:0px;
+	padding-left: 306px;
   background-color: #FBFAF7;
 }
 
