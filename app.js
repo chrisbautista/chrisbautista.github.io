@@ -21,21 +21,15 @@ function HomePageController ($scope, initSrvc) {
 }
 
 function InitService() {
-    var model = this;
-
-    model.tags = [];
-    model.getTags = getTags;
-    model.getTags();
-
     //initialize schedule
-    model.projects = {
+    this.projects = {
         list: [
         
             ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
             ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
         ]
     };
-    model.experiments = {
+    this.experiments = {
         list: [
           /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
             ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
@@ -43,7 +37,7 @@ function InitService() {
             ['#','AngularJS: Catch Keypress']
         ]
     };
-    model.lessons = {
+    this.lessons = {
         list: [
             ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
             ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
@@ -60,20 +54,10 @@ function InitService() {
         ]
     };
 
-
-    ////////////////////////
-    function getTags(){
-        var disTags = model.tags;
+    this.tags = [];
+    this.getTags = function(){
+        var disTags = this.tags;
         var tmpTag = '';
-
-        angular.forEach(model.projects.list,getTagCount);
-        angular.forEach(model.experiments.list,getTagCount);
-        angular.forEach(model.lessons.list,getTagCount);
-
-        console.log(model.tags);
-        model.tags = sortProperties(model.tags, true);
-
-        //--------------
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
@@ -107,12 +91,17 @@ function InitService() {
                 });
             return sortable; // array in format [ [ key1, val1 ], [ key2, val2 ], ... ]
         }
+        angular.forEach(this.projects.list,getTagCount);
+        angular.forEach(this.experiments.list,getTagCount);
+        angular.forEach(this.lessons.list,getTagCount);
 
+        console.log(this.tags);
 
+        this.tags = sortProperties(this.tags, true);
 
     }
 
-
+    this.getTags();
 }
 
 
