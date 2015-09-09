@@ -36,15 +36,17 @@ myApp.service('initService', function() {
             
         ]
     };
+
     this.tags = [];
     this.getTags = function(){
+        var disTags = this.tags;
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
-                if(!this.tags[tmp[i]]){
-                     this.tags[tmp[i]]=1;
+                if(!disTags[tmp[i]]){
+                     disTags[tmp[i]]=1;
                 }else{
-                    this.tags[tmp[i]]++;
+                    disTags[tmp[i]]++;
                 }
             }
         }
