@@ -21,6 +21,12 @@ function HomePageController ($scope, initSrvc) {
 }
 
 function InitService() {
+
+
+    this.tags = [];
+    this.getTags = getTags;
+    this.getTags();
+
     //initialize schedule
     this.projects = {
         list: [
@@ -54,8 +60,9 @@ function InitService() {
         ]
     };
 
-    this.tags = [];
-    this.getTags = function(){
+
+    ////////////////////////
+    function getTags(){
         var disTags = this.tags;
         var tmpTag = '';
         function getTagCount(item){
@@ -101,7 +108,7 @@ function InitService() {
 
     }
 
-    this.getTags();
+
 }
 
 
