@@ -65,7 +65,8 @@ function InitService() {
                 ['#','JSLint: Unnecessary `else` after disruption']
                 
             ]
-        };
+        }
+    ];
 
 
     this.getTags = function(){
