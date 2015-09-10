@@ -452,3 +452,11 @@ ul {
 
   position:relative;
 }
+
+.tag-btn {
+  display:inline;
+  padding: 5px; 
+  line-height: 1em;
+  background-color: #EFEFEF;
+  box-shadow: 1px 1px 3px #CCC;
+}
