@@ -92,6 +92,7 @@ function InitService() {
 
         this.tags = sortProperties(disTags);
 
+        console.log(disTags);
     }
 
     this.getTags();
