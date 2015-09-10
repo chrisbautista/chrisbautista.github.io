@@ -454,14 +454,16 @@ ul {
 }
 
 .tag-btn {
-  display:inline;
-  padding: 5px; 
-  line-height: 1em;
+  display: inline;
+  margin-right: 0.4em;
+  padding: 0.5em;
+  line-height: 2.6em;
   background-color: #EFEFEF;
   box-shadow: 1px 1px 3px #CCC;
 }
 
 .tags{
-  margin-top:9px;
-  border: 2px dashed #AAA;
+  padding: 1em;
+/* border: 2px dashed #AAA; */
+  text-align: center;
 }
