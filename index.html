@@ -48,7 +48,7 @@
               <h5>{{grp.name}}</h5>
 
               <ul>
-              {{grp.list}}
+                <!-- {{grp.list}} -->
                   <li ng-repeat="item in (grp.list | filter:vm.query)" class="fade">
                       <a href="{{item[0]}}">{{item[1]}}</a>
                   </li>
