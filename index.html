@@ -43,14 +43,14 @@
               </span>
             </p>
 
-            <p ng-repeat="grp in vm.links" ng-show="(grp.list | filter:vm.query).length">
+            <p ng-repeat="grp in vm.links" ng-show="(grp.list | filter:vm.query).length > 0">
               <h5>{{grp.name}}</h5>
 
               <ul>
                   <li ng-repeat="item in  testList[grp.name]=(grp.list | filter:vm.query)" class="fade">
                       <a href="{{item[0]}}">{{item[1]}}</a>
                   </li>
-                  <li ng-show="!testList[grp.name].length"><p>No Projects found.</p></li>
+                  <!--<li ng-show="!testList[grp.name].length"><p>No Projects found.</p></li>-->
               </ul>
             </p>
             
