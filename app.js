@@ -28,14 +28,16 @@ function HomePageController ($scope, initSrvc) {
 
 function InitService() {
     //initialize schedule
-    this.projects = {
+    this.links.projects = {
+        name: "Projects",
         list: [
         
             ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
             ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
         ]
     };
-    this.experiments = {
+    this.links.experiments = {
+        name: "Experiments",
         list: [
           /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
             ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
@@ -43,7 +45,8 @@ function InitService() {
             ['#','AngularJS: Catch Keypress']
         ]
     };
-    this.lessons = {
+    this.links.lessons = {
+        name: "Lessons",
         list: [
             ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
             ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
@@ -93,9 +96,11 @@ function InitService() {
 
             return sortable; 
         }
-        angular.forEach(this.projects.list,getTagCount);
-        angular.forEach(this.experiments.list,getTagCount);
-        angular.forEach(this.lessons.list,getTagCount);
+
+         for(var key in this.links)
+            if(this.links.hasOwnProperty(key))       
+                angular.forEach(this.links[key].list,getTagCount);
+       
 
         console.log(disTags);
 
