@@ -62,7 +62,7 @@ function InitService() {
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
                 tmpTag = tmp[i].replace(/\W/g, '');
-                if(tmpTag[0] === tmpTag[0].toUpperCase()){
+                if(/[A-Z]/.test( tmpTag[0] )){
                     if(!disTags[tmpTag]){
                         disTags[tmpTag]=1;
                     }else{
