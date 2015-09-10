@@ -42,8 +42,9 @@
                 <a ng-click="vm.searchTag(item[0])">{{item[0]}}({{item[1]}})</a>
               </span>
             </p>
-            {{vm.links}}
+            
             <p ng-repeat="grp in vm.links">
+              {{grp}}
               <h5>{{grp.name}}</h5>
 
               <ul>
