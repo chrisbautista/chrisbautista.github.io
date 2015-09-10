@@ -31,40 +31,41 @@ function InitService() {
 
 
     //initialize schedule
-    this.links.projects = {
-        name: "Projects",
-        list: [
-        
-            ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
-            ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
-        ]
-    };
-    this.links.experiments = {
-        name: "Experiments",
-        list: [
-          /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
-            ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
-            ['/experiments/bestbuyapi/app/','AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)'],
-            ['#','AngularJS: Catch Keypress']
-        ]
-    };
-    this.links.lessons = {
-        name: "Lessons",
-        list: [
-            ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
-            ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
-            ['/lessons/javascript/closure.js','Javascript: Closures'],
-            ['/lessons/javascript/shorthand.js','Javascript: Shorthand for Common Patterns'],
+    this.links = [ 
+        {
+            name: "Projects",
+            list: [
             
-            ['/lessons/css/margin_collapse.html','CSS: Margin Collapse'],
-            ['#','Javascript Best Practices'],
-            ['#','Javascript Design Patterns: Singleton'],
-            ['#','Javascript Design Patterns: Factory'],
-            ['#','Javascript Design Patterns: Decorator'],
-            ['#','JSLint: Unnecessary `else` after disruption']
-            
-        ]
-    };
+                ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
+                ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
+            ]
+        },
+        {
+            name: "Experiments",
+            list: [
+              /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
+                ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
+                ['/experiments/bestbuyapi/app/','AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)'],
+                ['#','AngularJS: Catch Keypress']
+            ]
+        },
+        {
+            name: "Lessons",
+            list: [
+                ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
+                ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
+                ['/lessons/javascript/closure.js','Javascript: Closures'],
+                ['/lessons/javascript/shorthand.js','Javascript: Shorthand for Common Patterns'],
+                
+                ['/lessons/css/margin_collapse.html','CSS: Margin Collapse'],
+                ['#','Javascript Best Practices'],
+                ['#','Javascript Design Patterns: Singleton'],
+                ['#','Javascript Design Patterns: Factory'],
+                ['#','Javascript Design Patterns: Decorator'],
+                ['#','JSLint: Unnecessary `else` after disruption']
+                
+            ]
+        };
 
 
     this.getTags = function(){
@@ -100,14 +101,13 @@ function InitService() {
             return sortable; 
         }
 
-         for(var key in this.links)
-            if(this.links.hasOwnProperty(key))       
-                angular.forEach(this.links[key].list,getTagCount);
-       
-
+        angular.forEach(this.links, function(item){
+            angular.forEach(item.list,getTagCount);
+        })       
+        
         console.log(disTags);
 
-        this.tags = sortProperties(disTags).slice(0,8);
+        this.tags = sortProperties(disTags).slice(0,10);
 
         console.log(disTags);
     }
