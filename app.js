@@ -13,9 +13,7 @@ angular.module('codeSpud',['ngAnimate'])
 function HomePageController ($scope, initSrvc) {
     var vm = this;
     console.log(initSrvc);
-    vm.experiments = initSrvc.experiments;
-    vm.lessons = initSrvc.lessons;
-    vm.projects = initSrvc.projects;
+    vm.links  = initSrvc.links;
     vm.tags = initSrvc.tags;
     vm.query = "";
     vm.searchTag = searchTag;
@@ -31,7 +29,7 @@ function InitService() {
     this.links = {};
     this.tags = [];
 
-    
+
     //initialize schedule
     this.links.projects = {
         name: "Projects",
