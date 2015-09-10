@@ -27,6 +27,11 @@ function HomePageController ($scope, initSrvc) {
 }
 
 function InitService() {
+
+    this.links = {};
+    this.tags = [];
+
+    
     //initialize schedule
     this.links.projects = {
         name: "Projects",
@@ -63,7 +68,7 @@ function InitService() {
         ]
     };
 
-    this.tags = [];
+
     this.getTags = function(){
         var disTags = this.tags;
         var tmpTag = '';
