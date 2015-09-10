@@ -43,7 +43,7 @@
               </span>
             </p>
             
-            <div ng-repeat="grp in vm.links">
+            <div ng-repeat="grp in vm.links" ng-show="(vm.links.list | filter:vm.query) > 0">
               
               <h5>{{grp.name}}</h5>
 
