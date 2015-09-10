@@ -90,7 +90,7 @@ function InitService() {
 
         console.log(disTags);
 
-        this.tags = sortProperties(disTags));
+        this.tags = sortProperties(disTags);
 
     }
 
