@@ -70,34 +70,27 @@ function InitService() {
             }
         }
 
-        function sortProperties(obj, isNumericSort)
+        function sortProperties(obj)
         {
-            isNumericSort=isNumericSort || false; // by default text sort
             var sortable=[];
             for(var key in obj)
                 if(obj.hasOwnProperty(key))
                     sortable.push([key, obj[key]]);
-            if(isNumericSort)
-                sortable.sort(function(a, b)
-                {
-                    return a[1]-b[1];
-                });
-            else
-                sortable.sort(function(a, b)
-                {
-                    var x=a[1].toLowerCase(),
-                        y=b[1].toLowerCase();
-                    return x<y ? -1 : x>y ? 1 : 0;
-                });
-            return sortable; // array in format [ [ key1, val1 ], [ key2, val2 ], ... ]
+
+            sortable.sort(function(a, b)
+            {
+                return a[1]-b[1];
+            });
+
+            return sortable; 
         }
         angular.forEach(this.projects.list,getTagCount);
         angular.forEach(this.experiments.list,getTagCount);
         angular.forEach(this.lessons.list,getTagCount);
 
-        console.log(this.tags);
+        console.log(disTags);
 
-        this.tags = sortProperties(this.tags, true);
+        this.tags = sortProperties(disTags));
 
     }
 
