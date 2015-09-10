@@ -1,9 +1,26 @@
 (function(){
 'use strict';
 
-var tmPromise, myApp = angular.module('codeSpud',['ngAnimate']);
+var tmPromise; 
 
-myApp.service('initService', function() {
+angular.module('codeSpud',['ngAnimate'])
+       
+       .service('initSrvc', InitService)
+       .controller('homePageCtrl', HomePageController );
+
+/////////////////////////
+
+function HomePageController ($scope, initSrvc) {
+    var vm = this;
+    console.log(initSrvc);
+    vm.experiments = initSrvc.experiments;
+    vm.lessons = initSrvc.lessons;
+    vm.projects = initSrvc.projects;
+    vm.tags = initSrvc.tags;
+
+}
+
+function InitService() {
     //initialize schedule
     this.projects = {
         list: [
@@ -40,13 +57,15 @@ myApp.service('initService', function() {
     this.tags = [];
     this.getTags = function(){
         var disTags = this.tags;
+        var tmpTag = '';
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
-                if(!disTags[tmp[i]]){
-                     disTags[tmp[i]]=1;
+                tmpTag = tmp[i].replace(/\W/g, '');
+                if(!disTags[tmpTag]){
+                     disTags[tmpTag]=1;
                 }else{
-                    disTags[tmp[i]]++;
+                    disTags[tmpTag]++;
                 }
             }
         }
@@ -83,16 +102,8 @@ myApp.service('initService', function() {
     }
 
     this.getTags();
-});
+}
 
-myApp.controller('homePageCtrl', ['$scope', 'initService', function ($scope, initService) {
-
-    $scope.experiments = initService.experiments;
-    $scope.lessons = initService.lessons;
-    $scope.projects = initService.projects;
-    $scope.tags = initService.tags;
-
-}]);
 
 })();
 
