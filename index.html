@@ -45,7 +45,7 @@
             
             <div ng-repeat="grp in vm.links" >
 
-              <p ng-show="(grp.list | filter:vm.query).length > 0">
+              <div ng-show="(grp.list | filter:vm.query).length > 0">
                 <h5>{{grp.name}}</h5>
 
                 <ul>
@@ -55,7 +55,7 @@
                     </li>
                     
                 </ul>
-              </p>
+              </div>
 
             </div>
             
