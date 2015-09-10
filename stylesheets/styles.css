@@ -460,3 +460,8 @@ ul {
   background-color: #EFEFEF;
   box-shadow: 1px 1px 3px #CCC;
 }
+
+.tags{
+  margin-top:9px;
+  border: 2px dashed #AAA;
+}
