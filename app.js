@@ -17,7 +17,13 @@ function HomePageController ($scope, initSrvc) {
     vm.lessons = initSrvc.lessons;
     vm.projects = initSrvc.projects;
     vm.tags = initSrvc.tags;
+    vm.query = "";
+    vm.searchTag = searchTag;
 
+    /////////////////////
+    function searchTag(tag){
+        vm.query = tag;
+    }
 }
 
 function InitService() {
