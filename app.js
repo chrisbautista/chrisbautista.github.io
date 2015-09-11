@@ -13,10 +13,13 @@ angular.module('codeSpud',['ngAnimate'])
 function HomePageController ($scope, initSrvc) {
     var vm = this;
     console.log(initSrvc);
-    vm.links  = initSrvc.links;
-    vm.tags = initSrvc.tags;
+    vm.service = initSrvc;
     vm.query = "";
     vm.searchTag = searchTag;
+
+    vm.service.getLinks().then(function(data){
+        console.log("OK",data, vm.service.links);
+    });
 
     /////////////////////
     function searchTag(tag){
@@ -24,50 +27,22 @@ function HomePageController ($scope, initSrvc) {
     }
 }
 
-function InitService() {
+function InitService($http) {
+    var svc = this;
 
     this.links = {};
     this.tags = [];
 
-
-    //initialize schedule
-    this.links = [ 
-        {
-            name: "Projects",
-            list: [
-            
-                ['/Alexandria/','Alexandria: Audiobooks App built with Ionic'],
-                ['/projects/boxerjs/build/','BoxerJS: Lightweight JQuery plugin for adding quick previews.']
-            ]
-        },
-        {
-            name: "Experiments",
-            list: [
-              /*  ['/experiments/cbTimer/public_html/','AngularJS: Timer using $timeout service'], */
-                ['/experiments/cbTimerDirective/public_html/','AngularJS: Making timer into a directive'],
-                ['/experiments/bestbuyapi/app/','AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)'],
-                ['#','AngularJS: Catch Keypress']
-            ]
-        },
-        {
-            name: "Lessons",
-            list: [
-                ['/lessons/javascript/shorthand.js','Javascript Shorthand Constructs'],
-                ['/lessons/javascript/balancedParens.html','Problem: Provided a string build a function to check for balanced parens '],
-                ['/lessons/javascript/closure.js','Javascript: Closures'],
-                ['/lessons/javascript/shorthand.js','Javascript: Shorthand for Common Patterns'],
-                
-                ['/lessons/css/margin_collapse.html','CSS: Margin Collapse'],
-                ['#','Javascript Best Practices'],
-                ['#','Javascript Design Patterns: Singleton'],
-                ['#','Javascript Design Patterns: Factory'],
-                ['#','Javascript Design Patterns: Decorator'],
-                ['#','JSLint: Unnecessary `else` after disruption']
-                
-            ]
-        }
-    ];
-
+    this.getLinks = function(){
+       return $http.get('links.json')
+        .then(function(response){
+            console.log(response);
+            if(response.status===200){
+                svc.links = response.data.links;
+                svc.getTags();
+            }
+        });
+    };
 
     this.getTags = function(){
         var disTags = this.tags;
@@ -113,7 +88,6 @@ function InitService() {
         console.log(disTags);
     }
 
-    this.getTags();
 }
 
 
