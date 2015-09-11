@@ -1,4 +1,5 @@
 # Bookmarks
+* [References](#references)
 * [Learning](#learning)
 * [Javascript](#javascript)
 * [CSS](#css)
@@ -7,6 +8,7 @@
 ---
 ## References
 *  [MDN - Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 ## Learning
 
 * [Online Bachelor's Level Learning](http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html)
