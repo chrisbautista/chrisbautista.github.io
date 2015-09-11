@@ -32,14 +32,19 @@ assert.deepEqual(diff([], ['snuffleupagus', 'cookie monster', 'elmo']), ['snuffl
 
 
 function diff(arr1, arr2) {
-  var newArr = [], longerArr = arr1.concat(arr2).sort();
+  var newArr = [], longerArr = arr1.concat(arr2);
   var i;
 
   newArr = longerArr.filter(function(a){return arr1.indexOf(a) === -1;})
   newArr = newArr.concat(longerArr.filter(function(a){return arr2.indexOf(a) === -1;}));
-  console.log(typeof newArr, arr2);
+  //console.log(typeof newArr, arr2);
   return newArr;
 }
 
-console.log(diff([1, 2, 3, 5], [1, 2, 3, 4, 5]));
-console.log(diff([], ['a', 'b', 'c']));
+
+
+
+console.log(">>>",diff([1, 2, 3, 5], [1, 2, 3, 4, 5]), [4]);
+console.log(">>>",diff([], ['a', 'b', 'c']), ['a', 'b', 'c']);
+console.log(">>>",diff(['diorite', 'andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'], 
+					['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']), ['pink wool']);

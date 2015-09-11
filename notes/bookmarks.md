@@ -5,12 +5,15 @@
 * [UX](#ux)
 
 ---
+## References
+*  [MDN - Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ## Learning
 
 * [Online Bachelor's Level Learning](http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html)
 * [Functional Programming - EDX](https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0)
 * [Algorithms - UPC](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf)
 * [What is DevOps Thing Anyway?](http://www.jedi.be/blog/2010/02/12/what-is-this-devops-thing-anyway/)
+* [Guided Challenges - Free Code Camp](http://freecodecamp.com/map)
 
 ## Javascript
 ### Standards
@@ -22,6 +25,15 @@
 
 ## CSS
 
+### Guides
+* [CSS Style Guide](http://cssguidelin.es/)
+* [OOCSS](http://oocss.org/)
+* [SMACSS](https://smacss.com/)
+* [SMACSS - Formatting](https://smacss.com/book/formatting)
+
+### Preprocessors
+* [LESS](http://lesscss.org/)
+
 ### Testing
 * [CSS Test](http://csste.st/)
 * [CSS Slides](http://csste.st/slides/)
@@ -30,6 +42,7 @@
 * [Automated Regression Testing](https://css-tricks.com/automating-css-regression-testing/)
 * [PhantomCSS](https://github.com/Huddle/PhantomCSS)
 * [CSS Regression Tools](http://succss.ifzenelse.net/)
+* [Visual Regression testing SPA](http://davidwalsh.name/visual-regression-testing-angular-applications)
 
 ## UX
 * [Free UX E-book](http://www.creativebloq.com/web-design/free-ebook-web-ui-design-patterns-91516632)
