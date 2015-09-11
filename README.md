@@ -5,31 +5,28 @@ A place to play
 
 # Outline
 
-### Projects
-
-* Khrunus: pure html5 for timekeeping
-
-### Experiments
-
-* AngularJS: Timer using $timeout service
-* AngularJS: Making timer into a directive
-* AngularJS: Append to Table
-* AngularJS: Catch Keypress
-
-### Lessons
-
-* Javascript Shorthand Constructs
-* Problem: Provided a string build a function to check for balanced parens
-* Javascript: Closures
-* Javascript: Shorthand for Common Patterns
+* Projects
+* Experiments
+* Lessons
 
 # Workflow
 
-### Testing 
-1) Install in a web server
+
+
+# Testing 
+* Install in a web server
 
 or
 
-2) run from console PHP server
-> php -S localhost:9000
+*  run from console PHP server
+```php
+> php -S localhost:8080
+```
 
+* Using nodejs express or local-web-server
+
+```console
+> npm install -g local-web-server
+> cd /path/to/your/project
+> ws -p 8080
+```
