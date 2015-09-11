@@ -1,7 +1,7 @@
 chrisbautista.github.io
 =======================
 
-A place to play
+A playground of sorts for learning frontend web technologies.
 
 # Outline
 
@@ -14,12 +14,11 @@ A place to play
 
 
 # Testing 
-* Install in a web server
 
-or
+* Copy into a webserver
 
 *  run from console PHP server
-```php
+```console
 > php -S localhost:8080
 ```
 
