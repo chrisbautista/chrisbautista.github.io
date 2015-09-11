@@ -1,2 +1,6 @@
 **/nbproject
 **/node_modules
+**/.idea
+.idea
+nbproject
+node_modules
