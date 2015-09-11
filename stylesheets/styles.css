@@ -468,6 +468,6 @@ ul {
   text-align: center;
 }
 
-input {
+input,button {
   padding:0.5em;
 }
