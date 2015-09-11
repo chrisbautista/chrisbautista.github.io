@@ -329,8 +329,8 @@ footer {
   clear:both;
   position:fixed;
   bottom:0px;
-	padding-left: 306px;
   background-color: #FBFAF7;
+  padding-left: 
 }
 
 @media print, screen and (max-width: 960px) {
