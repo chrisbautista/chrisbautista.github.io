@@ -14,6 +14,7 @@
 * [Online Bachelor's Level Learning](http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html)
 * [Functional Programming - EDX](https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0)
 * [Algorithms - UPC](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf)
+* [Algorithms 1 - Princeton](https://class.coursera.org/algs4partI-009/lecture)
 * [What is DevOps Thing Anyway?](http://www.jedi.be/blog/2010/02/12/what-is-this-devops-thing-anyway/)
 * [Guided Challenges - Free Code Camp](http://freecodecamp.com/map)
 

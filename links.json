@@ -1,9 +1,9 @@
-{ 
-    "links" : [ 
+{
+    "links" : [
         {
             "name": "Projects",
             "list": [
-            
+
                 ["/Alexandria/","Alexandria: Audiobooks App built with Ionic"],
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."]
             ]
@@ -23,14 +23,16 @@
                 ["/lessons/javascript/balancedParens.html","Problem: Provided a string build a function to check for balanced parens "],
                 ["/lessons/javascript/closure.js","Javascript: Closures"],
                 ["/lessons/javascript/shorthand.js","Javascript: Shorthand for Common Patterns"],
-                
+                ["/lessons/javascript/currying/curry.js","Javascript: Currying Arithmetic"],
+                ["/lessons/javascript/currying/curry_refactored.js","Javascript: Currying Arithmetic Refactored"],
+
                 ["/lessons/css/margin_collapse.html","CSS: Margin Collapse"],
                 ["#","Javascript Best Practices"],
                 ["#","Javascript Design Patterns: Singleton"],
                 ["#","Javascript Design Patterns: Factory"],
                 ["#","Javascript Design Patterns: Decorator"],
                 ["#","JSLint: Unnecessary `else` after disruption"]
-                
+
             ]
         }
     ]

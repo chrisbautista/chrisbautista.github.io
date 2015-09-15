@@ -1,10 +1,10 @@
 (function(){
 'use strict';
 
-var tmPromise; 
+/*global angular */
 
 angular.module('codeSpud',['ngAnimate'])
-       
+
        .service('initSrvc', InitService)
        .controller('homePageCtrl', HomePageController );
 
@@ -14,11 +14,11 @@ function HomePageController ($scope, initSrvc) {
     var vm = this;
     console.log(initSrvc);
     vm.service = initSrvc;
-    vm.query = "";
+    vm.query = '';
     vm.searchTag = searchTag;
 
     vm.service.getLinks().then(function(data){
-        console.log("OK",data, vm.service.links);
+        console.log('OK',data, vm.service.links);
     });
 
     /////////////////////
@@ -58,16 +58,18 @@ function InitService($http) {
                         disTags[tmpTag]++;
                     }
                 }
-                
+
             }
         }
 
         function sortProperties(obj)
         {
             var sortable=[];
-            for(var key in obj)
-                if(obj.hasOwnProperty(key))
+            for(var key in obj){
+                if(obj.hasOwnProperty(key)){
                     sortable.push([key, obj[key]]);
+                }
+            }
 
             sortable.sort(function(a, b)
             {
@@ -79,14 +81,12 @@ function InitService($http) {
 
         angular.forEach(this.links, function(item){
             angular.forEach(item.list,getTagCount);
-        })       
-        
-        console.log(disTags);
+        });
+
 
         this.tags = sortProperties(disTags).slice(0,10);
 
-        console.log(disTags);
-    }
+    };
 
 }
 
