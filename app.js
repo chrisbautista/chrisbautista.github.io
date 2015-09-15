@@ -39,14 +39,14 @@ function InitService($http) {
             console.log(response);
             if(response.status===200){
                 svc.links = normalizeLinks(response.data.links);
-                getTags();
+                this.tags = getTags(this.tags);
             }
         });
     };
 
     //////
-    function getTags(){
-        var disTags = this.tags;
+    function getTags(tags){
+        var disTags = tags;
         var tmpTag = '';
         function getTagCount(item){
             var tmp = item[1].split(' ');
@@ -85,7 +85,7 @@ function InitService($http) {
         });
 
 
-        this.tags = sortProperties(disTags).slice(0,10);
+        return sortProperties(disTags).slice(0,10);
 
     }
 
