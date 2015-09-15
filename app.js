@@ -29,25 +29,30 @@ function HomePageController ($scope, initSrvc) {
 
 function InitService($http) {
     var svc = this;
+    var expandUrls = [
+        ['__master__', '//github.com/chrisbautista/chrisbautista.github.io/blob/master']
+    ];
 
     this.links = {};
     this.tags = [];
 
+
     this.getLinks = function(){
        return $http.get('links.json')
         .then(function(response){
-            console.log(response);
+            //console.log(response);
             if(response.status===200){
-                svc.links = normalizeLinks(response.data.links);
-                this.tags = getTags(this.tags);
+                svc.links = normalizeLinks(response.data.links, expandUrls);
+                svc.tags = getTags(svc.tags,svc.links);
             }
         });
     };
 
     //////
-    function getTags(tags){
+    function getTags(tags,svcLinks){
         var disTags = tags;
         var tmpTag = '';
+
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
@@ -80,7 +85,7 @@ function InitService($http) {
             return sortable;
         }
 
-        angular.forEach(this.links, function(item){
+        angular.forEach(svcLinks, function(item){
             angular.forEach(item.list,getTagCount);
         });
 
@@ -89,22 +94,30 @@ function InitService($http) {
 
     }
 
-    function normalizeLinks(links){
-        var i,j;
+    function normalizeLinks(links, definedUrls){
+        var i,j,
 
-        function whichURL(url){
-            if(url.indexOf('[master]')!==-1){
-                url.replace('[master]','//github.com/chrisbautista/chrisbautista.github.io/blob/master');
+            newLinks=[];
+
+        function whichURL(url, Urls){
+            var $replace;
+            for(var x=0; x<Urls.length; x++){
+                if(url.indexOf(Urls[x][0])!==-1){
+                    $replace = Urls[x][0];
+                    url = url.replace($replace, Urls[x][1]);
+                }
             }
             return url;
         }
 
-        for(i=0;i<links.length;i++){
-            for(j=0;j<links[i].length;j++){
-                links[i][j] = whichURL(links[i][j]);
+        angular.forEach(links, function(item){
+            for(j=0;j<item.list.length;j++){
+                item.list[j][0] = whichURL(item.list[j][0], definedUrls);
             }
-        }
-        return links;
+            this.push(item);
+        }, newLinks);
+
+        return newLinks;
     }
 
 }
