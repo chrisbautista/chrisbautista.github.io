@@ -1,6 +1,13 @@
-//
-//
-//
+/**
+ *
+ * Promo App
+ *
+ * Usage: 
+ *     1) load a page configuration file ( check Page.js for page configuration )
+ *     2) use functions to setup and navigate app
+ *
+ *  TODO refactor
+ */
 
 ;(function($, helper) {
 
@@ -31,7 +38,7 @@
         addSprite: function(obj) {
             this.currentPage.children.push(obj);
         },
-        getCurrentPage: function() {  
+        getCurrentPage: function() {
             return $($(".divstage")[this.currentPage.index]);
         },
         setNextPage: function(indx) {

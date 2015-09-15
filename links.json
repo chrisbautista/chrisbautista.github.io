@@ -6,6 +6,8 @@
 
                 ["/Alexandria/","Alexandria: Audiobooks App built with Ionic"],
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."]
+                ["/projects/surfbiggestfan/build/","Surf Biggest Fan: Promo Application using Jquery and animate."]
+                ["/projects/youscentit/build/","You Scent it: Promo Application using Jquery and custom Promo library."]
             ]
         },
         {
@@ -19,12 +21,12 @@
         {
             "name": "Lessons",
             "list": [
-                ["//github.com/chrisbautista/chrisbautista.github.io/blob/master/lessons/javascript/shorthand.js","Javascript Shorthand Constructs"],
+                ["[master]/lessons/javascript/shorthand.js","Javascript Shorthand Constructs"],
                 ["/lessons/javascript/balancedParens.html","Javascript: Provided a string build a function to check for balanced parens "],
-                ["//github.com/chrisbautista/chrisbautista.github.io/blob/master/lessons/javascript/closure.js","Javascript: Closures"],
-                ["//github.com/chrisbautista/chrisbautista.github.io/blob/master/lessons/javascript/shorthand.js","Javascript: Shorthand for Common Patterns"],
-                ["//github.com/chrisbautista/chrisbautista.github.io/blob/master/lessons/javascript/currying/curry.js","Javascript: Currying Arithmetic"],
-                ["//github.com/chrisbautista/chrisbautista.github.io/blob/master/lessons/javascript/currying/curry_refactored.js","Javascript: Currying Arithmetic Refactored"],
+                ["[master]/lessons/javascript/closure.js","Javascript: Closures"],
+                ["[master]/lessons/javascript/shorthand.js","Javascript: Shorthand for Common Patterns"],
+                ["[master]/lessons/javascript/currying/curry.js","Javascript: Currying Arithmetic"],
+                ["[master]/lessons/javascript/currying/curry_refactored.js","Javascript: Currying Arithmetic Refactored"],
 
                 ["/lessons/css/margin_collapse.html","CSS: Margin Collapse"],
                 ["#","Javascript Best Practices"],

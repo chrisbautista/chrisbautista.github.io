@@ -172,7 +172,7 @@
                 $(".anim-obj").css("opacity", "0");
 
                 self.getCurrentPage().fadeIn(100, function() {
-                
+
                     var tmpConfig = {
                         delay: 1000,
                         easing: "easeInOutSine"
@@ -203,7 +203,7 @@
                 $(".anim-obj").css("opacity", "0");
 
                 self.getCurrentPage().fadeIn(100, function() {
-                   
+
 
                     self._add($h._enter($("#SBF-end"), {
                         type: "fadeOnly",

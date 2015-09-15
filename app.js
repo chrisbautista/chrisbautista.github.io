@@ -38,13 +38,14 @@ function InitService($http) {
         .then(function(response){
             console.log(response);
             if(response.status===200){
-                svc.links = response.data.links;
-                svc.getTags();
+                svc.links = normalizeLinks(response.data.links);
+                getTags();
             }
         });
     };
 
-    this.getTags = function(){
+    //////
+    function getTags(){
         var disTags = this.tags;
         var tmpTag = '';
         function getTagCount(item){
@@ -76,7 +77,7 @@ function InitService($http) {
                 return b[1]-a[1];
             });
 
-            return sortable; 
+            return sortable;
         }
 
         angular.forEach(this.links, function(item){
@@ -86,7 +87,25 @@ function InitService($http) {
 
         this.tags = sortProperties(disTags).slice(0,10);
 
-    };
+    }
+
+    function normalizeLinks(links){
+        var i,j;
+
+        function whichURL(url){
+            if(url.indexOf('[master]')!==-1){
+                url.replace('[master]','//github.com/chrisbautista/chrisbautista.github.io/blob/master');
+            }
+            return url;
+        }
+
+        for(i=0;i<links.length;i++){
+            for(j=0;j<links[i].length;j++){
+                links[i][j] = whichURL(links[i][j]);
+            }
+        }
+        return links;
+    }
 
 }
 
