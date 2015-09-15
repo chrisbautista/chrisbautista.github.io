@@ -5,6 +5,8 @@
  * Chris Bautista <chris@codespud.ca>
  * @chrisbautista
  *
+ *  node curry_refactored.js
+ *
  ****/
 
 (function(){
@@ -19,7 +21,10 @@
     sum = curry(add); // create curried addition func
     product = curry(multiply); // create curried multiplication func
 
+
+
     console.log('**** test cases start here ****');
+    ///
     console.log(sum(), 0);
     console.log(sum(3)(2)(), 5);
     sum10 = sum(2)(4)(4); // ==> Function
@@ -31,23 +36,25 @@
     console.log(sum13(-4)(), 9); // ==> 9
     console.log(sum(2)(4)(-7)(3)(1)(-8)(2)(-10)(), -13); // ==> -13
 
-    //
+    ///
     console.log('****multiply');
     console.log(product(3)(5)(), 15);
 
     ///////////////////////////
     ///
 
-    // function to curry
+    ///
     var add = function () {
         return reducedOp(arguments, function(a, b) { return a + b; });
     };
 
-
+    ///
     var  multiply = function() {
         return reducedOp(arguments, function(a, b) { return a * b; });
     };
 
+
+    /////////////////////////
 
     // helper: Reduced Operation
     function reducedOp(args,func){
@@ -55,7 +62,6 @@
         return Array.prototype.slice.call(args).reduce(func);
     }
 
-    /////////////////////////
     // helper: curry
     //
     function curry(func) {

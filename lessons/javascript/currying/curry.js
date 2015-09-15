@@ -5,6 +5,8 @@
  * Chris Bautista <chris@codespud.ca>
  * @chrisbautista
  *
+ *  >  node curry_refactored.js
+ *
  ****/
 
 (function(){
@@ -35,7 +37,7 @@
 
     ///////////////////////
 
-    // function to curry
+    // curry add
     function add() {
         if (arguments.length <= 0) {return 0; } //no arguments
 
@@ -46,9 +48,7 @@
     }
 
 
-    /*
-     * helper: curry
-     */
+    /// helper: curry
     function curry(func) {
         return function() {
             var curriedArgs;
