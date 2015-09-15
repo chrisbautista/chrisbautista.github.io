@@ -5,8 +5,8 @@
             "list": [
 
                 ["/Alexandria/","Alexandria: Audiobooks App built with Ionic"],
-                ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."]
-                ["/projects/surfbiggestfan/build/","Surf Biggest Fan: Promo Application using Jquery and animate."]
+                ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
+                ["/projects/surfbiggestfan/build/","Surf Biggest Fan: Promo Application using Jquery and animate."],
                 ["/projects/youscentit/build/","You Scent it: Promo Application using Jquery and custom Promo library."]
             ]
         },
