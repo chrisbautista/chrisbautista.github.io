@@ -8,14 +8,18 @@
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
                 ["https://github.com/chrisbautista/study/tree/master/pizza","Node/Javascript: Pizza Shop"],
                 ["/projects/surfbiggestfan/build/","Surf Biggest Fan: Promo Application using Jquery and animate."],
-                ["/projects/youscentit/build/","You Scent it: Promo Application using Jquery and custom Promo library."]
+                ["__master__/projects/surfbiggestfan/","Surf Biggest Fan: Promo Application using Jquery and animate. (code) "],
+                ["/projects/youscentit/build/","You Scent it: Promo Application using Jquery and custom Promo library."],
+                ["__master__/projects/youscentit/","You Scent it: Promo Application using Jquery and custom Promo library.(code)"]
             ]
         },
         {
             "name": "Experiments",
             "list": [
                 ["/experiments/cbTimerDirective/public_html/","AngularJS: Making timer into a directive"],
+                ["__master__/experiments/cbTimerDirective/public_html/","AngularJS: Making timer into a directive (code)"],
                 ["/experiments/bestbuyapi/app/","AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)"],
+                ["__master__/experiments/bestbuyapi/app/","AngularJS: Creating a Service for AJAX API (code)"],
                 ["#","> AngularJS: Pizza Shop"],
                 ["#","> Ionic: Library pattern"],
                 ["#","> ReactJS: Using Flux Framework"]
