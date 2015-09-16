@@ -16,7 +16,9 @@
             "list": [
                 ["/experiments/cbTimerDirective/public_html/","AngularJS: Making timer into a directive"],
                 ["/experiments/bestbuyapi/app/","AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)"],
-                ["#","AngularJS: Catch Keypress"]
+                ["#","> AngularJS: Pizza Shop"]
+                ["#","> Ionic: Library pattern"]
+                ["#","> ReactJS: Using Flux Framework"]
             ]
         },
         {
@@ -30,11 +32,11 @@
                 ["__master__/lessons/javascript/currying/curry_refactored.js","Javascript: Currying Arithmetic Refactored"],
 
                 ["/lessons/css/margin_collapse.html","CSS: Margin Collapse"],
-                ["#","Javascript Best Practices"],
-                ["#","Javascript Design Patterns: Singleton"],
-                ["#","Javascript Design Patterns: Factory"],
-                ["#","Javascript Design Patterns: Decorator"],
-                ["#","JSLint: Unnecessary `else` after disruption"]
+                ["#","> Javascript Best Practices"],
+                ["#","> Javascript Design Patterns: Singleton"],
+                ["#","> Javascript Design Patterns: Factory"],
+                ["#","> Javascript Design Patterns: Decorator"],
+                ["#","> JSLint: Unnecessary `else` after disruption"]
 
             ]
         }
