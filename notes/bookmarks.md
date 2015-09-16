@@ -17,6 +17,7 @@
 * [Algorithms 1 - Princeton](https://class.coursera.org/algs4partI-009/lecture)
 * [What is DevOps Thing Anyway?](http://www.jedi.be/blog/2010/02/12/what-is-this-devops-thing-anyway/)
 * [Guided Challenges - Free Code Camp](http://freecodecamp.com/map)
+* [Using DevTools](https://medium.com/google-developers/devtools-tips-for-sublime-text-users-cdd559ee80f8)
 
 ## Javascript
 ### Standards
