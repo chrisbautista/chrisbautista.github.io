@@ -95,7 +95,7 @@ function InitService($http) {
     }
 
     function normalizeLinks(links, definedUrls){
-        var i,j,
+        var j,
 
             newLinks=[];
 
