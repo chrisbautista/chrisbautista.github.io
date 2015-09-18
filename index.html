@@ -39,6 +39,7 @@
               </label>
             </div>
             <p class="tags">
+              <span class="tag-btn" > <a ng-click="vm.query=''">-All-</a></span>
               <span class="tag-btn" ng-repeat="item in vm.service.tags">
                 <a ng-click="vm.searchTag(item[0])">{{item[0]}}</a>
               </span>
@@ -62,9 +63,9 @@
 
 
       </section>
-  
+
     </div>
- 
+
 
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
