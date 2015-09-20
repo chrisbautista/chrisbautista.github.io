@@ -1,15 +1,16 @@
 # BESTBUY API
-## chris bautista
-## www.codespud.ca
+- chris bautista
+- [CodeSpud](www.codespud.ca)
 
 Uses
 ====
-AngularJS
-Bestbuy API
+- AngularJS
+- Bestbuy API
 
 File Structure
 ==============
 
+```
 app +
 	|
 	+ - + bower_components
@@ -34,14 +35,15 @@ app +
 		- products.html
 	- index.html
 	- README.md
+```
 
 Services
 =========
 folder: scripts/services.js
 
-*getCategories
-*getCategoryProducts
-*getProduct
+* getCategories
+* getCategoryProducts
+* getProduct
 
 
 
