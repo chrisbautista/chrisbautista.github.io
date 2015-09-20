@@ -29,7 +29,7 @@
             "name": "Lessons",
             "list": [
                 ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand Constructs"],
-                ["__master__/lessons/javascript/","JavaScript: Provided a string build a function to check for balanced parens "],
+                ["__master__/lessons/javascript/intermediate/balancedParens","JavaScript: Provided a string build a function to check for balanced parens "],
                 ["__master__/lessons/javascript/closure.js","JavaScript: Closures"],
                 ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand for Common Patterns"],
                 ["__master__/lessons/javascript/currying/curry.js","JavaScript: Currying Arithmetic"],
