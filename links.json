@@ -8,9 +8,9 @@
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
                 ["https://github.com/chrisbautista/study/tree/master/pizza","Node/Javascript: Pizza Shop"],
                 ["/projects/surfbiggestfan/build/","Promo Application using Jquery and animate."],
-                ["__master__/projects/surfbiggestfan/src/","Promo Application using Jquery and animate. (code) "],
+                ["__master__/projects/surfbiggestfan/","Promo Application using Jquery and animate. (code) "],
                 ["/projects/youscentit/build/","Promo Application using Jquery and custom Promo library."],
-                ["__master__/projects/youscentit/src/","Promo Application using Jquery and custom Promo library.(code)"]
+                ["__master__/projects/youscentit/","Promo Application using Jquery and custom Promo library.(code)"]
             ]
         },
         {
