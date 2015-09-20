@@ -22,7 +22,7 @@
              */
             (function(){
 
-                function isBalancedV1 (sStatement){
+                function isBalancedV1 (sStatement){ // try 1
      
                    var  c,itmp=0;
                    
@@ -52,7 +52,7 @@
                  * @returns boolean
                  */
                 
-                function isBalancedV2(sStatement){
+                function isBalancedV2(sStatement){ // try 2
                     
                     var c, iLevels = 0, // parens level ( = 1, () = 0, (()) = 2, ) = err
                         openParens = '({[',
@@ -73,6 +73,8 @@
                     
                     return iLevels === 0 ? true : false ;
                 }
+
+        ////////////////////////////
 
                 var openParens = '({['.split('');
                 var closeParens = ')}]'.split('');
@@ -190,7 +192,7 @@
                         parensStack.pop();
                     }
 
-                    return isBalancedV3(sStatement.slice(1), parensStack);
+                    return isBalanced(sStatement.slice(1), parensStack);
                 }
 
             }());

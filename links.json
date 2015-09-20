@@ -4,22 +4,22 @@
             "name": "Projects",
             "list": [
 
-                ["/Alexandria/","Alexandria: Audiobooks App built with Ionic"],
+                ["/Alexandria/","Alexandria: Audiobooks App (Ionic)"],
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
-                ["https://github.com/chrisbautista/study/tree/master/pizza","Node/Javascript: Pizza Shop"],
-                ["/projects/surfbiggestfan/build/","Promo Application using Jquery and animate."],
-                ["__master__/projects/surfbiggestfan/","Promo Application using Jquery and animate. (code) "],
-                ["/projects/youscentit/build/","Promo Application using Jquery and custom Promo library."],
-                ["__master__/projects/youscentit/","Promo Application using Jquery and custom Promo library.(code)"]
+                ["https://github.com/chrisbautista/study/tree/master/pizza","JavaScript/NodeJs: Pizza Shop"],
+                ["/projects/surfbiggestfan/build/","JavaScript: Promo Application (Jquery)."],
+                ["__master__/projects/surfbiggestfan/","JavaScript: Promo Application (Jquery). (code) "],
+                ["/projects/youscentit/build/","Javascript: Promo Application (Jquery and Promo plugin)."],
+                ["__master__/projects/youscentit/","Javascript: Promo Application (Jquery and Promo plugin).(code)"]
             ]
         },
         {
             "name": "Experiments",
             "list": [
-                ["/experiments/cbTimerDirective/public_html/","AngularJS: Making timer into a directive"],
-                ["__master__/experiments/cbTimerDirective/public_html/","AngularJS: Making timer into a directive (code)"],
-                ["/experiments/bestbuyapi/app/","AngularJS: Creating a Service for AJAX API (Turn off cross domain checks in browser)"],
-                ["__master__/experiments/bestbuyapi/app/","AngularJS: Creating a Service for AJAX API (code)"],
+                ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS timer directive"],
+                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS timer directive (code)"],
+                ["/experiments/bestbuyapi/app/","Javascript: AngularJS Service to consume AJAX API (Turn off cross domain checks in browser)"],
+                ["__master__/experiments/bestbuyapi/app/","Javascript: AngularJS Service to consume AJAX API (code)"],
                 ["#","> AngularJS: Pizza Shop"],
                 ["#","> Ionic: Library pattern"],
                 ["#","> ReactJS: Using Flux Framework"]
@@ -28,12 +28,12 @@
         {
             "name": "Lessons",
             "list": [
-                ["__master__/lessons/javascript/shorthand.js","Javascript Shorthand Constructs"],
-                ["/lessons/javascript/balancedParens.html","Javascript: Provided a string build a function to check for balanced parens "],
-                ["__master__/lessons/javascript/closure.js","Javascript: Closures"],
-                ["__master__/lessons/javascript/shorthand.js","Javascript: Shorthand for Common Patterns"],
-                ["__master__/lessons/javascript/currying/curry.js","Javascript: Currying Arithmetic"],
-                ["__master__/lessons/javascript/currying/curry_refactored.js","Javascript: Currying Arithmetic Refactored"],
+                ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand Constructs"],
+                ["__master__/lessons/javascript/","JavaScript: Provided a string build a function to check for balanced parens "],
+                ["__master__/lessons/javascript/closure.js","JavaScript: Closures"],
+                ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand for Common Patterns"],
+                ["__master__/lessons/javascript/currying/curry.js","JavaScript: Currying Arithmetic"],
+                ["__master__/lessons/javascript/currying/curry_refactored.js","JavaScript: Currying Arithmetic Refactored"],
 
                 ["/lessons/css/margin_collapse.html","CSS: Margin Collapse"],
                 ["#","> Javascript Best Practices"],
