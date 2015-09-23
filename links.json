@@ -4,25 +4,25 @@
             "name": "Projects",
             "list": [
 
-                ["/Alexandria/","Alexandria: Audiobooks App (Ionic)"],
+                ["/Alexandria/","Alexandria: Audiobooks Application (Ionic)"],
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
-                ["https://github.com/chrisbautista/study/tree/master/pizza","JavaScript/NodeJs: Pizza Shop"],
+                ["https://github.com/chrisbautista/study/tree/master/pizza","JavaScript/NodeJs: pizza shop"],
                 ["/projects/surfbiggestfan/build/","JavaScript: Promo Application (Jquery)."],
                 ["__master__/projects/surfbiggestfan/","JavaScript: Promo Application (Jquery). (code) "],
                 ["/projects/youscentit/build/","Javascript: Promo Application (Jquery and Promo plugin)."],
-                ["__master__/projects/youscentit/","Javascript: Promo Application (Jquery and Promo plugin).(code)"]
+                ["__master__/projects/youscentit/","JavaScript: Promo Application (Jquery and Promo plugin).(code)"]
             ]
         },
         {
             "name": "Experiments",
             "list": [
-                ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS timer directive"],
-                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS timer directive (code)"],
-                ["/experiments/bestbuyapi/app/","Javascript: AngularJS Service to consume AJAX API (Turn off cross domain checks in browser)"],
-                ["__master__/experiments/bestbuyapi/app/","Javascript: AngularJS Service to consume AJAX API (code)"],
-                ["#","> AngularJS: Pizza Shop"],
-                ["#","> Ionic: Library pattern"],
-                ["#","> ReactJS: Using Flux Framework"]
+                ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive"],
+                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (code)"],
+                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume AJAX API (turn off cross domain checks in browser)"],
+                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume AJAX API (code)"],
+                ["#","> AngularJS: pizza shop"],
+                ["#","> Ionic: Library Pattern"],
+                ["#","> ReactJS: using Flux Framework"]
             ]
         },
         {
@@ -31,16 +31,16 @@
                 ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand Constructs"],
                 ["__master__/lessons/javascript/intermediate/balancedParens","JavaScript: Provided a string build a function to check for balanced parens "],
                 ["__master__/lessons/javascript/closure.js","JavaScript: Closures"],
-                ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand for Common Patterns"],
+                ["__master__/lessons/javascript/shorthand.js","JavaScript: Shorthand for common Patterns"],
                 ["__master__/lessons/javascript/currying/curry.js","JavaScript: Currying Arithmetic"],
-                ["__master__/lessons/javascript/currying/curry_refactored.js","JavaScript: Currying Arithmetic Refactored"],
+                ["__master__/lessons/javascript/currying/curry_refactored.js","JavaScript: Currying Arithmetic refactored"],
 
-                ["/lessons/css/margin_collapse.html","CSS: Margin Collapse"],
+                ["/lessons/css/margin_collapse.html","CSS: Margin collapse"],
                 ["#","> Javascript Best Practices"],
                 ["#","> Javascript Design Patterns: Singleton"],
                 ["#","> Javascript Design Patterns: Factory"],
                 ["#","> Javascript Design Patterns: Decorator"],
-                ["#","> JSLint: Unnecessary `else` after disruption"]
+                ["#","> JSLint: unnecessary `else` after disruption"]
 
             ]
         }
