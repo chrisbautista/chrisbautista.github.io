@@ -56,14 +56,15 @@ function InitService($http) {
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
-                tmpTag = tmp[i].replace(/\W/g, '').toLowerCase();
-                //if(/[A-Z]/.test( tmpTag[0] )){
+                tmpTag = tmp[i].replace(/\W/g, '');
+                if(/[A-Z]/.test( tmpTag[0] )){
+                    tmpTag = tmpTag.toLowerCase();
                     if(!disTags[tmpTag]){
                         disTags[tmpTag]=1;
                     }else{
                         disTags[tmpTag]++;
                     }
-                //}
+                }
 
             }
         }
