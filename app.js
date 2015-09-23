@@ -91,7 +91,7 @@ function InitService($http) {
         });
 
 
-        return sortProperties(disTags).slice(0,10);
+        return sortProperties(disTags).slice(0,20);
 
     }
 
