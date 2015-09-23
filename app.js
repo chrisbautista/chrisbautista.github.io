@@ -56,7 +56,7 @@ function InitService($http) {
         function getTagCount(item){
             var tmp = item[1].split(' ');
             for(var i=0; i<tmp.length;i++){
-                tmpTag = tmp[i].replace(/\W/g, '');
+                tmpTag = tmp[i].replace(/\W/g, '').toLowerCase();
                 if(/[A-Z]/.test( tmpTag[0] )){
                     if(!disTags[tmpTag]){
                         disTags[tmpTag]=1;
@@ -116,6 +116,7 @@ function InitService($http) {
             }
             this.push(item);
         }, newLinks);
+
 
         return newLinks;
     }
