@@ -407,6 +407,13 @@ footer {
 
 @media print, screen and (max-width: 480px) {
 
+  body {
+    font-size: 1em;
+    margin:0;
+    padding:0.2em;
+    width:100%;
+  }
+
   header ul li.download {
     display:none;
   }
@@ -419,12 +426,6 @@ footer {
 		display:block;
 	}
 
-  body {
-    font-size: 1em;
-    margin:0;
-    padding:0.2em;
-    width:100%;
-  }
 
   .items,.items-container,.items-list,section {
     margin:0;
@@ -455,13 +456,11 @@ footer {
   .search {
     width: 80%;
   }
-  button {display:none;}
+  button, .tags {display:none;}
   
   .placeholder-icon {
     margin-top: 0.6em;
   }
-
-  .tags {display:none;}
 
 }
 
