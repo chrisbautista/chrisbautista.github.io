@@ -420,7 +420,7 @@ footer {
 	}
 
   body {
-    font-size: 1.2em;
+    font-size: 1em;
     margin:0;
     padding:0.2em;
     width:100%;
@@ -437,7 +437,7 @@ footer {
     padding: 0.5em;
     border-bottom:1px solid #DDD;
     margin:0.2em;
-    min-height: 3em;
+    min-height: 2em;
   }
 
   header li {
@@ -446,13 +446,17 @@ footer {
     padding:0.5em;
   }
   a.github ,  a.buttons:hover {
-    width: 4em;
+    width: 100%;
   }
 
-  .search,button, .placehoder-icon {
-    font-size: 1.2em;
+  .search, button, .placehoder-icon {
+    font-size: 1em;
   }
-
+  .search {
+    width: 80%;
+  }
+  button {display:none;}
+  
   .placeholder-icon {
     margin-top: 0.6em;
   }
