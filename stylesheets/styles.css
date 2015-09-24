@@ -461,6 +461,8 @@ footer {
     margin-top: 0.6em;
   }
 
+  .tags {display:none;}
+
 }
 
 @media print {
