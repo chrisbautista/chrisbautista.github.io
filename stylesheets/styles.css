@@ -410,14 +410,14 @@ ul {
 }
 
 .tag-btn {
-  display: inline;
-  margin-right: 0.4em;
-  padding: 0.5em;
-  line-height: 2.6em;
-  background-color: #EFEFEF;
-  box-shadow: 1px 1px 3px #CCC;
-  cursor: pointer;
-  border-radius: 5px;
+    display: inline-block;
+    margin: 0.2em;
+    padding: 0.1em 1.1em;
+    line-height: 1.6em;
+    background-color: #EFEFEF;
+    box-shadow: 1px 1px 3px #CCC;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .tags{
@@ -426,6 +426,8 @@ ul {
   text-align: center;
   width:90%;
 }
+
+.tag-btn a { min-width: 5em;}
 
 .btn{
   padding:0.5em;
