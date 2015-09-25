@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic|Roboto:400,400italic,500,500italic,700,700italic);
 
 /* MeyerWeb Reset */
 
@@ -27,7 +27,7 @@ time, mark, audio, video {
 
 body {
   padding:0 50px 0 0;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:"Roboto", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	color: #232323;
 	background-color: #FBFAF7;
