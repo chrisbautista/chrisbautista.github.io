@@ -421,15 +421,17 @@ ul {
 }
 
 .tags{
-  margin:0.5em;
+  margin:2.5em 1.5em 0 1.5em;
 /* border: 2px dashed #AAA; */
   text-align: center;
+  width:90%;
 }
 
 .btn{
   padding:0.5em;
   border-radius: 0.6em;
 }
+
 .placeholder-icon{
   float: left;
     left: 1.2em;
@@ -516,7 +518,9 @@ ul {
     margin-top: 2em;
   }
 
-
+  .github-ribbon {
+    display:none;
+  }
 }
 
 @media print, screen and (max-width: 540px) {
