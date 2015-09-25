@@ -326,6 +326,11 @@ a.buttons:hover {
   border: 0px solid #FFF;
 }
 
+.template-author {
+  color:#888;
+  font-size: 0.9em;
+}
+
 /* Section - for main page content */
 
 section {
@@ -514,7 +519,7 @@ ul {
 
 }
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 540px) {
 
   body {
     font-size: 1em;
@@ -544,6 +549,9 @@ ul {
     right: -1.4em;
   }
 
+  .template-author {
+    display:none;
+  }
 	footer {
 		margin: 0 0 0 20px;
 	}
