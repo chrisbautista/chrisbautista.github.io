@@ -418,10 +418,11 @@ footer {
   header{
     padding: 10px 5px 0;
     margin-right: 0;
-    margin-top: 0;
+    /* margin-top: 0; */
     /* margin-bottom: 1em; */
     position: fixed;
-    width: 96%;
+    width: 98%;
+    margin: -3px -1px 0 -3px;
   }
 
   .header {
@@ -440,7 +441,7 @@ footer {
 
   div.wrapper {
     width: 99%;
-    margin: 10em 0 0 0;
+    margin: 9em 0 0 0;
   }
 
   .category-line{
@@ -459,6 +460,11 @@ footer {
     border-bottom:1px solid #DDD;
     margin:0.2em;
     min-height: 2em;
+  }
+
+  header ul {
+    position: static;
+    margin: 0 0 0.3em;
   }
 
   header li {
@@ -481,14 +487,33 @@ footer {
     text-align: left;
   }
 
+  .search-container {
+    position: fixed;
+    left: 0.1em;
+    top: 6.4em;
+    width: 90%;
+    height: 4em;
+    background-color: #FFF;
+    display: inline-block;
+    z-index: 98;
+  }
+
   .search, button, .placehoder-icon {
     font-size: 1em;
   }
+
+  .placeholder-icon {
+    float: left;
+    left: 0.7em;
+    top: 2.2em;
+    position: relative;
+    margin-top: 0.3em;
+  }
+
   .search {
-    width: 80%;
+    width:100%;
   }
   button, .tags {display:none;}
-  
   .placeholder-icon {
     margin-top: 0.6em;
   }
