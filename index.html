@@ -15,7 +15,6 @@
     <![endif]-->
   </head>
   <body ng-app="codeSpud">
-      <div class="wrapper" ng-controller="homePageCtrl as vm">
       <header>
         <h1 class="header"><a href="http://www.codespud.ca"></a>CodeSpud</h1>
         <p class="header">A place to play</p>
@@ -28,8 +27,9 @@
       </ul>
 
       </header>
+      <div class="wrapper" ng-controller="homePageCtrl as vm">
       <section>
-        <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to CodeSpud</h3>
+        <h3 class="category-line"><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link">Welcome to CodeSpud</span></a></h3>
 
             <div>
               <label>
@@ -39,9 +39,9 @@
               </label>
             </div>
             <p class="tags">
-              <span class="tag-btn" > <a ng-click="vm.query=''">-All-</a></span>
-              <span class="tag-btn" ng-repeat="item in vm.service.tags">
-                <a ng-click="vm.searchTag(item[0])">{{item[0]}}</a>
+              <span class="tag-btn" > <a ng-click="vm.query=''">&nbsp;-All-&nbsp;</a></span>
+              <span class="tag-btn" ng-repeat="item in vm.service.tags" ng-click="vm.searchTag(item[0])">
+                <a>{{item[0]}}</a>
               </span>
             </p>
 

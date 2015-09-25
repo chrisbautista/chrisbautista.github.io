@@ -363,6 +363,7 @@ footer {
 
   header {
     padding-right:320px;
+    z-index: 99;
   }
 
   section {
@@ -393,7 +394,7 @@ footer {
 
 	section {
     padding:10px 0 10px 20px;
-    margin:0 0 30px;
+    margin:0 0 40px;
   }
 
 	footer {
@@ -414,9 +415,20 @@ footer {
     width:100%;
   }
 
-  header ul li.download {
-    display:none;
+  header{
+    padding: 10px 20px 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    position: fixed;
+    width:89%;
   }
+
+  .header {
+    display:inline-block;
+
+  }
+
 
 	footer {
 		margin: 0 0 0 20px;
@@ -426,6 +438,14 @@ footer {
 		display:block;
 	}
 
+  div.wrapper {
+    width: 99%;
+    margin: 10em 0 0 0;
+  }
+
+  .category-line{
+    display:none;
+  }
 
   .items,.items-container,.items-list,section {
     margin:0;
@@ -442,12 +462,20 @@ footer {
   }
 
   header li {
-    width:100%;
-    min-height: 2em;
-    padding:0.5em;
+    display: inline-block;
+    padding: 0.5em;
+    width: 28%;
+    min-height: 1.7em;
+    font-size:0.7em;
   }
+
+  header li:last-child{
+    display:none;
+  }
+
   a.github ,  a.buttons:hover {
     width: 100%;
+    text-align: left;
   }
 
   .search, button, .placehoder-icon {
@@ -512,10 +540,12 @@ ul {
   line-height: 2.6em;
   background-color: #EFEFEF;
   box-shadow: 1px 1px 3px #CCC;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .tags{
-  padding: 1em;
+  margin:0.5em;
 /* border: 2px dashed #AAA; */
   text-align: center;
 }
