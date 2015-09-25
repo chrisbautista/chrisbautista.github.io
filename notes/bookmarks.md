@@ -51,7 +51,9 @@
 * [CSS Regression Tools](http://succss.ifzenelse.net/)
 * [Visual Regression testing SPA](http://davidwalsh.name/visual-regression-testing-angular-applications)
 
-## UX
+## UX/UI
+* [Guide to Gorgeous UI](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda)
 * [Free UX E-book](http://www.creativebloq.com/web-design/free-ebook-web-ui-design-patterns-91516632)
 * [How to Get Started in UX](http://blog.uxpin.com/4621/how-to-get-started-in-ux-design/?mkt_tok=3RkMMJWWfF9wsRonu6nJZKXonjHpfsX86u4rXqO1lMI%2F0ER3fOvrPUfGjI4ATMNkI%2BSLDwEYGJlv6SgFS7PGMbJiz7gFXxI%3D)
+* [UI Patterns](http://ui-patterns.com/patterns)
 * [UX Starter Kit](http://ux-starter.uxpin.com/?_ga=1.229361116.1901042949.1441946472)
