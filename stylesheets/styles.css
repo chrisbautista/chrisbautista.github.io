@@ -539,6 +539,10 @@ ul {
 
   }
 
+  .github-ribbon{
+    top:-1.5em;
+    right: -1.4em;
+  }
 
 	footer {
 		margin: 0 0 0 20px;
