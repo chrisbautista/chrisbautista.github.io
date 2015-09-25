@@ -416,12 +416,12 @@ footer {
   }
 
   header{
-    padding: 10px 20px 0;
+    padding: 10px 5px 0;
     margin-right: 0;
     margin-top: 0;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     position: fixed;
-    width:89%;
+    width: 96%;
   }
 
   .header {
@@ -463,12 +463,15 @@ footer {
 
   header li {
     display: inline-block;
-    padding: 0.5em;
-    width: 28%;
-    min-height: 1.7em;
-    font-size:0.7em;
+    padding: 0.8em 0.2em 0.8em 0.5em;
+    width: 40%;
+    min-height: 1em;
+    font-size: 1em;
   }
 
+  header li:nth-last-child(2){
+    display:none;
+  }
   header li:last-child{
     display:none;
   }
