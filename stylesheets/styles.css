@@ -549,6 +549,18 @@ ul {
     display:inline-block;
 
   }
+  
+  h1.header{
+    color: #fff;
+    font-size: 1.3em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p.header{
+    font-size: 16px;
+    margin:0 0 0.3em 0;
+  }
 
   .github-ribbon{
     top:-1.5em;
@@ -568,7 +580,7 @@ ul {
 
   div.wrapper {
     width: 99%;
-    margin: 10em 0 0 0.2em;
+    margin: 8em 0 0 0.2em;
   }
 
 
@@ -593,9 +605,8 @@ ul {
 
   header li {
     display: inline-block;
-    padding: 0.8em 0.2em 0.8em 0.5em;
-    width: 40%;
-    min-height: 1em;
+    padding: 0.6em 0.4em 0.6em 0.4em;
+    width: auto;
     font-size: 1em;
   }
 
@@ -614,8 +625,8 @@ ul {
   .search-container {
     position: fixed;
     left: 0.1em;
-    top: 6.4em;
-    width: 90%;
+    top: 4.4em;
+    width: 88%;
     height: 4em;
     background-color: #FFF;
     display: inline-block;
