@@ -7,6 +7,8 @@
                 ["/Alexandria/","Alexandria: Audiobooks Application (Ionic)"],
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
                 ["https://github.com/chrisbautista/study/tree/master/pizza","JavaScript/NodeJs: pizza shop"],
+                ["/projects/surfbiggestfan/build/","JavaScript: Promo Application (Jquery)."],
+                ["__master__/projects/surfbiggestfan/","JavaScript: Promo Application (Jquery). (code) "],
                 ["/projects/youscentit/build/","Javascript: Promo Application (Jquery and Promo plugin)."],
                 ["__master__/projects/youscentit/","JavaScript: Promo Application (Jquery and Promo plugin).(code)"]
             ]
@@ -34,7 +36,6 @@
                 ["__master__/lessons/javascript/currying/curry_refactored.js","JavaScript: Currying Arithmetic refactored"],
 
                 ["/lessons/css/margin_collapse.html","CSS: Margin collapse"],
-                ["lessons/css/table/table.html","CSS: Table"],
                 ["#","> Javascript Best Practices"],
                 ["#","> Javascript Design Patterns: Singleton"],
                 ["#","> Javascript Design Patterns: Factory"],

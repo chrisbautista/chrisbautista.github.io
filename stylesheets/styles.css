@@ -464,7 +464,7 @@ ul {
     padding-right:320px;
     z-index: 99;
     margin-top: 0;
-    height: 13em;
+    height: 11em;
   }
 
   section {
@@ -478,8 +478,8 @@ ul {
 
   header ul {
     position: absolute;
-    right: 94px;
-    top: 38px;
+    right: 5em;
+    top: 0.8em;
   }
 
 
@@ -517,7 +517,7 @@ ul {
   }
 
   div.wrapper {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 
   .github-ribbon {
