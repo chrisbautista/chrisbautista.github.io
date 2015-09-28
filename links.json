@@ -16,8 +16,8 @@
             "list": [
                 ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive"],
                 ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (code)"],
-                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume AJAX API (turn off cross domain checks in browser)"],
-                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume AJAX API (code)"],
+                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API/AJAX  (turn off cross domain checks in browser)"],
+                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API/AJAX (code)"],
                 ["#","> AngularJS: pizza shop"],
                 ["#","> Ionic: Library Pattern"],
                 ["#","> ReactJS: using Flux Framework"]
@@ -34,7 +34,7 @@
                 ["__master__/lessons/javascript/currying/curry_refactored.js","JavaScript: Currying Arithmetic refactored"],
 
                 ["/lessons/css/margin_collapse.html","CSS: Margin collapse"],
-                ["lessons/css/table/table.html","CSS: Table"],
+                ["/lessons/css/table/table.html","CSS: Table"],
                 ["#","> Javascript Best Practices"],
                 ["#","> Javascript Design Patterns: Singleton"],
                 ["#","> Javascript Design Patterns: Factory"],
