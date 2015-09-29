@@ -16,8 +16,8 @@
             "list": [
                 ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive"],
                 ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (code)"],
-                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API/AJAX  (turn off cross domain checks in browser)"],
-                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API/AJAX (code)"],
+                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX  (turn off cross domain checks in browser)"],
+                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX (code)"],
                 ["#","> AngularJS: pizza shop"],
                 ["#","> Ionic: Library Pattern"],
                 ["#","> ReactJS: using Flux Framework"]
