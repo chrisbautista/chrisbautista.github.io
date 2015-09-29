@@ -49,18 +49,18 @@
 
             <div ng-repeat="grp in vm.service.links" class="items-container">
 
-              <div ng-show="(grp.list | filter:vm.query).length > 0" class="items">
+              <div class="items">
                 <h5 class="items-category">{{grp.name}}</h5>
 
-                <ul class='items-list'>
+                <ul ng-show="(grp.list | filter:vm.query).length > 0"  class='items-list'>
                   <!-- {{grp.list}} -->
                     <li ng-repeat="item in (grp.list | filter:vm.query)" class="fade items-link">
                         <a href="{{item[0]}}" target="_blank">{{item[1]}}</a>
                     </li>
 
                 </ul>
+                <p ng-show="(grp.list | filter:vm.query).length <= 0">no links found</p>
               </div>
-
             </div>
 
 
