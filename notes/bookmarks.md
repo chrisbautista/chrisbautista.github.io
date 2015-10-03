@@ -59,3 +59,4 @@
 * [UI Patterns](http://ui-patterns.com/patterns)
 * [UX Starter Kit](http://ux-starter.uxpin.com/?_ga=1.229361116.1901042949.1441946472)
 * [Ways of Improving Customer Journeys](http://adaptivepath.org/ideas/a-playbook-for-improving-customer-journeys/)
+* [Guidelines for Navigation Usability](http://usabilitygeek.com/10-guidelines-for-navigation-usability/)
