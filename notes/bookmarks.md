@@ -58,3 +58,4 @@
 * [How to Get Started in UX](http://blog.uxpin.com/4621/how-to-get-started-in-ux-design/?mkt_tok=3RkMMJWWfF9wsRonu6nJZKXonjHpfsX86u4rXqO1lMI%2F0ER3fOvrPUfGjI4ATMNkI%2BSLDwEYGJlv6SgFS7PGMbJiz7gFXxI%3D)
 * [UI Patterns](http://ui-patterns.com/patterns)
 * [UX Starter Kit](http://ux-starter.uxpin.com/?_ga=1.229361116.1901042949.1441946472)
+* [Ways of Improving Customer Journeys](http://adaptivepath.org/ideas/a-playbook-for-improving-customer-journeys/)
