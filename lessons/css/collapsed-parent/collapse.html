@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+
+		h3{
+			margin-bottom: 3em;
+		}
+
+		.container-initial,
+		.container,
+		.container-float,
+		.container-inline-block {
+			background-color: 	#DDD;
+		}
+
+
+	 	.container ul{
+  			width: 		100%;
+			margin: 	0;
+			padding: 	0;
+			border: 	1px solid red;
+		}
+
+	 	.container-float ul{
+			float:      left;
+  			width: 		100%;
+			margin: 	0;
+			padding: 	0;
+			border: 	1px solid red;
+		}
+
+	 	.container-inline-block ul{
+			display: 	inline-block;
+  			width: 		100%;
+			margin: 	0;
+			padding: 	0;
+			border: 	1px solid red;
+		}
+
+		li, .float-left, .float-right{
+			width: 		30px;
+			height: 	30px;
+			margin: 	0;
+			padding: 	20px;
+
+			list-style: none;
+			border-width: 1px;
+			border-style: solid;
+		}
+
+		.float-left{
+			float:left;
+			border-color: green;
+		}
+
+		.float-right{
+			float:right;
+			border-color: blue;
+		}
+
+		.clearfix{
+			clear:both;
+			padding:0; margin:0;
+		}
+
+
+</style>
+
+</head>
+<body>
+
+<p data-height="368" data-theme-id="19668" data-slug-hash="qOrKbx" data-default-tab="html" data-user="codespud" class='codepen'>See the Pen <a href='http://codepen.io/codespud/pen/qOrKbx/'>Float Experiments</a> by Chris Bautista (<a href='http://codepen.io/codespud'>@codespud</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+
+	<h3>initial markup - no floated children </h3>
+
+	<div class="container-initial">
+		<ul>
+			<li >left</li>
+			<li >left</li>
+			<li >left</li>
+			<li >right</li>
+			<li >right</li>
+			<li >right</li>
+		</ul>
+	</div>
+
+	<div class="clearfix"></div>
+
+
+	<h3>floated children - parents (ul,div.container) collapsed</h3>
+
+	<div class="container">
+		<ul>
+			<li class="float-left">left</li>
+			<li class="float-left">left</li>
+			<li class="float-left">left</li>
+			<li class="float-right">right</li>
+			<li class="float-right">right</li>
+			<li class="float-right">right</li>
+		</ul>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<h3>floated children - div.container collapsed - ul OK </h3>
+
+	<div class="container-float">
+		<ul>
+			<li class="float-left">left</li>
+			<li class="float-left">left</li>
+			<li class="float-left">left</li>
+			<li class="float-right">right</li>
+			<li class="float-right">right</li>
+			<li class="float-right">right</li>
+		</ul>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<h3>floated in inline-block - parents OK ( div.container and ul OK )</h3>
+
+	<div class="container-inline-block">
+		<ul>
+			<li class="float-left">left</li>
+			<li class="float-left">left</li>
+			<li class="float-left">left</li>
+			<li class="float-right">right</li>
+			<li class="float-right">right</li>
+			<li class="float-right">right</li>
+		</ul>
+	</div>
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+</body>
+</html>
