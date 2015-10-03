@@ -35,10 +35,10 @@
 
                 ["/lessons/css/margin_collapse.html","CSS: Margin collapse (demo)"],
                 ["__master__/lessons/css/margin_collapse.html","CSS: Margin collapse (code)"],
-                ["/lessons/css/table/table.html","CSS: Table(demo)"],
+                ["/lessons/css/table/table.html","CSS: table(demo)"],
                 ["__master_/lessons/css/table/table.html","CSS: Table(code)"],
-                ["/lessons/css/collapsed-parent/collapse.html","CSS: Fix Collapsed Parent(demo)"],
-                ["__master__/lessons/css/collapsed-parent/collapse.html","CSS: Fix Collapsed Parent (code)"],
+                ["/lessons/css/collapsed-parent/collapse.html","CSS: Fix collapsed parent (demo)"],
+                ["__master__/lessons/css/collapsed-parent/collapse.html","CSS: Fix collapsed parent (code)"],
                 ["#","> Javascript Best Practices"],
                 ["#","> Javascript Design Patterns: Singleton"],
                 ["#","> Javascript Design Patterns: Factory"],
