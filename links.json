@@ -14,8 +14,8 @@
         {
             "name": "Experiments",
             "list": [
-                ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (Demo)"],
-                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (Code)"],
+                ["/experiments/cbTimerDirective/public_html/","Javascript: AngularJS Timer Directive (Demo)"],
+                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: AngularJS Timer Directive (Code)"],
                 ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX (Demo)"],
                 ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX (Code)"],
                 ["#","> AngularJS: pizza shop"],
