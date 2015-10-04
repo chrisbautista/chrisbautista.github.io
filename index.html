@@ -42,13 +42,13 @@
               </label>
             </div>
             <div class="tags">
-              <div class="tag-btn" > <a ng-click="vm.query=''">&nbsp;-All-&nbsp;</a></div>
+              <div class="tag-btn" > <a ng-click="vm.query=''">&nbsp;-&nbsp;all&nbsp;-&nbsp;</a></div>
               <div class="tag-btn" ng-repeat="item in vm.service.tags" ng-click="vm.searchTag(item[0])">
                 <a>{{item[0]}}</a>
               </div>
             </div>
 
-            <div ng-repeat="grp in vm.service.links" class="items-container">
+            <div ng-repeat="grp in (vm.service.links | filter:vm.query)" class="items-container">
 
               <div class="items" >
                 <h5 class="items-category">{{grp.name}}</h5>
@@ -60,10 +60,10 @@
                     </li>
 
                 </ul>
-                <span ng-show="(grp.list | filter:vm.query).length <= 0">no topics found</span>
               </div>
 
             </div>
+            <div ng-show="(vm.service.links | filter:vm.query).length <= 0" class="items-container"><div class="items" ><h5 class="items-category">no topics found</h5></div></div>
 
 
       </section>
