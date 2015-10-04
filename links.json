@@ -7,17 +7,17 @@
                 ["/Alexandria/","Alexandria: Audiobooks Application (Ionic)"],
                 ["/projects/boxerjs/build/","BoxerJS: Lightweight JQuery plugin for adding quick previews."],
                 ["https://github.com/chrisbautista/study/tree/master/pizza","JavaScript/NodeJs: pizza shop"],
-                ["/projects/youscentit/build/","Javascript: Promo Application - Jquery and Promo plugin (demo)"],
-                ["__master__/projects/youscentit/","JavaScript: Promo Application - Jquery and Promo plugin (code)"]
+                ["/projects/youscentit/build/","Javascript: Promo Application - Jquery and Promo plugin (Demo)"],
+                ["__master__/projects/youscentit/","JavaScript: Promo Application - Jquery and Promo plugin (Code)"]
             ]
         },
         {
             "name": "Experiments",
             "list": [
-                ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive"],
-                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (code)"],
-                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX  (turn off cross domain checks in browser)"],
-                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX (code)"],
+                ["/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (Demo)"],
+                ["__master__/experiments/cbTimerDirective/public_html/","Javascript: Making AngularJS Timer Directive (Code)"],
+                ["/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX (Demo)"],
+                ["__master__/experiments/bestbuyapi/app/","JavaScript: AngularJS Service to consume API / AJAX (Code)"],
                 ["#","> AngularJS: pizza shop"],
                 ["#","> Ionic: Library Pattern"],
                 ["#","> ReactJS: using Flux Framework"]
@@ -33,12 +33,12 @@
                 ["__master__/lessons/javascript/currying/curry.js","JavaScript: Currying Arithmetic"],
                 ["__master__/lessons/javascript/currying/curry_refactored.js","JavaScript: Currying Arithmetic refactored"],
 
-                ["/lessons/css/margin_collapse.html","CSS: Margin collapse (demo)"],
-                ["__master__/lessons/css/margin_collapse.html","CSS: Margin collapse (code)"],
-                ["/lessons/css/table/table.html","CSS: table(demo)"],
-                ["__master_/lessons/css/table/table.html","CSS: Table(code)"],
-                ["/lessons/css/collapsed-parent/collapse.html","CSS: Fix collapsed parent (demo)"],
-                ["__master__/lessons/css/collapsed-parent/collapse.html","CSS: Fix collapsed parent (code)"],
+                ["/lessons/css/margin_collapse.html","CSS: Margin Collapsed (Demo)"],
+                ["__master__/lessons/css/margin_collapse.html","CSS: Margin Collapsed (Code)"],
+                ["/lessons/css/table/table.html","CSS: table(Demo)"],
+                ["__master_/lessons/css/table/table.html","CSS: Table(Code)"],
+                ["/lessons/css/collapsed-parent/collapse.html","CSS: fix Collapsed parent (Demo)"],
+                ["__master__/lessons/css/collapsed-parent/collapse.html","CSS: fix Collapsed parent (Code)"],
                 ["#","> Javascript Best Practices"],
                 ["#","> Javascript Design Patterns: Singleton"],
                 ["#","> Javascript Design Patterns: Factory"],
