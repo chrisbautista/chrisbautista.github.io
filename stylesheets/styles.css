@@ -350,6 +350,10 @@ footer {
   padding-left: 
 }
 
+strong {
+  color:#9F0000;
+}
+
 /* lists */
 .items {
   display:inline-block;
@@ -549,7 +553,7 @@ ul {
     display:inline-block;
 
   }
-  
+
   h1.header{
     color: #fff;
     font-size: 1.3em;
