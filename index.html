@@ -56,7 +56,7 @@
                 <ul ng-show="(grp.list | filter:vm.query).length > 0"  class='items-list'>
                   <!-- {{grp.list}} -->
                     <li ng-repeat="item in (grp.list | filter:vm.query)" class="fade items-link">
-                        <span><a href="{{item[0]}}" target="_blank">{{item[1]}}</a></span>
+                        <a href="{{item[0]}}" target="_blank"><span ng-bind-html="item[1] | highlight:vm.query"></span></a>
                     </li>
 
                 </ul>

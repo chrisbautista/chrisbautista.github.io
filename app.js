@@ -6,7 +6,8 @@
 angular.module('codeSpud',['ngAnimate'])
 
        .service('initSrvc', InitService)
-       .controller('homePageCtrl', HomePageController );
+       .controller('homePageCtrl', HomePageController )
+       .filter('highlight', HighLightFilter );
 
 /////////////////////////
 
@@ -100,6 +101,19 @@ function InitService($http) {
 
             newLinks=[];
 
+        angular.forEach(links, function(item){
+            for(j=0;j<item.list.length;j++){
+                item.list[j][0] = whichURL(item.list[j][0], definedUrls);
+                //item.list[j][1] = formatTitles(item.list[j][1]);
+            }
+            this.push(item);
+        }, newLinks);
+
+
+        return newLinks;
+
+
+        ////////////////
         function whichURL(url, Urls){
             var $replace;
             for(var x=0; x<Urls.length; x++){
@@ -111,17 +125,25 @@ function InitService($http) {
             return url;
         }
 
-        angular.forEach(links, function(item){
-            for(j=0;j<item.list.length;j++){
-                item.list[j][0] = whichURL(item.list[j][0], definedUrls);
-            }
-            this.push(item);
-        }, newLinks);
+/*        function formatTitles(title){
+            return title.replace(/([A-Z][a-zA-Z0-9\-\_]+)/g,'<strong>$1</strong>');
+        }
 
+*/
 
-        return newLinks;
     }
 
+}
+
+function HighLightFilter($sce) {
+  return function(text, phrase) {
+    if (phrase) {
+        text = text.replace(new RegExp('('+phrase+')', 'gi'),
+                '<strong>$1</strong>');
+    }
+
+    return $sce.trustAsHtml(text);
+  };
 }
 
 
