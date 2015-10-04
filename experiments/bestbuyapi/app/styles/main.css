@@ -89,6 +89,19 @@ body {
   text-align: right;
 }
 
+.hint {
+  border:2px dashed red;
+  padding:10px;
+  margin: 0 10em 50px 10em;
+  font-size:1em;
+  font-weight: bold;
+  color:green;
+}
+
+a:hover {
+  cursor:pointer;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
