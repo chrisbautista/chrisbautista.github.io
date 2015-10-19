@@ -39,8 +39,8 @@
 <div>.</div>
 <section>
   <div class="col-md-3 col-xs-3 col-l-3 ">
-        <div ng-repeat="cat in categories">
-          <a ng-click="loadCategoryProducts(cat)" ng-class="category.id == cat.id ? 'btn btn-primary' : '' ">{{cat.name}}</a>
+        <div class="category-item" ng-repeat="cat in categories">
+          <a ng-click="loadCategoryProducts(cat)" ng-class="category.id == cat.id ? 'btn btn-primary' : '' ">{{cat.name | uppercase}}</a>
         </div>
       
   </div>
@@ -50,7 +50,7 @@
   <div class="col-md-9 col-xs-9 col-l-9">
     <div>
       <ul class="list-inline">
-        <li ng-repeat="product in categoryProducts | limitTo:32">
+        <li class="product-item" ng-repeat="product in categoryProducts | limitTo:32">
           <a ng-click="showProduct(product)" ><img ng-src="http://bestbuy.ca{{product.thumbnailImage}}" alt="product-name"/></a>
         </li>
        
