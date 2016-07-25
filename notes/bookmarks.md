@@ -4,10 +4,12 @@
 * [Javascript](#javascript)
 * [CSS](#css)
 * [UX](#ux)
+* [Website Optimization] (#website)
 
 ---
 ## References
 *  [MDN - Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+*  [HTMLRocks - How Browsers Work?](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
 
 ## Learning
 
@@ -60,3 +62,12 @@
 * [UX Starter Kit](http://ux-starter.uxpin.com/?_ga=1.229361116.1901042949.1441946472)
 * [Ways of Improving Customer Journeys](http://adaptivepath.org/ideas/a-playbook-for-improving-customer-journeys/)
 * [Guidelines for Navigation Usability](http://usabilitygeek.com/10-guidelines-for-navigation-usability/)
+
+## Website Optimization
+* http://yuiblog.com/blog/2007/12/20/video-lecomte/
+* http://www.slideshare.net/julien.lecomte/high-performance-ajax-applications/7-Yahoos_Exceptional_Performance_rules_ulliMake
+* http://www.ravelrumba.com/blog/static-cookieless-domain/
+* http://www.ravelrumba.com/blog/domain-sharding-tests-in-ie7-ie8-firefox-and-safari/
+* https://developers.google.com/speed/docs/insights/EnableCompression?csw=1#ServeFromCookielessDomain
+
+
