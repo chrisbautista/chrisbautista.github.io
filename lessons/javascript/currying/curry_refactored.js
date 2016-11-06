@@ -1,6 +1,6 @@
 /****
  *
- * CURRYING
+ * Functional Programming : CURRYING
  *
  * Chris Bautista <chris@codespud.ca>
  * @chrisbautista
