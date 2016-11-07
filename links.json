@@ -67,7 +67,11 @@
         ],
         [
           "__master__/lessons/typescript/hilo-game/",
-          "Javascript: High - Low Card Game "
+          "Javascript: High - Low Card Game (code)"
+        ],
+        [
+          "lessons/typescript/hilo-game/",
+          "Javascript: High - Low Card Game (demo)"
         ],
         [
           "__master__/lessons/javascript/intermediate/balancedParens",
