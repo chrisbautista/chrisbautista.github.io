@@ -39,7 +39,7 @@
 
 
         this.getLinks = function () {
-            return $http.get('links.json?v2')
+            return $http.get('links.json?v3')
                 .then(function (response) {
                     //console.log(response);
                     if (response.status === 200) {
