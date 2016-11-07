@@ -2,12 +2,8 @@
  * Created by chrisbautista on 2016-11-06.
  */
 function countDown(first, last, interval) {
-    if (last === void 0) {
-        last = 0;
-    }
-    if (interval === void 0) {
-        interval = 1;
-    }
+    if (last === void 0) { last = 0; }
+    if (interval === void 0) { interval = 1; }
     var ctr = first;
     while (ctr < last) {
         console.log(ctr);
@@ -41,5 +37,4 @@ function dotdotdotOperator() {
     var tmp2 = tmp.concat([4, 5, 6]);
     console.log(tmp2);
 }
-
 dotdotdotOperator();
