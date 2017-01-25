@@ -41,7 +41,20 @@ var FilterClass = (function () {
     };
     // callbacks
     FilterClass.prototype.filterCallback = function (e) {
-        console.log(e);
+        var filterString = e.target.options[e.target.selectedIndex].value;
+        var element = this.blocks;
+        console.log('filterString', filterString);
+        _.map(this.blocks, function (item) {
+            item.style.display = 'hide';
+        });
+        var divs = element.filter(function (item) {
+            if (item.dataset.filter.indexOf(filterString) !== -1) {
+                return true;
+            }
+        });
+        _.map(divs, function (item) {
+            item.style.display = 'block';
+        });
     };
     return FilterClass;
 }());
