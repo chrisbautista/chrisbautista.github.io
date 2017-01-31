@@ -16,7 +16,7 @@ $(document).ready(function(){
   
   app.prototype.revealDiv = function(e){
     var target = e.currentTarget;
-    
+    /*$('div').html('sliding').animate({left: 0}).delay(2000).animate({left: -100});*/
     console.log($(target),$('.preview[style*="block"]').length);
     if($('.preview[style*="block"]').length>0){
       $('.preview[style*="block"]').slideUp('fast', function(){
