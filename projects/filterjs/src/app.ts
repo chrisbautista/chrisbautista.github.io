@@ -70,7 +70,7 @@ class FilterClass {
 
         let options = _.reduce(this.config.filters, function (options, item, key) {
             return `${options}<option value="${item}"> ${item} </option>`;
-        }, '');
+        }, '<option value=""> - All - </option>');
 
         let template = "";
 

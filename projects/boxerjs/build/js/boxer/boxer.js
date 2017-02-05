@@ -52,6 +52,11 @@
             outSideContainer = document.createElement('div');
             outSideContainer.id = "imgContainer";
 
+            // add initial class here
+            // make provisions for adding animation specific 
+            // properties ( genie starts from the mouse position, 
+            // fadein )
+
             insideContainer = buildInside(thumb, configType, function() {
                 outSideContainer.appendChild(insideContainer);
 
@@ -63,7 +68,6 @@
                     h = config.height;
                     $($(outSideContainer)[0].firstChild).css('width',w);
                     $($(outSideContainer)[0].firstChild).css('height',h);
-                    //$(outSideContainer).css('padding',"10px");
                 }
 
 
@@ -71,14 +75,13 @@
                     w =  parseInt(w/2);
                     h =  parseInt(h/2);
                     $(outSideContainer)[0].firstChild.width = w;
-                }//sometimes images are just too big lets fix it
+                }//sometimes content is just too big lets fix it
                  // works gracefully for divs
 
                 $(outSideContainer)[0].firstChild.width = w;
                 $(outSideContainer).css({
                     'top': (($(window).height() / 2) - parseInt(h / 2)) + "px",
                     'left': (($(window).width() / 2) - parseInt(w / 2)) + "px",
-                    //'height': (h + 2) + "px"
                 });
                 addCloseHandler(outSideContainer);
             });
@@ -130,7 +133,6 @@
 
     $.fn.boxer = function(options) {
 
-        // This is the easiest way to have default options.
         var settings = $.extend({
             overlayName: "previewOverlay",
             width:600,

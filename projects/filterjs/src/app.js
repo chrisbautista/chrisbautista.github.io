@@ -36,7 +36,7 @@ var FilterClass = (function () {
         var parent = document.querySelector(this.parentSelector);
         var options = _.reduce(this.config.filters, function (options, item, key) {
             return options + "<option value=\"" + item + "\"> " + item + " </option>";
-        }, '');
+        }, '<option value=""> - All - </option>');
         var template = "";
         if (_.indexOf(this.filterTypes, 'text') !== -1) {
             template += "\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-md-5\">\n                    <input type=\"search\" value=\"\" name=\"keyword-filter\" id=\"keyword-filter\" class=\"form-control\" placeholder=\"enter keyword\">            \n                    </div>\n                </div>\n            </div>\n            ";
