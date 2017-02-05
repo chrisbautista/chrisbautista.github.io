@@ -1,3 +1,3 @@
-    function TestCtrl($scope) {
-        $scope.title = "Write a title here";
-    }
+function InboxCtrl($scope) {
+    $scope.title = "Write a title here";
+}
