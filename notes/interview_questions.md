@@ -17,6 +17,10 @@
     * What is a child selector?
 - What are the possible values for position? explain each
 
+## SASS
+- what is ampersand &?
+- what are mixins?
+
 ## HTML
 
 ## Web development
