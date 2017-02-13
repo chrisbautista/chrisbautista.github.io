@@ -14,7 +14,7 @@
    - automated transpiling
    - ``` npm instal --save-dev babel-loader ```
    - bundle.js
-```nodejs
+```node
   module.exports = {
 	entry: './script.js',
 	output: {filename: 'bundle.js'},
@@ -26,6 +26,17 @@
   };
 ```
    
+- Let keyword
+   - enforce ?'block scoping' 
+   - ? closure
+   - ``` for(let i=0; i<100; i++) {  } ```
 
+- Const keyword
+  - constant value , must not change
 
+- Template String
+  - ` this is a template string, ${myName}`
+  - $${} to render dollar signs
 
+- Spread Operator
+  - 
