@@ -9,6 +9,13 @@
 - Callback vs Promise
 - AngularJS vs React?
 - MVC vs MVVM
+- setTimeout and setInterval? timing? runs before or after duration?
+- Datatypes in Javascropt?
+
+## Modern Javascript
+- Spread operator
+- arrow functions
+- desctructuring
 
 
 ## CSS
@@ -31,6 +38,9 @@
     * HTML
     * CSS
     * Accessibility
+
+## Test Driven Development
+[TDD vs BDD](https://www.youtube.com/watch?v=mT8QDNNhExg)
 
 ## AngularJS
 - What is angularJS?
