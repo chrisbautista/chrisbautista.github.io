@@ -41,6 +41,7 @@
 
 ## Test Driven Development
 - [TDD vs BDD](https://www.youtube.com/watch?v=mT8QDNNhExg)
+- [Jasmine](https://jasmine.github.io/)
 
 ## AngularJS
 - What is angularJS?
@@ -52,5 +53,14 @@
 ## React
 
 ## Redux
+
+## Chrome Dev Tools
+- Adding breakpoints
+- Watching variables
+
+## Concepts
+- Declarative vs Imperative 
+- Functional?
+
 
 
