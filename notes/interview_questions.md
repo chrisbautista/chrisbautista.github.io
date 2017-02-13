@@ -40,7 +40,7 @@
     * Accessibility
 
 ## Test Driven Development
-[TDD vs BDD](https://www.youtube.com/watch?v=mT8QDNNhExg)
+- [TDD vs BDD](https://www.youtube.com/watch?v=mT8QDNNhExg)
 
 ## AngularJS
 - What is angularJS?
