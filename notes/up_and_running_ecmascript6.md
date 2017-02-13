@@ -14,7 +14,7 @@
    - automated transpiling
    - ``` npm instal --save-dev babel-loader ```
    - bundle.js
-```json
+```nodejs
   module.exports = {
 	entry: './script.js',
 	output: {filename: 'bundle.js'},
