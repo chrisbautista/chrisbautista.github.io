@@ -95,6 +95,8 @@ Functional programming is a programming paradigm, meaning that it is a way of th
 
 ## Modern Javascript
 - Spread operator
+https://rainsoft.io/how-three-dots-changed-javascript/
+
 - arrow functions
 - desctructuring
 
