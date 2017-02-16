@@ -13,13 +13,15 @@ https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/
 - What is prototype inheritance? 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 
-> When it comes to inheritance, JavaScript only has one construct: objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.
+When it comes to inheritance, JavaScript only has one construct: objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.
+
     * Difference from classical inheritance?
     https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9#.xk74hshk3
     
     > Classes inherit from classes and create subclass relationships: hierarchical class taxonomies.
    
    > A prototype is a working object instance. Objects inherit directly from other objects.
+   
 - What is ES6(ES2015)?
    https://medium.com/javascript-scene/how-to-learn-es6-47d9a1ac2620#.rryz8gs44
 
