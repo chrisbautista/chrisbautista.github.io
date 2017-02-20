@@ -116,9 +116,10 @@
         [
           "__master__/lessons/css/collapsed-parent/collapse.html",
           "CSS: fix Collapsed parent (Code)"
-        ],[
-          "#",
-          "Javascript Block Reveal"
+        ],
+        [
+          "/javascripts/reveal-video/",
+          "Javascript Block Reveal(demo)"
         ],
         [
           "#",
