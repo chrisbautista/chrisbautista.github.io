@@ -1,36 +1,63 @@
 .previewOverlay {
     position: fixed;
-    top:0;left: 0;
-    width:100%;
-    height:100%;
-    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 5000;
-    margin:0; padding: 0; line-height: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
     font: 80% sans-serif;
 }
 
-.previewOverlay div#imgContainer {
-    top:0px;left:0px;
+.centered {
     position: absolute;
-    display:block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.previewOverlay div#imgContainer {
+    display: block;
     border: 6px solid #FDFDFD;
     background-color: #FDFDFD;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.8);
-    margin: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.8);
 }
+
 .previewOverlay div#imgContainer img {
-    height:auto;
+    height: auto;
 }
+
 .previewOverlay div#imgContainer p {
 
-    background-color:#FDFDFD;
-    padding:5px;
-    
+    background-color: #FDFDFD;
+    padding: 5px;
+
 }
-.boxer-closeBtn{
-    position:absolute;
+
+.boxer-closeBtn {
+    position: absolute;
     z-index: 5001;
     background: url("close.png") no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+}
+
+@media (max-width: 500px) {
+
+    .centered {
+        top: 20%;
+    }
+
+    .previewOverlay div#imgContainer {
+        width: 100%;
+    }
+
+    .previewOverlay div#imgContainer img {
+        width: 100%;
+        height: auto;
+    }
 }

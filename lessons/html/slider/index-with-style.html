@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <style>
+
+
+        ul, li {
+            list-style-type: none;
+            list-style: none;
+        }
+
+        ul.slider {
+            /*width: 10000px;*/
+            position: relative;
+        }
+
+        ul.slider li {
+
+            position: absolute;
+            display: none;
+        }
+
+        ul.slider li img {
+            width: 280px;
+            height: auto;
+
+        }
+
+        ul.slider li.active {
+            z-index: 9999;
+            display: inline-block;
+        }
+
+        .controls {
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<article>
+    <h1>Slider: An exercise in progressive web development</h1>
+
+    <div class="container">
+        <div class="controls">
+            <span class="control left-control">&lt;&lt;</span>
+
+            <span class="control right-control">&gt;&gt;</span>
+        </div>
+        <ul class="slider">
+            <li class="active"><img src="images/car1.jpg" alt="img1"></li>
+            <li><img src="images/car2.jpg" alt="img2"></li>
+            <li><img src="images/car3.jpg" alt="img3"></li>
+            <li><img src="images/car4.jpg" alt="img4"></li>
+            <li><img src="images/car5.jpg" alt="img5"></li>
+        </ul>
+
+    </div>
+
+</article>
+
+<script>
+    'use strict';
+
+    (function () {
+
+        var elements = document.querySelectorAll('.slider li');
+        var currentIndex = 0;
+        var activeClassName = 'active';
+
+        console.log(elements);
+
+        function nextSlide(elements, index) {
+            var nextIndex = index++,
+                total = elements.length;
+
+            if (nextIndex > total - 1) {
+                nextIndex = 0;
+            }
+            return nextIndex;
+        }
+
+        function prevSlide(elements, index) {
+            var nextIndex = currentIndex--,
+                total = elements.length;
+            if (nextIndex < 0) {
+                nextIndex = total - 1;
+            }
+
+            return nextIndex;
+        }
+
+        function setSlide(elements, index) {
+            elements.className = '';
+            elements[index] = activeClassName;
+        }
+
+        document.querySelectorAll('.control.right-control').forEach(function (item, i) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                currentIndex = setSlide(elements, nextSlide(elements, currentIndex))
+                console.log('right', elements, currentIndex);
+
+            })
+        });
+        document.querySelectorAll('.control.left-control').forEach(function (item, i) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                currentIndex = setSlide(elements, prevSlide(elements, currentIndex))
+                console.log('left', elements, currentIndex);
+
+            })
+        });
+
+
+    }());
+
+
+</script>
+
+</body>
+</html>

@@ -8,10 +8,10 @@
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
-*/
-(function($) {
+ */
+(function ($) {
 
-    var createBoxer = function(config) {
+    var createBoxer = function (config) {
         var obj = config.obj;
         var hlpr = this;
         var $main;
@@ -21,11 +21,11 @@
             var $cntnr = $(cntnr);
             var closeBtn = document.createElement('div');
             closeBtn.className = "boxer-closeBtn";
-            $main.append(closeBtn);
+            $($main).find('> div').prepend(closeBtn);
             $btn = $(".boxer-closeBtn");
-            $btn.css('top', (parseInt($cntnr.css('top')) - 20) + "px");
-            $btn.css('left', (parseInt($cntnr.css('left')) + parseInt($cntnr.css('width')) + 12) + "px");
-            $main.on('click', function() {
+            // $btn.css('top', (parseInt($cntnr.css('top')) - 20) + "px");
+            // $btn.css('left', (parseInt($cntnr.css('left')) + parseInt($cntnr.css('width')) + 12) + "px");
+            $main.on('click', function () {
                 $cntnr.remove();
                 $(this).remove();
                 $(this).off();
@@ -36,53 +36,46 @@
             var overlay, configType, insideContainer, w, h;
             var thumb = e.target;
             e.preventDefault();
-            
+
             thumb = thumb.nodeName !== 'A' ? e.target.parentNode : thumb;
- 
-            if(thumb.nodeName !== 'A') {
-             return false;
+
+            if (thumb.nodeName !== 'A') {
+                return false;
             }
-            
+
             configType = $(thumb).attr('data-type') || "";
-    
-            
+
+
             $('body').append($('<div></div>').addClass(config.overlayName));
-            $main = $("."+ config.overlayName);
+            $main = $("." + config.overlayName);
 
             outSideContainer = document.createElement('div');
             outSideContainer.id = "imgContainer";
 
-            // add initial class here
-            // make provisions for adding animation specific 
-            // properties ( genie starts from the mouse position, 
-            // fadein )
-
-            insideContainer = buildInside(thumb, configType, function() {
+            insideContainer = buildInside(thumb, configType, function () {
                 outSideContainer.appendChild(insideContainer);
+                outSideContainer.className = 'centered';
 
-                if($(outSideContainer)[0].firstChild.width){
+                if ($(outSideContainer)[0].firstChild.width) {
                     w = $(outSideContainer)[0].firstChild.width;
                     h = $(outSideContainer)[0].firstChild.height;
-                }else{
+                } else {
                     w = config.width;
                     h = config.height;
-                    $($(outSideContainer)[0].firstChild).css('width',w);
-                    $($(outSideContainer)[0].firstChild).css('height',h);
+                    $($(outSideContainer)[0].firstChild).css('width', w);
+                    $($(outSideContainer)[0].firstChild).css('height', h);
+
                 }
 
 
-                if( w >$(window).width()*0.7 || h > $(window).height()*0.7 ){
-                    w =  parseInt(w/2);
-                    h =  parseInt(h/2);
+                if (w > $(window).width() * 0.7 || h > $(window).height() * 0.7) {
+                    w = parseInt(w / 2);
+                    h = parseInt(h / 2);
                     $(outSideContainer)[0].firstChild.width = w;
-                }//sometimes content is just too big lets fix it
+                }//sometimes images are just too big lets fix it
                  // works gracefully for divs
 
                 $(outSideContainer)[0].firstChild.width = w;
-                $(outSideContainer).css({
-                    'top': (($(window).height() / 2) - parseInt(h / 2)) + "px",
-                    'left': (($(window).width() / 2) - parseInt(w / 2)) + "px",
-                });
                 addCloseHandler(outSideContainer);
             });
 
@@ -94,30 +87,30 @@
         }
 
         function buildInside(thumb, configType, callback) {
-            var fragment,insideNode,text,title;
+            var fragment, insideNode, text, title;
             fragment = document.createDocumentFragment();
 
 
-            if (configType === "" || configType ==="image" ) { //image
-                
+            if (configType === "" || configType === "image") { //image
+
                 insideNode = document.createElement("img");
                 insideNode.src = thumb.href;
                 fragment.appendChild(insideNode);
-                
-                if(thumb.title){
+
+                if (thumb.title) {
                     title = document.createElement("p");
                     text = document.createTextNode(thumb.title);
                     title.appendChild(text);
                     fragment.appendChild(title);
                 }
-                
+
                 insideNode.addEventListener("load", callback);
 
-            } else if(configType==="ajax"){
+            } else if (configType === "ajax") {
                 insideNode = document.createElement("div");
-                $(insideNode).load(thumb.href, function( response, status, xhr ) {
-                  fragment.appendChild(insideNode);
-                  callback(response);
+                $(insideNode).load(thumb.href, function (response, status, xhr) {
+                    fragment.appendChild(insideNode);
+                    callback(response);
                 });
 
             }
@@ -131,16 +124,17 @@
 
     };
 
-    $.fn.boxer = function(options) {
+    $.fn.boxer = function (options) {
 
+        // This is the easiest way to have default options.
         var settings = $.extend({
             overlayName: "previewOverlay",
-            width:600,
-            height:400
+            width: 600,
+            height: 400
         }, options);
 
-        this.filter("div").each(function() {
-            $.each(this.children, function() {
+        this.filter("div").each(function () {
+            $.each(this.children, function () {
                 createBoxer($.extend({obj: $(this)}, settings));
             });
         });
