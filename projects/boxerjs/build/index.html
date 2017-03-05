@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boxer JS</title>
+    <meta http-equiv="refresh" content="0;URL='http://chrisbautista.github.io/boxerjs/'"/>
+    <link rel="stylesheet" href="js/boxer/boxer.min.css">
+    <link rel="stylesheet" href="js/boxer-zoom.css">
+    <style type="text/css">
+
+        body {
+            padding: 40px;
+            font-family: sans-serif;
+            color: #444;
+
+        }
+
+        #container {
+            max-width: 800px;
+            margin-top: 10px;
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            color: #0DF;
+            font-size: 3em;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+        }
+
+        h2 {
+            color: #0DF;
+            font-size: 2.2em;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            line-height: 16px;
+            max-width: 700px;
+        }
+
+        ul {
+            display: inline-block;
+            list-style: none;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-indent: 0px;
+            padding: 20px;
+        }
+
+        table {
+
+            width: 80%;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #AAA;
+        }
+
+        tr:nth-child(even) {
+            background-color: #DDD;
+        }
+
+        th {
+            background-color: #777;
+            color: #FEFEFE;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        .boxer {
+            max-width: 800px;
+            padding: 30px;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #0DF;
+            border-radius: 6px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+            line-height: 24px;
+
+        }
+
+        .jumbotron {
+            background-color: #EEE;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+            min-height: 100px;
+            padding: 30px;
+        }
+
+        #footer {
+            margin-top: 30px;
+            font-size: 0.7em;
+        }
+
+        #social {
+            font-size: 0.7em;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+
+    Project moved to <a href="http://chrisbautista.github.io/boxerjs/"></a>. This page will redirect you in a few
+    seconds.
+
+</div>
+
+
+<h1>BoxerJs : Demo</h1>
+
+<div class="jumbotron">
+
+    Github repository: <a href="https://github.com/chrisbautista/boxerjs">https://github.com/chrisbautista/boxerjs</a>
+    <br><br>
+    <div>Usage:</div>
+    <p></p>
+    <ol>
+        <li>copy boxer.js, boxer.css, and close.png into your project</li>
+        <li>include boxer.js and boxer.css</li>
+        <li>wrap anchors in a container e.g. <br>
+            <code>
+                &lt;div class="boxer" &gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;a href="picture.png" title="this is a picture" &gt;
+                &lt;img src="picture_thumb.jpg" /&gt;
+                &lt;/a&gt;<br>
+                &lt;/div &gt;
+
+            </code>
+        </li>
+        <li>run code <br>
+            <code>
+
+                $(".boxer").boxer();
+
+            </code>
+        </li>
+    </ol>
+    <p></p>
+</div>
+
+<div class="boxer">
+    <h4>Thumbnails</h4>
+    <a href="assets/dog1.jpg" title="Dog 1"><img src="assets/dog1-thumb.jpg" alt="dog 1"></a>
+    <a href="assets/dog2.jpg" title="Dog 2"><img src="assets/dog2-thumb.jpg" alt="dog 2"></a>
+    <a href="assets/dog3.jpg" title="Dog 3"><img src="assets/dog3-thumb.jpg" alt="dog 3"></a>
+</div>
+<div class="boxer">
+    <h4>Thumbnails in a UL</h4>
+    <ul>
+        <li><a href="assets/dog1.jpg" title="Dog 1 1"><img src="assets/dog1-thumb.jpg" alt="dog 1"></a></li>
+        <li><a href="assets/dog2.jpg" title="Dog 1 2"><img src="assets/dog2-thumb.jpg" alt="dog 2"></a></li>
+        <li><a href="assets/dog3.jpg" title="Dog 1 3"><img src="assets/dog3-thumb.jpg" alt="dog 3"></a></li>
+    </ul>
+
+
+</div>
+
+<div class="boxer">
+    <h4>Anchors in a paragraph</h4>
+    I love my <a href="assets/dog1.jpg" title="Dog 1 1">dog</a>. Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna <a href="assets/dog1.jpg" title="Dog 1 1"> another dog</a>. Ut enim ad
+    minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    <a href="page.html" data-type="ajax">City vs Population</a>
+</div>
+
+<div class="boxer">
+    <h4>Ajax</h4>
+    <ul>
+        <li><a href="page.html" data-type="ajax">City vs Population(local page.html)</a></li>
+        <li><a href="http://www.google.com" data-type="ajax">Google dot com(remote Page)</a></li>
+    </ul>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/boxer/boxer.min.js"></script>
+<script>
+
+    $(".boxer").boxer();
+</script>
+</body>
+</html>
