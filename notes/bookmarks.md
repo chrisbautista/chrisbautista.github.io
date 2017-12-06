@@ -26,7 +26,7 @@
 * [Observer](http://www.html5rocks.com/en/tutorials/es7/observe/)
 * [Isomorphic Javascript](https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters/)
 * [Eloquent Javascript](http://eloquentjavascript.net/)
-
+* [Writing Javascript APIs](http://blog.wolksoftware.com/writing-javascript-apis)
 ### React
 * [Egghead.io - React Tutorials](https://egghead.io/series/react-fundamentals)
 
