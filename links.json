@@ -1,147 +1,269 @@
 {
+  "cards": [
+    {
+      "title": "BoxerJS",
+      "content":   "Lightweight JQuery plugin for adding quick previews.",
+      "tags" : ["project", "jquery", "plugin", "javascript"],
+      "links" : [
+          {
+            "label": "Demo",
+            "link": "/boxerjs/"
+          },
+          {
+            "label": "Code",
+            "link": "https://github.com/chrisbautista/boxerjs"
+          }
+        ]
+    },
+    {
+      "title": "YouScentIt",
+      "content": "Promo Application - Jquery and Promo plugin",
+      "tags": [
+        "project",
+        "jquery",
+        "javascript"
+      ],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "/projects/youscentit/build/"
+        },
+        {
+          "label": "Code",
+          "link": "__master__/projects/youscentit/"
+        }
+      ]
+    },
+    {
+      "title": "Pizza Store",
+      "content": "MEAN experiment: Pizza assembly and cart",
+      "tags": [
+        "project",
+        "nodejs",
+        "school",
+        "javascript"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "link": "https://github.com/chrisbautista/study/tree/master/pizza"
+        }
+      ]
+    },
+    {
+      "title": "Timer Directive",
+      "content": "AngularJS 1 timer built as directive component",
+      "tags": [
+        "experiments",
+        "angular",
+        "javasript"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/experiments/cbTimerDirective/public_html/"
+        },
+        {
+          "label": "Demo",
+          "link": "/experiments/cbTimerDirective/public_html/"
+        }
+      ]
+    },
+    {
+      "title": "Best Buy API demo",
+      "content": "AngularJS 1 Service to consume API / AJAX",
+      "tags": [
+        "experiments",
+        "angular",
+        "javascript"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/experiments/bestbuyapi/app/"
+          },
+          {
+            
+          "label": "Demo",
+          "link": "/experiments/bestbuyapi/app/"
+        }
+      ]
+    },
+    {
+      "title": "Hi-Lo Card game",
+      "content": "Game mechanics study app - venturing into typescript syntax",
+      "tags": [
+        "lessons",
+        "typescript",
+        "javascript",
+        "game"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/lessons/typescript/hilo-game/"
+          },
+          {
+            
+          "label": "Demo",
+          "link": "lessons/typescript/hilo-game/"
+        }
+      ]
+    },
+    {
+      "title": "Balance Parens",
+      "content": "Provided a string build a function to check for balanced parens ",
+      "tags": [
+        "lessons",
+        "javascript"
+   
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/lessons/javascript/intermediate/balancedParens"
+        }
+      ]
+    },
+{
+  "title": "Closures",
+  "content": "Studying closure",
+  "tags": [
+    "lessons",
+    "javascript"
+  
+  ],
   "links": [
     {
-      "name": "Projects",
-      "list": [
-        [
-          "/Alexandria/",
-          "Alexandria: Audiobooks Application (Ionic)"
-        ],
-        [
-          "/boxerjs/",
-          "BoxerJS: Lightweight JQuery plugin for adding quick previews."
-        ],
-        [
-          "https://github.com/chrisbautista/study/tree/master/pizza",
-          "JavaScript/NodeJs: pizza shop"
-        ],
-        [
-          "/projects/youscentit/build/",
-          "Javascript: Promo Application - Jquery and Promo plugin (Demo)"
-        ],
-        [
-          "__master__/projects/youscentit/",
-          "JavaScript: Promo Application - Jquery and Promo plugin (Code)"
-        ]
-      ]
-    },
-    {
-      "name": "Experiments",
-      "list": [
-        [
-          "/experiments/cbTimerDirective/public_html/",
-          "Javascript: AngularJS Timer Directive (Demo)"
-        ],
-        [
-          "__master__/experiments/cbTimerDirective/public_html/",
-          "Javascript: AngularJS Timer Directive (Code)"
-        ],
-        [
-          "/experiments/bestbuyapi/app/",
-          "JavaScript: AngularJS Service to consume API / AJAX (Demo)"
-        ],
-        [
-          "__master__/experiments/bestbuyapi/app/",
-          "JavaScript: AngularJS Service to consume API / AJAX (Code)"
-        ],
-        [
-          "#",
-          "> AngularJS: pizza shop"
-        ],
-        [
-          "#",
-          "> Ionic: Library Pattern"
-        ],
-        [
-          "#",
-          "> ReactJS: using Flux Framework"
-        ]
-      ]
-    },
-    {
-      "name": "Lessons",
-      "list": [
-        [
-          "__master__/lessons/javascript/shorthand.js",
-          "JavaScript: Shorthand Constructs"
-        ],
-        [
-          "__master__/lessons/typescript/hilo-game/",
-          "Javascript: High - Low Card Game (code)"
-        ],
-        [
-          "lessons/typescript/hilo-game/",
-          "Javascript: High - Low Card Game (demo)"
-        ],
-        [
-          "__master__/lessons/javascript/intermediate/balancedParens",
-          "JavaScript: Provided a string build a function to check for balanced parens "
-        ],
-        [
-          "__master__/lessons/javascript/closure.js",
-          "JavaScript: Closures"
-        ],
-        [
-          "__master__/lessons/javascript/shorthand.js",
-          "JavaScript: Shorthand for common Patterns"
-        ],
-        [
-          "__master__/lessons/javascript/currying/curry.js",
-          "JavaScript: Currying Arithmetic"
-        ],
-        [
-          "__master__/lessons/javascript/currying/curry_refactored.js",
-          "JavaScript: Currying Arithmetic refactored"
-        ],
-        [
-          "/lessons/css/margin_collapse.html",
-          "CSS: Margin Collapsed (Demo)"
-        ],
-        [
-          "__master__/lessons/css/margin_collapse.html",
-          "CSS: Margin Collapsed (Code)"
-        ],
-        [
-          "/lessons/css/table/table.html",
-          "CSS: table(Demo)"
-        ],
-        [
-          "__master_/lessons/css/table/table.html",
-          "CSS: Table(Code)"
-        ],
-        [
-          "/lessons/css/collapsed-parent/collapse.html",
-          "CSS: fix Collapsed parent (Demo)"
-        ],
-        [
-          "__master__/lessons/css/collapsed-parent/collapse.html",
-          "CSS: fix Collapsed parent (Code)"
-        ],
-        [
-          "/javascripts/reveal-video/",
-          "Javascript Block Reveal(demo)"
-        ],
-        [
-          "#",
-          "> Javascript Best Practices"
-        ],
-        [
-          "#",
-          "> Javascript Design Patterns: Singleton"
-        ],
-        [
-          "#",
-          "> Javascript Design Patterns: Factory"
-        ],
-        [
-          "#",
-          "> Javascript Design Patterns: Decorator"
-        ],
-        [
-          "#",
-          "> JSLint: unnecessary `else` after disruption"
-        ]
-      ]
+      "label": "Code",
+      "link": "__master__/lessons/javascript/closure.js"
     }
   ]
+},
+{
+  "title": "Shorthand Javascript",
+  "content": "My notes on shorthand javascript",
+  "tags": [
+    "lessons",
+    "javascript"
+   
+  ],
+  "links": [
+    {
+      "label": "Code",
+      "link": "__master__/lessons/javascript/shorthand.js"
+    }
+  ]
+},
+{
+  "title": "Currying",
+  "content": "A sample currying arithmetic script",
+  "tags": [
+    "lessons",
+    "javascript",
+    "functional programming"
+  ],
+  "links": [
+    {
+      "label": "Code",
+      "link": "__master__/lessons/javascript/currying/curry.js"
+    }
+  ]
+},
+{
+  "title": "Currying version 2",
+  "content": "A refactored version of the currying arithmetic",
+  "tags": [
+    "lessons",
+    "javascript",
+    "functional programming"
+  ],
+  "links": [
+    {
+      "label": "Code",
+      "link": "__master__/lessons/javascript/currying/curry_refactored.js"
+    }
+  ]
+},
+{
+  "title": "CSS Margin collapse experiment",
+  "content": "A look at different markup and CSS and how elements margin collapsing works",
+  "tags": [
+    "lessons",
+    "CSS"
+  ],
+  "links": [
+    {
+      "label": "Demo",
+      "link": "/lessons/css/margin_collapse.html"
+      },
+      {
+        
+      "label": "Code",
+      "link": "__master__/lessons/css/margin_collapse.html"
+    }
+  ]
+},
+{
+  "title": "CSS Table",
+  "content": "Figuring out CSS tables",
+  "tags": [
+    "lessons",
+    "CSS"
+  ],
+  "links": [
+    {
+      "label": "Demo",
+      "link": "/lessons/css/table/table.html"
+      },
+      {
+        
+      "label": "Code",
+      "link": "__master_/lessons/css/table/table.html"
+    }
+  ]
+},
+{
+  "title": "Fixing Collapsed Parent Elements",
+  "content": "Sample code and markup in fixing collapsed parent elements",
+  "tags": [
+    "lessons",
+    "CSS"
+  ],
+  "links": [
+    {
+      "label": "Demo",
+      "link": "/lessons/css/collapsed-parent/collapse.html"},
+    {
+      
+      "label": "Code",
+      "link": "__master__/lessons/css/collapsed-parent/collapse.html"
+    }
+  ]
+},
+{
+  "title": "Block Reveal",
+  "content": "A study on block reveal scripting",
+  "tags": [
+    "lessons",
+    "javascript"
+  ],
+  "links": [
+    {
+      "label": "Demo",
+      "link": "javascripts/reveal-video/"
+      },
+      {
+        
+      "label": "Code",
+      "link": "__master__/javascripts/reveal-video/"
+    }
+  ]
+}
+
+
+
+    
+  ]
+
 }

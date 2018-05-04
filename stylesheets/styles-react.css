@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik|Trirong');
+
+
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.854em;
+}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+small, .font_small {font-size: 0.618em;}
+
+
+body {
+    font-family: 'Rubik', serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-family: 'Trirong', serif;
+}
+
+#tags-wrapper {
+    max-width: 1000px;
+}
+#tags-wrapper button {
+    margin-left: 6px;
+    margin-bottom: 5px;
+}
+.card__content, .card__links {
+    padding: 10px 15px;
+}
+
+#filter-wrapper {position:relative; margin-top:40px;}
+#filter-wrapper i {    
+    position: absolute;
+    top: 41px;
+    right: -6px;
+}
+
+#filter-wrapper input {
+    font-size: 2em;
+    padding: 14px;
+}
+
+span.card__title {
+    font-family: 'Trirong', serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    /* background-color: #DDD; */
+    display: block;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.card__description{
+    margin: 0;
+}
+
+a.card__link {
+    text-align: right;
+    margin: 0 6px;
+    text-decoration: underline;
+}
+
+p.card__tags {
+    display: block;
+    font-size: 0.7rem;
+    margin: 32px 0 18px;
+   
+    width: 100%;
+    text-align: center;
+}
+
+.card__links {
+    text-align: right;
+}
+
+.card {
+  min-width: 150px;
+}
+
+span.tag {
+    font-style: italic;
+    padding: 2px 2px 4px;
+   
+    margin-right: 4px;
+     border-bottom: 1px solid #DDD;
+}
+
+footer {
+    
+}
+
+
+.masonry { /* Masonry container */
+    margin: 0 auto;
+    column-count: 4;
+    column-gap: 1em;
+    padding: 40px;
+}
+
+.item { /* Masonry bricks or child elements */
+   display:inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .masonry { /* Masonry container */
+        column-count: 3;
+    padding: 20px;
+    }
+        h1 {
+       font-size: 4rem;
+    }    
+
+}
+@media only screen and (max-width: 740px)
+{
+    .masonry { /* Masonry container */
+        column-count: 2;
+    padding: 20px;
+    }
+    h1 {
+       font-size: 3rem;
+    }    
+    
+}
+
+@media only screen and (max-width: 430px)
+{
+    .masonry { /* Masonry container */
+        column-count: 1;
+    padding: 5px;
+    }
+
+    h1 {
+       font-size: 2rem;
+    }    
+}
+
