@@ -32,10 +32,15 @@ const Footer = () => (
 )
 
 class Tag extends Component {
+
+    handleClick = () => {
+        this.props.onClickHandler( this.props.text )
+    }
+
     render() {
         let { text } = this.props
         return (
-            <button className="btn waves-effect waves-light  scale-transition" > {text} </button>
+            <button className="btn waves-effect waves-light  scale-transition" onClick={this.handleClick}> {text} </button>
         )
     }
 }
@@ -107,8 +112,12 @@ class Folio extends Component {
             .sort()
     }
 
+    setTag = (text) => {
+       this.setFilter(text)
+    }
+
     setFilter = (filter) => {
-        if(filter.length>3){
+        if(filter.length>=0){
             let { cards } = this.state;
 
             let filtered = cards.filter((item, i) => {
@@ -143,13 +152,13 @@ class Folio extends Component {
                         <div className="row">
                             <div className="col sm12 l12 m12">
                                 <i class="material-icons">search</i>
-                                <input type="text" name="" onChange={this.onFilterChange} ref={this.filterRef}/>
+                                <input type="text" name="search"  onChange={this.onFilterChange} ref={this.filterRef}/>
                             </div>
                         </div>
                     </section>
                     <section id="tags-wrapper" className="container">
                         <div className="row">
-                            {tags && tags.map((tag, j) => <Tag key={j} text={tag} />)}
+                            {tags && tags.map((tag, j) => <Tag key={j} onClickHandler={this.setTag} text={tag} />)}
                         </div>
                     </section>
                     <section id="cards-wrapper" className="masonry-wrapper">

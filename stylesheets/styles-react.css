@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #tags-wrapper {
     max-width: 1000px;
+    margin-bottom: 60px;
 }
 #tags-wrapper button {
     margin-left: 6px;
@@ -114,23 +115,43 @@ footer {
 
 
 .masonry { /* Masonry container */
-    margin: 0 auto;
-    column-count: 4;
-    column-gap: 1em;
-    padding: 40px;
+    display: block;
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: flex;
+   -webkit-align-items: left;
+   -webkit-moz-items: left;
+   align-items: left;
+   -webkit-justify-content: left;
+   -moz-justify-content: left;
+   justify-content: left;
+   -webkit-flex-direction: row;
+   -moz-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   -moz-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-flex-flow: row wrap;
+   -moz-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-content: flex-end;
+   -moz-align-content: flex-end;
+   align-content: flex-end;
+   
 }
 
 .item { /* Masonry bricks or child elements */
-   display:inline-block;
-    margin: 0;
-    width: 100%;
+    display: inline-block;
+    display: box;
+    width: 25%;
+     padding: 0 5px;
 }
 
 @media only screen and (max-width: 1000px)
 {
-    .masonry { /* Masonry container */
-        column-count: 3;
-    padding: 20px;
+    .item { /* Masonry container */
+         width: 33.333%;
+   
     }
         h1 {
        font-size: 4rem;
@@ -139,9 +160,9 @@ footer {
 }
 @media only screen and (max-width: 740px)
 {
-    .masonry { /* Masonry container */
-        column-count: 2;
-    padding: 20px;
+    .item { /* Masonry container */
+         width: 50%;
+   
     }
     h1 {
        font-size: 3rem;
@@ -151,9 +172,9 @@ footer {
 
 @media only screen and (max-width: 430px)
 {
-    .masonry { /* Masonry container */
-        column-count: 1;
-    padding: 5px;
+    .item { /* Masonry container */
+        width: 100%;
+   
     }
 
     h1 {
