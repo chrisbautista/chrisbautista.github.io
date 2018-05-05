@@ -44,6 +44,16 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 1000px;
     margin-bottom: 60px;
 }
+
+#tags-wrapper .row {
+    text-align: center;
+
+}
+#tags-wrapper .row-buttons {
+    text-align: right;
+
+}
+
 #tags-wrapper button {
     margin-left: 6px;
     margin-bottom: 5px;

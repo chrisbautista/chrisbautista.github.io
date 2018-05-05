@@ -1,6 +1,11 @@
 const { Component } = React
 
 const MASTERURL = `https://github.com/chrisbautista/chrisbautista.github.io/tree/master`
+const COLOR_CODE = {
+    lessons: ' blue lighten-4',
+    projects: 'orange lighten-3',
+    experiments: 'red lighten-3'
+}; 
 
 function debounce(fn, delay) {
     var timer = null;
@@ -11,6 +16,19 @@ function debounce(fn, delay) {
             fn.apply(context, args);
         }, delay);
     };
+}
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
 }
 
 const Header = () => (
@@ -38,9 +56,9 @@ class Tag extends Component {
     }
 
     render() {
-        let { text } = this.props
+        let { text, className } = this.props
         return (
-            <button className="btn waves-effect waves-light  scale-transition" onClick={this.handleClick}> {text} </button>
+            <button className={`btn waves-effect waves-light scale-transition ${className}`} onClick={this.handleClick}> {text} </button>
         )
     }
 }
@@ -66,10 +84,10 @@ class Card extends Component {
 
 
     render() {
-        let { id, title, links, children, tags } = this.props;
+        let { id, title, links, children, tags, className } = this.props;
 
         return (
-            <div key={id} className={`card`}>
+            <div key={id} className={`card ${className}  `}>
                 <div className={`card__content`}>
                     <span className={`card__title`}>{title}</span>
                     <p className={`card__description`}>{children}</p>
@@ -112,6 +130,10 @@ class Folio extends Component {
             .sort()
     }
 
+    clearTags = () => {
+        this.setState({filter:'', filteredCards: this.state.cards})
+    }
+
     setTag = (text) => {
        this.setFilter(text)
     }
@@ -127,7 +149,7 @@ class Folio extends Component {
                     item.tags.indexOf(filter) >= 0
             })
 
-            this.setState({filteredCards: filtered});
+            this.setState({filter:filter, filteredCards: filtered});
         }
     }
 
@@ -158,17 +180,23 @@ class Folio extends Component {
                     </section>
                     <section id="tags-wrapper" className="container">
                         <div className="row">
+                           
                             {tags && tags.map((tag, j) => <Tag key={j} onClickHandler={this.setTag} text={tag} />)}
                         </div>
+                        
                     </section>
                     <section id="cards-wrapper" className="masonry-wrapper">
+                        <div className="row-buttons">
+                            {this.state.filter && <Tag key={0} className={`grey darken-1`} onClickHandler={this.clearTags} text={`Reset`} />}
+                        </div>
                         <div className="masonry">
                             {
-                                filteredCards && filteredCards.map(({ links, title, tags, content }, i) =>
+                                filteredCards && shuffle(filteredCards).map(({ links, title, tags, content, group }, i) =>
                                     (<div className="item"><Card id={i}
                                         links={links}
                                         title={title}
-                                        tags={tags}>
+                                        tags={tags}
+                                        className={COLOR_CODE[group]}>
                                         {content}
                                     </Card></div>)
                                 )
