@@ -104,11 +104,14 @@ p.card__tags {
 }
 
 .card__links {
-    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .card {
   min-width: 150px;
+  min-height: 215px;
 }
 
 span.tag {
