@@ -147,6 +147,10 @@ footer {
      padding: 0 5px;
 }
 
+#cards-wrapper {
+    margin: 0 15px 50px;
+}
+
 @media only screen and (max-width: 1000px)
 {
     .item { /* Masonry container */
