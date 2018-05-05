@@ -36,8 +36,8 @@ const Header = () => (
         <h1 class="page-title"> <span>Codespud</span> @ Github </h1>
         <nav>
             <ul>
-                <li><a href="http://www.codespud.com">Blog</a></li>
-                <li><a >Github</a></li>
+                <li><a className=" waves-effect waves-light scale-transition" href="http://www.codespud.com">Blog</a></li>
+                <li><a className=" waves-effect waves-light scale-transition" href="https://github.com/chrisbautista/">Github</a></li>
             </ul>
         </nav>
     </header>
