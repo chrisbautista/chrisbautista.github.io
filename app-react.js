@@ -52,6 +52,7 @@ const Footer = () => (
 class Tag extends Component {
 
     handleClick = () => {
+        
         this.props.onClickHandler( this.props.text )
     }
 
@@ -109,11 +110,12 @@ class Folio extends Component {
             cards: [],
             filteredCards : [],
             tags: [],
-            filter: ''
+            filter: '',
+            cardState: 'shown'
         }
 
         this.filterRef = React.createRef();
-        this.setFilter = debounce(this.setFilter, 500);
+        this.setFilter = debounce(this.setFilter, 1000);
     }
 
     componentWillMount = () => {
@@ -135,10 +137,17 @@ class Folio extends Component {
     }
 
     setTag = (text) => {
+
+        if(this.state.filteredCards.length>0){
+            //hidefirst then show
+            console.log('set filter')
+            this.setState({cardState:'hidden'});
+        }
        this.setFilter(text)
     }
 
     setFilter = (filter) => {
+        
         if(filter.length>=0){
             let { cards } = this.state;
 
@@ -149,12 +158,19 @@ class Folio extends Component {
                     item.tags.indexOf(filter) >= 0
             })
 
-            this.setState({filter:filter, filteredCards: filtered});
+            this.setState({filter:filter, filteredCards: filtered, cardState:'shown'});
         }
     }
 
     onFilterChange= (e) => {
-        this.setFilter(e.target.value);
+
+        if(this.state.filteredCards.length>0){
+            //hidefirst then show
+            console.log('set filter')
+            this.setState({cardState:'hidden'});
+        }
+        
+       // this.setFilter(e.target.value);
     }
    
     render() {
@@ -192,7 +208,7 @@ class Folio extends Component {
                         <div className="masonry">
                             {
                                 filteredCards && shuffle(filteredCards).map(({ links, title, tags, content, group }, i) =>
-                                    (<div className="item"><Card id={i}
+                                    (<div className={`item ${this.state.cardState}` }><Card id={i}
                                         links={links}
                                         title={title}
                                         tags={tags}
