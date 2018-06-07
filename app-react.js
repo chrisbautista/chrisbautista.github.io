@@ -111,17 +111,22 @@ class Folio extends Component {
             filteredCards : [],
             tags: [],
             filter: '',
-            cardState: 'shown'
+            cardState: ''
         }
 
         this.filterRef = React.createRef();
-        this.setFilter = debounce(this.setFilter, 1000);
+        this.setFilter = debounce(this.setFilter, 500);
     }
 
     componentWillMount = () => {
         fetch('/links.json')
             .then(response => response.json())
             .then(json => this.setState({ cards: json.cards, filteredCards:json.cards }))
+            .then(() => {
+                setTimeout(() => {
+                    this.setState({ cardState: 'shown' })
+                }, 400);
+            })
     }
 
     extractTags = () => {
@@ -133,20 +138,35 @@ class Folio extends Component {
     }
 
     clearTags = () => {
+
+        if (this.state.filteredCards.length > 0) {
+            //hidefirst then show
+            console.log('set filter')
+            this.setState({ cardState: 'hidden' });
+        }
         this.setState({filter:'', filteredCards: this.state.cards})
+        setTimeout(() => {
+            this.setState({ cardState: 'shown' })
+        }, 400);
     }
 
     setTag = (text) => {
-
-        if(this.state.filteredCards.length>0){
-            //hidefirst then show
-            console.log('set filter')
-            this.setState({cardState:'hidden'});
-        }
        this.setFilter(text)
     }
 
+    onFilterChange = (e) => {
+
+        this.setFilter(e.target.value);
+    }
+
     setFilter = (filter) => {
+
+        if (this.state.filteredCards.length > 0) {
+            //hidefirst then show
+            console.log('set filter')
+            this.setState({ cardState: 'hidden' });
+        }
+
         
         if(filter.length>=0){
             let { cards } = this.state;
@@ -158,20 +178,14 @@ class Folio extends Component {
                     item.tags.indexOf(filter) >= 0
             })
 
-            this.setState({filter:filter, filteredCards: filtered, cardState:'shown'});
+            this.setState({filter:filter, filteredCards: filtered});
+            setTimeout( () => {
+                this.setState({cardState:'shown'})
+            }, 400);
         }
     }
 
-    onFilterChange= (e) => {
 
-        if(this.state.filteredCards.length>0){
-            //hidefirst then show
-            console.log('set filter')
-            this.setState({cardState:'hidden'});
-        }
-        
-       // this.setFilter(e.target.value);
-    }
    
     render() {
 
@@ -207,7 +221,7 @@ class Folio extends Component {
                         </div>
                         <div className="masonry">
                             {
-                                filteredCards && shuffle(filteredCards).map(({ links, title, tags, content, group }, i) =>
+                                filteredCards.length > 0 ? shuffle(filteredCards).map(({ links, title, tags, content, group }, i) =>
                                     (<div className={`item ${this.state.cardState}` }><Card id={i}
                                         links={links}
                                         title={title}
@@ -215,8 +229,12 @@ class Folio extends Component {
                                         className={COLOR_CODE[group]}>
                                         {content}
                                     </Card></div>)
+                                ) : (
+                                    <div className="alert alert-error">no cards found</div>
                                 )
+
                             }
+                            
                         </div>
                     </section>
 
