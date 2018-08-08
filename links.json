@@ -37,6 +37,22 @@
       "group": "projects"
     },
     {
+      "title": "Vagrant-LAMP",
+      "content": "Custom Vagrant configuration for LAMP local development with optional WP and Drupal provisioning",
+      "tags": [
+        "project",
+        "vagrant",
+        "development",
+        "PHP"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "link": "https://github.com/chrisbautista/vagrant-lamp"
+        }
+      ],
+      "group": "projects"
+    },{
       "title": "Pizza Store",
       "content": "MEAN experiment: Pizza assembly and cart",
       "tags": [
