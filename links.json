@@ -2,28 +2,24 @@
   "cards": [
     {
       "title": "BoxerJS",
-      "content":   "Lightweight JQuery plugin for adding quick previews.",
-      "tags" : ["project", "jquery", "plugin", "javascript"],
-      "links" : [
-          {
-            "label": "Demo",
-            "link": "/boxerjs/"
-          },
-          {
-            "label": "Code",
-            "link": "https://github.com/chrisbautista/boxerjs"
-          }
-        ],
-        "group": "projects"
+      "content": "Lightweight JQuery plugin for adding quick previews.",
+      "tags": ["project", "jquery", "plugin", "javascript"],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "/boxerjs/"
+        },
+        {
+          "label": "Code",
+          "link": "https://github.com/chrisbautista/boxerjs"
+        }
+      ],
+      "group": "projects"
     },
     {
       "title": "YouScentIt",
       "content": "Promo Application - Jquery and Promo plugin",
-      "tags": [
-        "project",
-        "jquery",
-        "javascript"
-      ],
+      "tags": ["project", "jquery", "javascript"],
       "links": [
         {
           "label": "Demo",
@@ -39,12 +35,7 @@
     {
       "title": "Vagrant-LAMP",
       "content": "Custom Vagrant configuration for LAMP local development with optional WP and Drupal provisioning",
-      "tags": [
-        "project",
-        "vagrant",
-        "development",
-        "PHP"
-      ],
+      "tags": ["project", "vagrant", "development", "PHP"],
       "links": [
         {
           "label": "Code",
@@ -52,15 +43,11 @@
         }
       ],
       "group": "projects"
-    },{
+    },
+    {
       "title": "Pizza Store",
       "content": "MEAN experiment: Pizza assembly and cart",
-      "tags": [
-        "project",
-        "nodejs",
-        "school",
-        "javascript"
-      ],
+      "tags": ["project", "nodejs", "school", "javascript"],
       "links": [
         {
           "label": "Code",
@@ -72,11 +59,7 @@
     {
       "title": "Timer Directive",
       "content": "AngularJS 1 timer built as directive component",
-      "tags": [
-        "experiments",
-        "angular",
-        "javascript"
-      ],
+      "tags": ["experiments", "angular", "javascript"],
       "links": [
         {
           "label": "Code",
@@ -92,18 +75,13 @@
     {
       "title": "Best Buy API demo",
       "content": "AngularJS 1 Service to consume API / AJAX",
-      "tags": [
-        "experiments",
-        "angular",
-        "javascript"
-      ],
+      "tags": ["experiments", "angular", "javascript"],
       "links": [
         {
           "label": "Code",
           "link": "__master__/experiments/bestbuyapi/app/"
-          },
-          {
-            
+        },
+        {
           "label": "Demo",
           "link": "/experiments/bestbuyapi/app/"
         }
@@ -113,19 +91,13 @@
     {
       "title": "Hi-Lo Card game",
       "content": "Game mechanics study app - venturing into typescript syntax",
-      "tags": [
-        "lessons",
-        "typescript",
-        "javascript",
-        "game"
-      ],
+      "tags": ["lessons", "typescript", "javascript", "game"],
       "links": [
         {
           "label": "Code",
           "link": "__master__/lessons/typescript/hilo-game/"
-          },
-          {
-            
+        },
+        {
           "label": "Demo",
           "link": "lessons/typescript/hilo-game/"
         }
@@ -135,11 +107,7 @@
     {
       "title": "Balance Parens",
       "content": "Provided a string build a function to check for balanced parens ",
-      "tags": [
-        "lessons",
-        "javascript"
-   
-      ],
+      "tags": ["lessons", "javascript"],
       "links": [
         {
           "label": "Code",
@@ -148,153 +116,133 @@
       ],
       "group": "lessons"
     },
-{
-  "title": "Closures",
-  "content": "Studying closure",
-  "tags": [
-    "lessons",
-    "javascript"
-  
-  ],
-  "links": [
     {
-      "label": "Code",
-      "link": "__master__/lessons/javascript/closure.js"
+      "title": "Closures",
+      "content": "Studying closure",
+      "tags": ["lessons", "javascript"],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/lessons/javascript/closure.js"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "Shorthand Javascript",
+      "content": "My notes on shorthand javascript",
+      "tags": ["lessons", "javascript"],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/lessons/javascript/shorthand.js"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "Currying",
+      "content": "A sample currying arithmetic script",
+      "tags": ["lessons", "javascript", "functional programming"],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/lessons/javascript/currying/curry.js"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "Currying version 2",
+      "content": "A refactored version of the currying arithmetic",
+      "tags": ["lessons", "javascript", "functional programming"],
+      "links": [
+        {
+          "label": "Code",
+          "link": "__master__/lessons/javascript/currying/curry_refactored.js"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "CSS Margin collapse experiment",
+      "content": "A look at different markup and CSS and how elements margin collapsing works",
+      "tags": ["lessons", "CSS"],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "/lessons/css/margin_collapse.html"
+        },
+        {
+          "label": "Code",
+          "link": "__master__/lessons/css/margin_collapse.html"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "CSS Table",
+      "content": "Figuring out CSS tables",
+      "tags": ["lessons", "CSS"],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "/lessons/css/table/table.html"
+        },
+        {
+          "label": "Code",
+          "link": "__master_/lessons/css/table/table.html"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "Fixing Collapsed Parent Elements",
+      "content": "Sample code and markup in fixing collapsed parent elements",
+      "tags": ["lessons", "CSS"],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "/lessons/css/collapsed-parent/collapse.html"
+        },
+        {
+          "label": "Code",
+          "link": "__master__/lessons/css/collapsed-parent/collapse.html"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "Block Reveal",
+      "content": "A study on block reveal scripting",
+      "tags": ["lessons", "javascript"],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "javascripts/reveal-video/"
+        },
+        {
+          "label": "Code",
+          "link": "__master__/javascripts/reveal-video/"
+        }
+      ],
+      "group": "lessons"
+    },
+    {
+      "title": "Morsecode-potato",
+      "content": "An exercise to wrap morse code transcribing into React hooks.",
+      "tags": ["lessons", "javascript", "tool", "utility", "reactjs", "react", "hooks", "project"],
+      "links": [
+        {
+          "label": "Demo",
+          "link": "https://chrisbautista.github.io/morsecode-potato"
+        },
+        {
+          "label": "Code",
+          "link": "https://github.com/chrisbautista/morsecode-potato"
+        }
+      ],
+      "group": "projects"
     }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "Shorthand Javascript",
-  "content": "My notes on shorthand javascript",
-  "tags": [
-    "lessons",
-    "javascript"
-   
-  ],
-  "links": [
-    {
-      "label": "Code",
-      "link": "__master__/lessons/javascript/shorthand.js"
-    }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "Currying",
-  "content": "A sample currying arithmetic script",
-  "tags": [
-    "lessons",
-    "javascript",
-    "functional programming"
-  ],
-  "links": [
-    {
-      "label": "Code",
-      "link": "__master__/lessons/javascript/currying/curry.js"
-    }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "Currying version 2",
-  "content": "A refactored version of the currying arithmetic",
-  "tags": [
-    "lessons",
-    "javascript",
-    "functional programming"
-  ],
-  "links": [
-    {
-      "label": "Code",
-      "link": "__master__/lessons/javascript/currying/curry_refactored.js"
-    }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "CSS Margin collapse experiment",
-  "content": "A look at different markup and CSS and how elements margin collapsing works",
-  "tags": [
-    "lessons",
-    "CSS"
-  ],
-  "links": [
-    {
-      "label": "Demo",
-      "link": "/lessons/css/margin_collapse.html"
-      },
-      {
-        
-      "label": "Code",
-      "link": "__master__/lessons/css/margin_collapse.html"
-    }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "CSS Table",
-  "content": "Figuring out CSS tables",
-  "tags": [
-    "lessons",
-    "CSS"
-  ],
-  "links": [
-    {
-      "label": "Demo",
-      "link": "/lessons/css/table/table.html"
-      },
-      {
-        
-      "label": "Code",
-      "link": "__master_/lessons/css/table/table.html"
-    }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "Fixing Collapsed Parent Elements",
-  "content": "Sample code and markup in fixing collapsed parent elements",
-  "tags": [
-    "lessons",
-    "CSS"
-  ],
-  "links": [
-    {
-      "label": "Demo",
-      "link": "/lessons/css/collapsed-parent/collapse.html"},
-    {
-      
-      "label": "Code",
-      "link": "__master__/lessons/css/collapsed-parent/collapse.html"
-    }
-  ],
-  "group": "lessons"
-},
-{
-  "title": "Block Reveal",
-  "content": "A study on block reveal scripting",
-  "tags": [
-    "lessons",
-    "javascript"
-  ],
-  "links": [
-    {
-      "label": "Demo",
-      "link": "javascripts/reveal-video/"
-      },
-      {
-        
-      "label": "Code",
-      "link": "__master__/javascripts/reveal-video/"
-    }
-  ],
-  "group": "lessons"
-}
-
-
-
-    
   ]
-
 }
